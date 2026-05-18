@@ -1,5 +1,6 @@
 import PageHero from "@/src/components/common/PageHero";
 import SectionCard from "@/src/components/common/SectionCard";
+import MapSection from "@/src/features/stadiums/map/MapSection";
 import StadiumInfoCard from "@/src/features/stadiums/stadiumInfoSection";
 import { getStadiums } from "@/src/services/stadium/getStadiums";
 
@@ -16,6 +17,12 @@ const StadiumsPage = async () => {
         <SectionCard>
           <StadiumInfoCard data={stadiumData} />
         </SectionCard>
+        <div className="grid grid-cols-1 gap-3 md:grid-cols-2">
+          <SectionCard>야구장 날씨</SectionCard>
+          <SectionCard>
+            <MapSection data={stadiumData} />
+          </SectionCard>
+        </div>
       </div>
     </div>
   );
