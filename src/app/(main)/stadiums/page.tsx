@@ -12,7 +12,7 @@ const StadiumsPage = async () => {
         title="구장 정보"
         intro="전국 야구장의 주요 정보와 편의시설, 교통, 주변 정보를 확인해보세요!"
       />
-      <div className="-mt-5 flex flex-col gap-5 md:-mt-3 md:px-8.25 lg:-mt-10 xl:-mt-15">
+      <div className="mx-2.5 -mt-6 flex flex-col gap-5 md:mx-0 md:-mt-3 md:px-8.25 lg:-mt-10 xl:-mt-15">
         <SectionCard>
           <StadiumInfoCard data={stadiumData} />
         </SectionCard>
