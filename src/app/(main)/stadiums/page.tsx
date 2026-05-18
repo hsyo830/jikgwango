@@ -1,8 +1,11 @@
 import PageHero from "@/src/components/common/PageHero";
 import SectionCard from "@/src/components/common/SectionCard";
 import StadiumInfoCard from "@/src/features/stadiums/stadiumInfoSection";
+import { getStadiums } from "@/src/services/stadium/getStadiums";
 
-const StadiumsPage = () => {
+const StadiumsPage = async () => {
+  const stadiumData = await getStadiums();
+
   return (
     <div>
       <PageHero
@@ -11,7 +14,7 @@ const StadiumsPage = () => {
       />
       <div className="-mt-5 flex flex-col gap-5 md:-mt-3 md:px-8.25 lg:-mt-10 xl:-mt-15">
         <SectionCard>
-          <StadiumInfoCard />
+          <StadiumInfoCard data={stadiumData} />
         </SectionCard>
       </div>
     </div>
