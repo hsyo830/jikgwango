@@ -13,7 +13,7 @@ const MapSection = ({ data }: MapSectionProps) => {
   return (
     <>
       <SectionHeader stadiumData={stadiumData} />
-      <StadiumMap />
+      <StadiumMap stadiumData={stadiumData} />
     </>
   );
 };
