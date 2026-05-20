@@ -1,5 +1,6 @@
 import PageHero from "@/src/components/common/PageHero";
 import SectionCard from "@/src/components/common/SectionCard";
+import FoodSection from "@/src/features/stadiums/food/FoodSection";
 import MapSection from "@/src/features/stadiums/map/MapSection";
 import StadiumInfoCard from "@/src/features/stadiums/stadiumInfoSection";
 import WeatherSection from "@/src/features/stadiums/weather/WeatherSection";
@@ -26,6 +27,9 @@ const StadiumsPage = async () => {
             <MapSection data={stadiumData} />
           </SectionCard>
         </div>
+        <SectionCard>
+          <FoodSection data={stadiumData} />
+        </SectionCard>
       </div>
     </div>
   );
