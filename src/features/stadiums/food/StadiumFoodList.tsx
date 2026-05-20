@@ -30,6 +30,18 @@ const StadiumFoodList = ({ data }: StadiumFoodListProps) => {
             }}
             spaceBetween={15}
             slidesPerView={4}
+            breakpoints={{
+              768: {
+                slidesPerView: 2.2,
+                spaceBetween: 10,
+              },
+              1024: {
+                slidesPerView: 3,
+              },
+              1280: {
+                slidesPerView: 4,
+              },
+            }}
             autoplay={{
               delay: 3500,
               disableOnInteraction: false,

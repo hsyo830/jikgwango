@@ -38,6 +38,10 @@ export const stadiums: Stadium[] = [
       lat: 35.194031,
       lng: 129.061518,
     },
+    weatherGrid: {
+      nx: 98,
+      ny: 76,
+    },
   },
   {
     id: "changwon",
@@ -75,6 +79,10 @@ export const stadiums: Stadium[] = [
     map: {
       lat: 35.222533,
       lng: 128.582278,
+    },
+    weatherGrid: {
+      nx: 89,
+      ny: 76,
     },
   },
   {
@@ -114,6 +122,10 @@ export const stadiums: Stadium[] = [
       lat: 35.841056,
       lng: 128.681742,
     },
+    weatherGrid: {
+      nx: 90,
+      ny: 90,
+    },
   },
   {
     id: "daejeon",
@@ -151,6 +163,10 @@ export const stadiums: Stadium[] = [
     map: {
       lat: 36.316944,
       lng: 127.429167,
+    },
+    weatherGrid: {
+      nx: 68,
+      ny: 100,
     },
   },
   {
@@ -190,6 +206,10 @@ export const stadiums: Stadium[] = [
       lat: 37.498222,
       lng: 126.867139,
     },
+    weatherGrid: {
+      nx: 58,
+      ny: 125,
+    },
   },
   {
     id: "gwangju",
@@ -228,6 +248,10 @@ export const stadiums: Stadium[] = [
       lat: 35.168333,
       lng: 126.888889,
     },
+    weatherGrid: {
+      nx: 59,
+      ny: 75,
+    },
   },
   {
     id: "incheon",
@@ -265,6 +289,10 @@ export const stadiums: Stadium[] = [
     map: {
       lat: 37.436998,
       lng: 126.693244,
+    },
+    weatherGrid: {
+      nx: 55,
+      ny: 124,
     },
   },
   {
@@ -305,6 +333,53 @@ export const stadiums: Stadium[] = [
       lat: 37.512257,
       lng: 127.071901,
     },
+    weatherGrid: {
+      nx: 61,
+      ny: 126,
+    },
+  },
+  {
+    id: "jamsil",
+    name: "잠실야구장",
+    teams: ["두산", "LG"],
+    logoUrl1: "/image/team-logo/doosan-logo.svg",
+    logoUrl2: "/image/team-logo/lg-logo.svg",
+    searchKeyword: "잠실야구장",
+    kakaoPlaceName: "잠실종합운동장 잠실야구장",
+    address: "서울 송파구 올림픽로 25",
+    transport: {
+      subway: "2호선 종합운동장역 5·6번 출구 도보 약 5분",
+      bus: [],
+    },
+    parking: {
+      available: true,
+      paid: true,
+      capacity: 2200,
+      note: "잠실종합운동장 주차장 유료 이용",
+    },
+    openedYear: 1982,
+    capacity: 25000,
+    type: "outdoor",
+    allowedItems: ["생수", "500ml 이하 PET 음료", "간단한 간식", "우산"],
+    prohibitedItems: ["유리병", "캔", "600ml 초과 PET", "주류", "폭죽", "드론", "삼각대"],
+    facilities: ["화장실", "매점", "수유실", "물품보관함", "의무실", "ATM"],
+    seatingInfo: {
+      hasGuide: true,
+      note: "좌석 가격 및 시야 정보 제공",
+    },
+    entranceInfo: {
+      gates: [],
+      note: "출입구 위치, 입장 시간, 게이트별 정보",
+    },
+    officialUrl: "https://www.doosanbears.com",
+    map: {
+      lat: 37.512257,
+      lng: 127.071901,
+    },
+    weatherGrid: {
+      nx: 61,
+      ny: 126,
+    },
   },
   {
     id: "suwon",
@@ -342,6 +417,10 @@ export const stadiums: Stadium[] = [
     map: {
       lat: 37.299824,
       lng: 127.009668,
+    },
+    weatherGrid: {
+      nx: 60,
+      ny: 121,
     },
   },
 ];

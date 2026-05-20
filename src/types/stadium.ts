@@ -38,4 +38,8 @@ export interface Stadium {
     lat: number;
     lng: number;
   };
+  weatherGrid?: {
+    nx: number;
+    ny: number;
+  };
 }
