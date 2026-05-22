@@ -1,3 +1,5 @@
+import { PTY_ICON, SKY_ICON } from "../constants/weatherIconList";
+
 const SKY_LABEL: Record<string, string> = {
   "1": "맑음",
   "3": "구름많음",
@@ -44,6 +46,7 @@ export const formatWeatherData = (items: WeatherItem[]) => {
         time: `${Number(time.slice(0, 2))}시`,
         temperature: Number(value.T1H),
         weatherText: pty !== "0" ? PTY_LABEL[pty] : SKY_LABEL[sky],
+        icon: pty !== "0" ? PTY_ICON[pty] : SKY_ICON[sky],
         sky,
         pty,
       };
@@ -59,6 +62,7 @@ export const formatWeatherData = (items: WeatherItem[]) => {
       humidity: Number(Object.values(groupedByTime)[0]?.REH),
       windSpeed: Number(Object.values(groupedByTime)[0]?.WSD),
       rainProbability: 20,
+      icon: first.icon,
     },
     hourly,
     message: "우산을 챙기면 좋아요! 가벼운 바람이 불어요.",

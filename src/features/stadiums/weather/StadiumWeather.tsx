@@ -1,8 +1,13 @@
 "use client";
 
+import Image from "next/image";
+
+import NoResult from "@/src/components/common/NoResult";
 import { useStadiumWeather } from "@/src/hooks/queries/useStadiumWeatherQuery";
 import { Stadium } from "@/src/types/stadium";
 import { getWeatherBaseDateTime } from "@/src/utils/weatherTime";
+
+import { WeatherLoading } from "../loading/WeatherLoading";
 
 type StadiumWeatherProps = {
   stadiumData: Stadium;
@@ -19,14 +24,21 @@ const StadiumWeather = ({ stadiumData }: StadiumWeatherProps) => {
     ny: stadiumData.weatherGrid!.ny,
   });
 
-  if (isLoading) return <div>날씨 불러오는 중...</div>;
-  if (isError || !data) return <div>날씨 정보를 불러오지 못했어요.</div>;
+  if (isLoading) return <WeatherLoading />;
+  if (isError || !data)
+    return (
+      <div>
+        <NoResult message="날씨 정보를 불러오지 못했습니다." />
+      </div>
+    );
 
   return (
     <section>
+      <div className="relative h-20 w-20">
+        <Image src={data.current.icon} alt={data.current.weatherText} fill />
+      </div>
       <div>{data.current.temperature}°C</div>
       <div>{data.current.weatherText}</div>
-
       <div>체감 {data.current.feelsLike}°C</div>
       <div>습도 {data.current.humidity}%</div>
       <div>바람 {data.current.windSpeed}m/s</div>
