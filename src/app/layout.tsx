@@ -3,6 +3,8 @@ import "./globals.css";
 import type { Metadata } from "next";
 import Script from "next/script";
 
+import ReactQueryProvider from "@/src/providers/ReactQueryProvider";
+
 import { pretendard } from "../styles/fonts";
 
 export const metadata: Metadata = {
@@ -38,13 +40,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ko" className={`${pretendard.variable} h-full`} suppressHydrationWarning>
-      <head>
-        <Script
-          src={`//dapi.kakao.com/v2/maps/sdk.js?appkey=${process.env.NEXT_PUBLIC_KAKAO_JS_KEY}&autoload=false&libraries=services`}
-          strategy="beforeInteractive"
-        />
-      </head>
-      <body className="flex min-h-full flex-col font-sans antialiased">{children}</body>
+      <body className="flex min-h-full flex-col font-sans antialiased">
+        <ReactQueryProvider>{children}</ReactQueryProvider>
+      </body>
     </html>
   );
 }

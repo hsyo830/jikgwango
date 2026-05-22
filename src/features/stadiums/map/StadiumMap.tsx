@@ -1,10 +1,10 @@
 "use client";
 
-import Image from "next/image";
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 
-import mapImage from "@/public/image/map-marker/sajik-stadium-map.png";
 import { Stadium } from "@/src/types/stadium";
+
+import KakaoMapScript from "./KakaoMapScript";
 
 declare global {
   interface Window {
@@ -19,23 +19,17 @@ type StadiumMapProps = {
 
 const StadiumMap = ({ stadiumData }: StadiumMapProps) => {
   const mapRef = useRef<HTMLDivElement>(null);
+  const [isKakaoLoaded, setIsKakaoLoaded] = useState(false);
 
   useEffect(() => {
-    if (!window.kakao || !mapRef.current) {
-      console.log("카카오 SDK 또는 mapRef 없음");
-      return;
-    }
+    if (!isKakaoLoaded || !window.kakao || !mapRef.current) return;
 
     const lat = Number(stadiumData.map?.lat);
     const lng = Number(stadiumData.map?.lng);
 
-    console.log("위도 경도:", lat, lng);
-
     if (Number.isNaN(lat) || Number.isNaN(lng)) return;
 
     window.kakao.maps.load(() => {
-      console.log("지도 생성 시작");
-
       const position = new window.kakao.maps.LatLng(lat, lng);
 
       const map = new window.kakao.maps.Map(mapRef.current, {
@@ -57,13 +51,21 @@ const StadiumMap = ({ stadiumData }: StadiumMapProps) => {
         image: markerImage,
       });
     });
-  }, [stadiumData]);
+  }, [isKakaoLoaded, stadiumData]);
 
   return (
-    <div
-      ref={mapRef}
-      className="bg-surface-2 relative h-45 w-full overflow-hidden rounded-xl md:h-60"
-    />
+    <>
+      <KakaoMapScript
+        onLoad={() => {
+          setIsKakaoLoaded(true);
+        }}
+      />
+
+      <div
+        ref={mapRef}
+        className="bg-surface-2 relative h-45 w-full overflow-hidden rounded-xl md:h-60"
+      />
+    </>
   );
 };
 
