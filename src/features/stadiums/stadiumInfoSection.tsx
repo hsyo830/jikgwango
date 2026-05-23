@@ -29,7 +29,7 @@ const StadiumInfoCard = ({ data }: StadiumInfoCardProps) => {
       <div className="flex w-full flex-col gap-4 px-1.5 md:gap-3 md:px-0">
         <div className="flex w-full items-center justify-between">
           <div className="text-xl font-bold md:text-2xl">{stadiumData.name}</div>
-          <div>
+          <div className="flex gap-2">
             <Image
               src={stadiumData.logoUrl1}
               alt={stadiumData.name}
@@ -43,7 +43,7 @@ const StadiumInfoCard = ({ data }: StadiumInfoCardProps) => {
                 alt={stadiumData.name}
                 width={96}
                 height={96}
-                className="h-auto w-10 md:w-20"
+                className="h-auto w-12 opacity-35 md:w-15"
               />
             ) : (
               ""
@@ -71,7 +71,7 @@ const StadiumInfoCard = ({ data }: StadiumInfoCardProps) => {
               <span className="font-semibold">주차</span>
             </div>
             <div>
-              <div>{`${stadiumData.parking.available ? "주차 가능" : "주차 불가"}(${stadiumData.parking.paid ? "유료" : "무료"}) / ${stadiumData.parking.capacity !== null ? `약 ${stadiumData.parking.capacity}대 / ` : `${stadiumData.parking.note}`} `}</div>
+              <div>{`${stadiumData.parking.available ? "주차 가능" : "주차 불가"}(${stadiumData.parking.paid ? "유료" : "무료"}) / ${stadiumData.parking.capacity !== null ? `약 ${stadiumData.parking.capacity.toLocaleString()}대 / ` : `${stadiumData.parking.note}`} `}</div>
               <div>{`${stadiumData.parking.capacity ? `${stadiumData.parking.note}` : ""}`}</div>
             </div>
           </div>
@@ -83,7 +83,7 @@ const StadiumInfoCard = ({ data }: StadiumInfoCardProps) => {
           </div>
           <div className="flex flex-1 flex-col items-center gap-0.5 md:gap-1.5">
             <div className="text-muted font-semibold">수용 인원</div>
-            <div className="font-semibold">{stadiumData.capacity}명</div>
+            <div className="font-semibold">{stadiumData.capacity.toLocaleString()}명</div>
           </div>
           <div className="flex flex-1 flex-col items-center gap-0.5 md:gap-1.5">
             <div className="text-muted font-semibold">실내/실외</div>
