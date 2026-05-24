@@ -11,42 +11,52 @@ import SsgLogo from "@/public/image/team-logo/ssg-logo.svg";
 
 export const KBO_TEAMS = {
   LT: {
+    id: "lotte-giants",
     name: "롯데 자이언츠",
     logo: LotteLogo,
   },
   HH: {
+    id: "hanwha-eagles",
     name: "한화 이글스",
     logo: HanwhaLogo,
   },
   HT: {
+    id: "kia-tigers",
     name: "KIA 타이거즈",
     logo: KiaLogo,
   },
   WO: {
+    id: "kiwoom-heroes",
     name: "키움 히어로즈",
     logo: KiwoomLogo,
   },
   KT: {
+    id: "kt-wiz",
     name: "KT 위즈",
     logo: KtLogo,
   },
   LG: {
+    id: "lg-twins",
     name: "LG 트윈스",
     logo: LgLogo,
   },
   NC: {
+    id: "nc-dinos",
     name: "NC 다이노스",
     logo: NcLogo,
   },
   OB: {
+    id: "doosan-bears",
     name: "두산 베어스",
     logo: DoosanLogo,
   },
   SS: {
+    id: "samsung-lions",
     name: "삼성 라이온즈",
     logo: SamsungLogo,
   },
   SK: {
+    id: "ssg-landers",
     name: "SSG 랜더스",
     logo: SsgLogo,
   },
