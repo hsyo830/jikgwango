@@ -8,6 +8,7 @@ import ReactQueryProvider from "@/src/providers/ReactQueryProvider";
 import { pretendard } from "../styles/fonts";
 
 export const metadata: Metadata = {
+  metadataBase: new URL("http://localhost:3000"),
   title: "직관GO | 야구 직관 정보를 한번에!",
   description: "KBO Baseball Stadium Information Platform",
   openGraph: {

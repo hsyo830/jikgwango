@@ -38,7 +38,7 @@ const StadiumWeather = ({ stadiumData }: StadiumWeatherProps) => {
       <div className="border-border flex items-start justify-between border-b pb-2 md:px-3 lg:px-5">
         <div className="flex items-center gap-2.5 lg:gap-4">
           <div className="relative h-19 w-19 md:h-17 md:w-17 lg:h-19 lg:w-19">
-            <Image src={data.current.icon} alt={data.current.weatherText} fill />
+            <Image src={data.current.icon} alt={data.current.weatherText} fill sizes="40px" />
           </div>
           <div className="flex flex-col">
             <div className="text-3xl font-bold lg:text-4xl">{data.current.temperature}°C</div>
@@ -70,7 +70,7 @@ const StadiumWeather = ({ stadiumData }: StadiumWeatherProps) => {
           <div key={item.time} className="flex flex-col items-center">
             <time className="text-muted text-sm font-bold">{item.time}</time>
             <div className="relative h-5 w-5 md:h-8.5 md:w-8.5 lg:h-10 lg:w-10">
-              <Image src={item.icon} alt={item.weatherText} fill />
+              <Image src={item.icon} alt={item.weatherText} fill sizes="40px" />
             </div>
             <span className="text-base font-bold">{item.temperature}°</span>
           </div>
