@@ -18,20 +18,12 @@ const StadiumsPage = async () => {
       />
       <div className="mx-2.5 -mt-6 flex flex-col gap-5 md:mx-0 md:-mt-3 md:px-8.25 lg:-mt-10 xl:-mt-15">
         <StadiumFilterBadgeList />
-        <SectionCard>
-          <StadiumInfoCard data={stadiumData} />
-        </SectionCard>
+        <StadiumInfoCard data={stadiumData} />
         <div className="grid grid-cols-1 gap-3 md:grid-cols-2">
-          <SectionCard>
-            <WeatherSection data={stadiumData} />
-          </SectionCard>
-          <SectionCard>
-            <MapSection data={stadiumData} />
-          </SectionCard>
+          <WeatherSection data={stadiumData} />
+          <MapSection data={stadiumData} />
         </div>
-        <SectionCard>
-          <FoodSection data={stadiumData} />
-        </SectionCard>
+        <FoodSection data={stadiumData} />
       </div>
     </div>
   );

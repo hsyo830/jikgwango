@@ -1,3 +1,4 @@
+import SectionCard from "@/src/components/common/SectionCard";
 import { Stadium } from "@/src/types/stadium";
 
 import SectionHeader from "./SectionHeader";
@@ -11,10 +12,10 @@ const FoodSection = ({ data }: FoodSectionProps) => {
   const stadiumData = data[0];
 
   return (
-    <>
+    <SectionCard>
       <SectionHeader />
       <StadiumFoodList data={stadiumData} />
-    </>
+    </SectionCard>
   );
 };
 
