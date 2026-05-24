@@ -35,10 +35,6 @@ const StadiumFilterBadgeList = () => {
                 slidesPerView: 7,
               },
             }}
-            autoplay={{
-              delay: 3500,
-              disableOnInteraction: false,
-            }}
             loop={Object.values(KBO_TEAMS).length > 4}
           >
             {Object.values(KBO_TEAMS).map((team) => (
