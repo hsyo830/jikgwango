@@ -6,12 +6,13 @@ import StadiumFoodList from "./StadiumFoodList";
 
 type FoodSectionProps = {
   data: Stadium;
+  selectedStadiumId: string;
 };
 
-const FoodSection = ({ data }: FoodSectionProps) => {
+const FoodSection = ({ data, selectedStadiumId }: FoodSectionProps) => {
   return (
     <SectionCard>
-      <SectionHeader />
+      <SectionHeader selectedStadiumId={selectedStadiumId} />
       <StadiumFoodList data={data} />
     </SectionCard>
   );

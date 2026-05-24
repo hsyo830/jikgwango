@@ -3,6 +3,7 @@ import { Stadium } from "../types/stadium";
 export const stadiums: Stadium[] = [
   {
     id: "busan",
+    stadiumId: "busan",
     name: "사직야구장",
     teams: ["롯데"],
     logoUrl1: "/image/team-logo/lotte-logo.svg",
@@ -45,6 +46,7 @@ export const stadiums: Stadium[] = [
   },
   {
     id: "changwon",
+    stadiumId: "changwon",
     name: "창원NC파크",
     teams: ["NC"],
     logoUrl1: "/image/team-logo/nc-logo.svg",
@@ -87,6 +89,7 @@ export const stadiums: Stadium[] = [
   },
   {
     id: "daegu",
+    stadiumId: "daegu",
     name: "대구삼성라이온즈파크",
     teams: ["삼성"],
     logoUrl1: "/image/team-logo/samsung-logo.svg",
@@ -129,6 +132,7 @@ export const stadiums: Stadium[] = [
   },
   {
     id: "daejeon",
+    stadiumId: "daejeon",
     name: "대전한화생명볼파크",
     teams: ["한화"],
     logoUrl1: "/image/team-logo/hanwha-logo.svg",
@@ -171,6 +175,7 @@ export const stadiums: Stadium[] = [
   },
   {
     id: "gocheok",
+    stadiumId: "gocheok",
     name: "고척스카이돔",
     teams: ["키움"],
     logoUrl1: "/image/team-logo/kiwoom-logo.svg",
@@ -213,6 +218,7 @@ export const stadiums: Stadium[] = [
   },
   {
     id: "gwangju",
+    stadiumId: "gwangju",
     name: "광주 기아 챔피언스 필드",
     teams: ["KIA"],
     logoUrl1: "/image/team-logo/kia-logo.svg",
@@ -255,6 +261,7 @@ export const stadiums: Stadium[] = [
   },
   {
     id: "incheon",
+    stadiumId: "incheon",
     name: "인천SSG랜더스필드",
     teams: ["SSG"],
     logoUrl1: "/image/team-logo/ssg-logo.svg",
@@ -297,6 +304,7 @@ export const stadiums: Stadium[] = [
   },
   {
     id: "jamsil-lg",
+    stadiumId: "jamsil",
     name: "잠실야구장",
     teams: ["LG", "두산"],
     logoUrl1: "/image/team-logo/lg-logo.svg",
@@ -340,6 +348,7 @@ export const stadiums: Stadium[] = [
   },
   {
     id: "jamsil-ds",
+    stadiumId: "jamsil",
     name: "잠실야구장",
     teams: ["두산", "LG"],
     logoUrl1: "/image/team-logo/doosan-logo.svg",
@@ -383,6 +392,7 @@ export const stadiums: Stadium[] = [
   },
   {
     id: "suwon",
+    stadiumId: "suwon",
     name: "수원KT위즈파크",
     teams: ["KT"],
     logoUrl1: "/image/team-logo/kt-logo.svg",

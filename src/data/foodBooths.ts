@@ -1682,7 +1682,7 @@ export const foodBooths: FoodBooth[] = [
   {
     id: "gwangju-1ru-3f-01",
     stadiumId: "gwangju",
-    stadiumName: "광주-기아 챔피언스필드",
+    stadiumName: "광주 기아 챔피언스필드",
     locationCategory: "내부 1루",
     location: "내부 1루 3층",
     name: "BHC치킨",
@@ -1692,7 +1692,7 @@ export const foodBooths: FoodBooth[] = [
   {
     id: "gwangju-1ru-3f-02",
     stadiumId: "gwangju",
-    stadiumName: "광주-기아 챔피언스필드",
+    stadiumName: "광주 기아 챔피언스필드",
     locationCategory: "내부 1루",
     location: "내부 1루 3층",
     name: "CU편의점",
@@ -1701,7 +1701,7 @@ export const foodBooths: FoodBooth[] = [
   {
     id: "gwangju-1ru-3f-03",
     stadiumId: "gwangju",
-    stadiumName: "광주-기아 챔피언스필드",
+    stadiumName: "광주 기아 챔피언스필드",
     locationCategory: "내부 1루",
     location: "내부 1루 3층",
     name: "STATION(새우)",
@@ -1710,7 +1710,7 @@ export const foodBooths: FoodBooth[] = [
   {
     id: "gwangju-1ru-3f-04",
     stadiumId: "gwangju",
-    stadiumName: "광주-기아 챔피언스필드",
+    stadiumName: "광주 기아 챔피언스필드",
     locationCategory: "내부 1루",
     location: "내부 1루 3층",
     name: "XOXO핫도그",
@@ -1719,7 +1719,7 @@ export const foodBooths: FoodBooth[] = [
   {
     id: "gwangju-1ru-3f-05",
     stadiumId: "gwangju",
-    stadiumName: "광주-기아 챔피언스필드",
+    stadiumName: "광주 기아 챔피언스필드",
     locationCategory: "내부 1루",
     location: "내부 1루 3층",
     name: "마성떡볶이",
@@ -1728,7 +1728,7 @@ export const foodBooths: FoodBooth[] = [
   {
     id: "gwangju-1ru-3f-06",
     stadiumId: "gwangju",
-    stadiumName: "광주-기아 챔피언스필드",
+    stadiumName: "광주 기아 챔피언스필드",
     locationCategory: "내부 1루",
     location: "내부 1루 3층",
     name: "스트릿츄러스",
@@ -1737,7 +1737,7 @@ export const foodBooths: FoodBooth[] = [
   {
     id: "gwangju-1ru-3f-07",
     stadiumId: "gwangju",
-    stadiumName: "광주-기아 챔피언스필드",
+    stadiumName: "광주 기아 챔피언스필드",
     locationCategory: "내부 1루",
     location: "내부 1루 3층",
     name: "마왕족발",
@@ -1746,7 +1746,7 @@ export const foodBooths: FoodBooth[] = [
   {
     id: "gwangju-1ru-3f-08",
     stadiumId: "gwangju",
-    stadiumName: "광주-기아 챔피언스필드",
+    stadiumName: "광주 기아 챔피언스필드",
     locationCategory: "내부 1루",
     location: "내부 1루 3층",
     name: "파파존스",
@@ -1756,7 +1756,7 @@ export const foodBooths: FoodBooth[] = [
   {
     id: "gwangju-1ru-4f-01",
     stadiumId: "gwangju",
-    stadiumName: "광주-기아 챔피언스필드",
+    stadiumName: "광주 기아 챔피언스필드",
     locationCategory: "내부 1루",
     location: "내부 1루 4층",
     name: "XOXO핫도그",
@@ -1765,7 +1765,7 @@ export const foodBooths: FoodBooth[] = [
   {
     id: "gwangju-1ru-4f-02",
     stadiumId: "gwangju",
-    stadiumName: "광주-기아 챔피언스필드",
+    stadiumName: "광주 기아 챔피언스필드",
     locationCategory: "내부 1루",
     location: "내부 1루 4층",
     name: "광주원샷",
@@ -1774,7 +1774,7 @@ export const foodBooths: FoodBooth[] = [
   {
     id: "gwangju-1ru-4f-03",
     stadiumId: "gwangju",
-    stadiumName: "광주-기아 챔피언스필드",
+    stadiumName: "광주 기아 챔피언스필드",
     locationCategory: "내부 1루",
     location: "내부 1루 4층",
     name: "자문밖",
@@ -1784,7 +1784,7 @@ export const foodBooths: FoodBooth[] = [
   {
     id: "gwangju-1ru-5f-01",
     stadiumId: "gwangju",
-    stadiumName: "광주-기아 챔피언스필드",
+    stadiumName: "광주 기아 챔피언스필드",
     locationCategory: "내부 1루",
     location: "내부 1루 5층",
     name: "BHC치킨",
@@ -1794,7 +1794,7 @@ export const foodBooths: FoodBooth[] = [
   {
     id: "gwangju-1ru-5f-02",
     stadiumId: "gwangju",
-    stadiumName: "광주-기아 챔피언스필드",
+    stadiumName: "광주 기아 챔피언스필드",
     locationCategory: "내부 1루",
     location: "내부 1루 5층",
     name: "파파존스",
@@ -1804,7 +1804,7 @@ export const foodBooths: FoodBooth[] = [
   {
     id: "gwangju-3ru-3f-01",
     stadiumId: "gwangju",
-    stadiumName: "광주-기아 챔피언스필드",
+    stadiumName: "광주 기아 챔피언스필드",
     locationCategory: "내부 3루",
     location: "내부 3루 3층",
     name: "BHC치킨",
@@ -1814,7 +1814,7 @@ export const foodBooths: FoodBooth[] = [
   {
     id: "gwangju-3ru-3f-02",
     stadiumId: "gwangju",
-    stadiumName: "광주-기아 챔피언스필드",
+    stadiumName: "광주 기아 챔피언스필드",
     locationCategory: "내부 3루",
     location: "내부 3루 3층",
     name: "요아정",
@@ -1823,7 +1823,7 @@ export const foodBooths: FoodBooth[] = [
   {
     id: "gwangju-3ru-3f-03",
     stadiumId: "gwangju",
-    stadiumName: "광주-기아 챔피언스필드",
+    stadiumName: "광주 기아 챔피언스필드",
     locationCategory: "내부 3루",
     location: "내부 3루 3층",
     name: "CU편의점",
@@ -1832,7 +1832,7 @@ export const foodBooths: FoodBooth[] = [
   {
     id: "gwangju-3ru-3f-04",
     stadiumId: "gwangju",
-    stadiumName: "광주-기아 챔피언스필드",
+    stadiumName: "광주 기아 챔피언스필드",
     locationCategory: "내부 3루",
     location: "내부 3루 3층",
     name: "BHC치킨 PUB",
@@ -1841,7 +1841,7 @@ export const foodBooths: FoodBooth[] = [
   {
     id: "gwangju-3ru-3f-05",
     stadiumId: "gwangju",
-    stadiumName: "광주-기아 챔피언스필드",
+    stadiumName: "광주 기아 챔피언스필드",
     locationCategory: "내부 3루",
     location: "내부 3루 3층",
     name: "광주원샷",
@@ -1850,7 +1850,7 @@ export const foodBooths: FoodBooth[] = [
   {
     id: "gwangju-3ru-3f-06",
     stadiumId: "gwangju",
-    stadiumName: "광주-기아 챔피언스필드",
+    stadiumName: "광주 기아 챔피언스필드",
     locationCategory: "내부 3루",
     location: "내부 3루 3층",
     name: "마성떡볶이",
@@ -1859,7 +1859,7 @@ export const foodBooths: FoodBooth[] = [
   {
     id: "gwangju-3ru-3f-07",
     stadiumId: "gwangju",
-    stadiumName: "광주-기아 챔피언스필드",
+    stadiumName: "광주 기아 챔피언스필드",
     locationCategory: "내부 3루",
     location: "내부 3루 3층",
     name: "스트릿츄러스",
@@ -1868,7 +1868,7 @@ export const foodBooths: FoodBooth[] = [
   {
     id: "gwangju-3ru-3f-08",
     stadiumId: "gwangju",
-    stadiumName: "광주-기아 챔피언스필드",
+    stadiumName: "광주 기아 챔피언스필드",
     locationCategory: "내부 3루",
     location: "내부 3루 3층",
     name: "프랭크버거",
@@ -1878,7 +1878,7 @@ export const foodBooths: FoodBooth[] = [
   {
     id: "gwangju-3ru-4f-01",
     stadiumId: "gwangju",
-    stadiumName: "광주-기아 챔피언스필드",
+    stadiumName: "광주 기아 챔피언스필드",
     locationCategory: "내부 3루",
     location: "내부 3루 4층",
     name: "광주원샷",
@@ -1887,7 +1887,7 @@ export const foodBooths: FoodBooth[] = [
   {
     id: "gwangju-3ru-4f-02",
     stadiumId: "gwangju",
-    stadiumName: "광주-기아 챔피언스필드",
+    stadiumName: "광주 기아 챔피언스필드",
     locationCategory: "내부 3루",
     location: "내부 3루 4층",
     name: "자문밖",
@@ -1896,7 +1896,7 @@ export const foodBooths: FoodBooth[] = [
   {
     id: "gwangju-3ru-4f-03",
     stadiumId: "gwangju",
-    stadiumName: "광주-기아 챔피언스필드",
+    stadiumName: "광주 기아 챔피언스필드",
     locationCategory: "내부 3루",
     location: "내부 3루 4층",
     name: "프랭크버거",
@@ -1906,7 +1906,7 @@ export const foodBooths: FoodBooth[] = [
   {
     id: "gwangju-3ru-5f-01",
     stadiumId: "gwangju",
-    stadiumName: "광주-기아 챔피언스필드",
+    stadiumName: "광주 기아 챔피언스필드",
     locationCategory: "내부 3루",
     location: "내부 3루 5층",
     name: "CU편의점",
@@ -1915,7 +1915,7 @@ export const foodBooths: FoodBooth[] = [
   {
     id: "gwangju-3ru-5f-02",
     stadiumId: "gwangju",
-    stadiumName: "광주-기아 챔피언스필드",
+    stadiumName: "광주 기아 챔피언스필드",
     locationCategory: "내부 3루",
     location: "내부 3루 5층",
     name: "마성떡볶이",
@@ -1925,7 +1925,7 @@ export const foodBooths: FoodBooth[] = [
   {
     id: "gwangju-outside-01",
     stadiumId: "gwangju",
-    stadiumName: "광주-기아 챔피언스필드",
+    stadiumName: "광주 기아 챔피언스필드",
     locationCategory: "외부",
     location: "외부",
     name: "INC COFFEE",

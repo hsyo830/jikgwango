@@ -40,7 +40,7 @@ const StadiumsClient = ({ stadiumData }: StadiumsClientProps) => {
         <WeatherSection data={data} />
         <MapSection data={data} />
       </div>
-      <FoodSection data={data} />
+      <FoodSection data={data} selectedStadiumId={selectedStadiumId} />
     </div>
   );
 };

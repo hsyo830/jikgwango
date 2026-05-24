@@ -16,7 +16,7 @@ type StadiumFoodListProps = {
 };
 
 const StadiumFoodList = ({ data }: StadiumFoodListProps) => {
-  const foodBoothList = foodBooths.filter((booth) => booth.stadiumId === data.id);
+  const foodBoothList = foodBooths.filter((booth) => booth.stadiumId === data.stadiumId);
 
   return (
     <div className="w-full overflow-scroll md:overflow-hidden">

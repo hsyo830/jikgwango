@@ -2,6 +2,7 @@ export type StadiumType = "outdoor" | "indoor" | "dome";
 
 export interface Stadium {
   id: string;
+  stadiumId: string;
   name: string;
   teams: string[];
   logoUrl1: string;
