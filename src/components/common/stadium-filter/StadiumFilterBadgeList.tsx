@@ -10,7 +10,15 @@ import { KBO_TEAMS } from "@/src/constants/kboTeams";
 
 import StadiumFilterBadge from "./StadiumFilterBadge";
 
-const StadiumFilterBadgeList = () => {
+type StadiumFilterBadgeListProps = {
+  selectedStadiumId: string;
+  onSelectedStadiumId: (stadiumId: string) => void;
+};
+
+const StadiumFilterBadgeList = ({
+  selectedStadiumId,
+  onSelectedStadiumId,
+}: StadiumFilterBadgeListProps) => {
   return (
     <div className="w-full overflow-scroll md:overflow-hidden">
       <section className="hidden w-full md:block md:px-4.5">
@@ -39,7 +47,13 @@ const StadiumFilterBadgeList = () => {
           >
             {Object.values(KBO_TEAMS).map((team) => (
               <SwiperSlide key={team.id}>
-                <StadiumFilterBadge name={team.name} logo={team.logo} />
+                <StadiumFilterBadge
+                  name={team.name}
+                  logo={team.logo}
+                  stadiumId={team.stadiumId}
+                  selectedStadiumId={selectedStadiumId}
+                  onSelectedStadiumId={onSelectedStadiumId}
+                />
               </SwiperSlide>
             ))}
           </Swiper>
@@ -57,7 +71,14 @@ const StadiumFilterBadgeList = () => {
 
       <section className="flex w-230 gap-1.5 md:hidden">
         {Object.values(KBO_TEAMS).map((team) => (
-          <StadiumFilterBadge key={team.id} name={team.name} logo={team.logo} />
+          <StadiumFilterBadge
+            key={team.id}
+            name={team.name}
+            logo={team.logo}
+            stadiumId={team.stadiumId}
+            selectedStadiumId={selectedStadiumId}
+            onSelectedStadiumId={onSelectedStadiumId}
+          />
         ))}
       </section>
     </div>
