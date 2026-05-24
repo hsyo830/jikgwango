@@ -14,7 +14,11 @@ type StadiumsClientProps = {
 };
 
 const StadiumsClient = ({ stadiumData }: StadiumsClientProps) => {
-  const [selectedStadiumId, setSelectedStadiumId] = useState(stadiumData[0].id);
+  const [selectedStadiumId, setSelectedStadiumId] = useState(stadiumData[0].id ?? "");
+
+  const data = stadiumData.find((item) => item.id === selectedStadiumId);
+
+  if (!data) return null;
 
   return (
     <div className="mx-2.5 -mt-6 flex flex-col gap-5 md:mx-0 md:-mt-3 md:px-8.25 lg:-mt-10 xl:-mt-15">
@@ -22,12 +26,12 @@ const StadiumsClient = ({ stadiumData }: StadiumsClientProps) => {
         selectedStadiumId={selectedStadiumId}
         onSelectedStadiumId={setSelectedStadiumId}
       />
-      <StadiumInfoCard data={stadiumData} />
+      <StadiumInfoCard data={data} />
       <div className="grid grid-cols-1 gap-3 md:grid-cols-2">
-        <WeatherSection data={stadiumData} />
-        <MapSection data={stadiumData} />
+        <WeatherSection data={data} />
+        <MapSection data={data} />
       </div>
-      <FoodSection data={stadiumData} />
+      <FoodSection data={data} />
     </div>
   );
 };

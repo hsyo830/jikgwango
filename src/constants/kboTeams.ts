@@ -42,7 +42,7 @@ export const KBO_TEAMS = {
   },
   LG: {
     id: "lg-twins",
-    stadiumId: "jamsil",
+    stadiumId: "jamsil-lg",
     name: "LG 트윈스",
     logo: LgLogo,
   },
@@ -54,7 +54,7 @@ export const KBO_TEAMS = {
   },
   OB: {
     id: "doosan-bears",
-    stadiumId: "jamsil",
+    stadiumId: "jamsil-ds",
     name: "두산 베어스",
     logo: DoosanLogo,
   },

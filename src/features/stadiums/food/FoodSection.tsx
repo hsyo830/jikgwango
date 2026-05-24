@@ -5,16 +5,14 @@ import SectionHeader from "./SectionHeader";
 import StadiumFoodList from "./StadiumFoodList";
 
 type FoodSectionProps = {
-  data: Stadium[];
+  data: Stadium;
 };
 
 const FoodSection = ({ data }: FoodSectionProps) => {
-  const stadiumData = data[0];
-
   return (
     <SectionCard>
       <SectionHeader />
-      <StadiumFoodList data={stadiumData} />
+      <StadiumFoodList data={data} />
     </SectionCard>
   );
 };

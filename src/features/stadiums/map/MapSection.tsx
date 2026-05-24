@@ -5,16 +5,14 @@ import SectionHeader from "./SectionHeader";
 import StadiumMap from "./StadiumMap";
 
 type MapSectionProps = {
-  data: Stadium[];
+  data: Stadium;
 };
 
 const MapSection = ({ data }: MapSectionProps) => {
-  const stadiumData = data[0];
-
   return (
     <SectionCard>
-      <SectionHeader stadiumData={stadiumData} />
-      <StadiumMap stadiumData={stadiumData} />
+      <SectionHeader stadiumData={data} />
+      <StadiumMap stadiumData={data} />
     </SectionCard>
   );
 };

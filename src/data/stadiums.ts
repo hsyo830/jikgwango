@@ -296,7 +296,7 @@ export const stadiums: Stadium[] = [
     },
   },
   {
-    id: "jamsil",
+    id: "jamsil-lg",
     name: "잠실야구장",
     teams: ["LG", "두산"],
     logoUrl1: "/image/team-logo/lg-logo.svg",
@@ -339,7 +339,7 @@ export const stadiums: Stadium[] = [
     },
   },
   {
-    id: "jamsil",
+    id: "jamsil-ds",
     name: "잠실야구장",
     teams: ["두산", "LG"],
     logoUrl1: "/image/team-logo/doosan-logo.svg",
