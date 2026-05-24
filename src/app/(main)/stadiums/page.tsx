@@ -1,10 +1,4 @@
 import PageHero from "@/src/components/common/PageHero";
-import SectionCard from "@/src/components/common/SectionCard";
-import StadiumFilterBadgeList from "@/src/components/common/stadium-filter/StadiumFilterBadgeList";
-import FoodSection from "@/src/features/stadiums/food/FoodSection";
-import MapSection from "@/src/features/stadiums/map/MapSection";
-import StadiumInfoCard from "@/src/features/stadiums/stadiumInfoSection";
-import WeatherSection from "@/src/features/stadiums/weather/WeatherSection";
 import { getStadiums } from "@/src/services/stadium/getStadiums";
 
 import StadiumsClient from "./StadiumsClient";
