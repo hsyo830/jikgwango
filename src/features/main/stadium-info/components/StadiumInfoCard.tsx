@@ -31,21 +31,13 @@ const StadiumInfoCard = ({ stadium }: StadiumInfoCardProps) => {
             </p>
             <p className="text-disabled text-sm md:text-lg lg:text-base">|</p>
             <div className="flex gap-2">
-              <Image
-                src={stadiumInfo.logoUrl1}
-                alt="팀 로고"
-                width={48}
-                height={48}
-                className="h-auto w-10 md:w-13 lg:w-10 xl:w-12"
-              />
+              <div className="relative h-10 w-10 md:h-13 md:w-13 lg:h-10 lg:w-10 xl:h-12 xl:w-12">
+                <Image src={stadiumInfo.logoUrl1} alt="팀 로고" fill />
+              </div>
               {stadiumInfo.logoUrl2 && (
-                <Image
-                  src={stadiumInfo.logoUrl2}
-                  alt="팀 로고"
-                  width={48}
-                  height={48}
-                  className="h-auto w-10 md:w-13 lg:w-10 xl:w-12"
-                />
+                <div className="relative h-auto w-10 md:w-13 lg:w-10 xl:w-12">
+                  <Image src={stadiumInfo.logoUrl2} alt="팀 로고" fill />
+                </div>
               )}
             </div>
           </div>

@@ -24,11 +24,13 @@ const GameCard = ({ game }: GameCardProps) => {
           <div className="text-muted text-xs font-bold md:text-sm">
             {game.awayName.split(" ")[0]}
           </div>
-          <div className="flex h-8 items-center md:h-17">
+          <div className="relative flex h-8 w-10 items-center md:h-17 md:w-21">
             <Image
               src={KBO_TEAMS[game.awayCode].logo}
               alt={game.awayName}
-              className="h-auto w-10 md:w-21"
+              fill
+              sizes="(max-width: 768px) 40px, 84px"
+              className="object-contain"
             />
           </div>
         </div>
@@ -37,11 +39,13 @@ const GameCard = ({ game }: GameCardProps) => {
           <div className="text-muted text-xs font-bold md:text-sm">
             {game.homeName.split(" ")[0]}
           </div>
-          <div className="flex h-8 items-center md:h-17">
+          <div className="relative flex h-8 w-10 items-center md:h-17 md:w-21">
             <Image
               src={KBO_TEAMS[game.homeCode].logo}
               alt={game.homeName}
-              className="h-auto w-10 md:w-21"
+              fill
+              sizes="(max-width: 768px) 40px, 84px"
+              className="object-contain"
             />
           </div>
         </div>
@@ -50,12 +54,16 @@ const GameCard = ({ game }: GameCardProps) => {
         {game.stadiumFullName}
       </div>
       <div className="flex w-full flex-col items-center justify-between gap-1 md:flex-row">
-        <div className="flex items-center gap-0.5 md:gap-1">
-          <Image
-            src={KBO_WEATHER[game.gameIcon].icon}
-            alt={game.gameIconName}
-            className="h-auto w-6.5 md:w-8.5"
-          />
+        <div className="flex items-center gap-0.5 md:gap-2">
+          <div className="relative h-6.5 w-6.5 md:h-8.5 md:w-8.5">
+            <Image
+              src={KBO_WEATHER[game.gameIcon].icon}
+              alt={game.gameIconName}
+              fill
+              sizes="(max-width: 768px) 40px, 84px"
+              className="object-contain"
+            />
+          </div>
           <div className="text-sm font-semibold md:text-xl">{Math.floor(game.gameTemp)}°C</div>
         </div>
         {game.cancelSc === 0 ? (
