@@ -1,7 +1,7 @@
 import PageHero from "@/src/components/common/PageHero";
 import { getFoodBooth } from "@/src/services/stadium/getFoodBooth";
 
-import FoodBoothClient from "./StadiumsClient";
+import FoodBoothClient from "./FoodBoothClient";
 
 const FoodPage = async () => {
   const foodBoothData = await getFoodBooth();
