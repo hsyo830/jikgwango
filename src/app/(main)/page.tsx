@@ -19,11 +19,11 @@ export default function MainPage() {
         <SectionCard>
           <StadiumFoodSection />
         </SectionCard>
-        <SectionCard>
-          <StadiumInfoSection />
-        </SectionCard>
+        <SectionCard>야구장 날씨</SectionCard>
         <div className="grid grid-cols-1 gap-3 md:grid-cols-2">
-          <SectionCard>야구장 날씨</SectionCard>
+          <SectionCard>
+            <StadiumInfoSection />
+          </SectionCard>
           <SectionCard>
             <ChecklistSection />
           </SectionCard>

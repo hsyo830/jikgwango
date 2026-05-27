@@ -9,13 +9,7 @@ const StadiumsInfoSection = async () => {
   return (
     <div>
       <SectionHeader />
-      <section className="flex w-full items-center gap-2 p-1 xl:hidden">
-        <StadiumInfoCard stadium={stadiumInfoData} />
-      </section>
-      <section className="hidden w-full items-center gap-2 p-1 xl:flex">
-        <StadiumInfoCard stadium={stadiumInfoData} />
-        <StadiumInfoCard stadium={stadiumInfoData} />
-      </section>
+      <StadiumInfoCard stadium={stadiumInfoData} />
     </div>
   );
 };
