@@ -1,6 +1,7 @@
 import Image from "next/image";
 
 import { FOOD_CATEGORIES } from "@/src/constants/foodCategories";
+import { cn } from "@/src/lib/utils";
 import { FoodBooth } from "@/src/types/foodBooth";
 import { getFoodCategory } from "@/src/utils/getFoodCategory";
 
@@ -10,17 +11,27 @@ import FoodCategoryBadge from "./FoodCategoryBadge";
 
 type FoodProps = {
   food: FoodBooth;
-  className?: string;
+  variant?: "main" | "foodPage";
 };
 
-const FoodCard = ({ food, className = "" }: FoodProps) => {
+const FoodCard = ({ food, variant = "main" }: FoodProps) => {
   const foodCategory = getFoodCategory(food.menuCategory);
 
   return (
     <div
-      className={`bg-surface border-border flex h-50 w-35 flex-col overflow-hidden rounded-xl border md:h-85 md:w-75 lg:h-83 lg:w-full lg:items-center ${className}`}
+      className={cn(
+        "bg-surface border-border flex overflow-hidden rounded-xl border md:h-85 md:w-75 md:flex-col lg:h-83 lg:w-full lg:items-center",
+        variant === "main" && "h-50 w-35 flex-col md:w-75",
+        variant === "foodPage" && "h-30 w-full items-center gap-1 md:w-full md:items-start",
+      )}
     >
-      <div className="relative h-21.5 w-full shrink-0 bg-gray-100 md:h-40">
+      <div
+        className={cn(
+          "relative shrink-0 bg-gray-100 md:h-40 md:w-full",
+          variant === "main" && "h-21.5 w-full",
+          variant === "foodPage" && "h-full w-35",
+        )}
+      >
         <Image
           src={food.imageUrl || "/image/food-booth/placeholder-image.webp"}
           alt="음식 부스 이미지"
@@ -29,7 +40,7 @@ const FoodCard = ({ food, className = "" }: FoodProps) => {
           className="object-cover"
         />
       </div>
-      <div className="flex min-w-0 flex-1 flex-col justify-start gap-0.5 px-2 pt-2 md:justify-center md:gap-0 md:px-4 md:pt-0 lg:w-full">
+      <div className="flex min-w-0 flex-1 flex-col justify-start gap-0.5 px-2 pt-2 md:w-full md:justify-center md:gap-0 md:px-4 md:pt-0">
         <div className="border-border border-b pb-2">
           <p className="text-primary truncate text-[11px] font-semibold md:text-sm md:text-[13px] lg:text-[14px]">
             {food.stadiumName}

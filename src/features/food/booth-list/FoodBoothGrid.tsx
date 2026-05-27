@@ -9,10 +9,10 @@ type FoodBoothGridProps = {
 const FoodBoothGrid = ({ filteredFoodBoothData }: FoodBoothGridProps) => {
   return (
     <section className="w-full">
-      <ul className="grid grid-cols-2 gap-3 md:grid-cols-3 lg:grid-cols-3 xl:gap-5 2xl:grid-cols-4">
+      <ul className="grid grid-cols-1 gap-3 md:grid-cols-2 lg:grid-cols-3 xl:gap-5 2xl:grid-cols-4">
         {filteredFoodBoothData.map((booth) => (
           <li key={booth.id} className="min-w-0">
-            <FoodCard food={booth} />
+            <FoodCard food={booth} variant="foodPage" />
           </li>
         ))}
       </ul>
