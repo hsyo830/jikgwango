@@ -71,21 +71,19 @@ const StadiumFilterBadgeList = ({
         </ul>
       </section>
 
-      <section className="flex w-230 gap-1.5 md:hidden">
-        <ul>
-          {Object.values(KBO_TEAMS).map((team) => (
-            <li key={team.id}>
-              <StadiumFilterBadge
-                name={team.name}
-                logo={team.logo}
-                stadiumId={team.stadiumId}
-                selectedStadiumId={selectedStadiumId}
-                onSelectedStadiumId={onSelectedStadiumId}
-              />
-            </li>
-          ))}
-        </ul>
-      </section>
+      <ul className="flex w-230 gap-1.5 md:hidden">
+        {Object.values(KBO_TEAMS).map((team) => (
+          <li key={team.id}>
+            <StadiumFilterBadge
+              name={team.name}
+              logo={team.logo}
+              stadiumId={team.stadiumId}
+              selectedStadiumId={selectedStadiumId}
+              onSelectedStadiumId={onSelectedStadiumId}
+            />
+          </li>
+        ))}
+      </ul>
     </div>
   );
 };
