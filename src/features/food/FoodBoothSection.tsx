@@ -1,3 +1,4 @@
+import NoResult from "@/src/components/common/NoResult";
 import SectionCard from "@/src/components/common/SectionCard";
 import { FoodCategoryValue } from "@/src/constants/foodCategories";
 import { FoodBooth } from "@/src/types/foodBooth";
@@ -26,6 +27,8 @@ const FoodBoothSection = ({
     return isSameStadium && isSameCategory;
   });
 
+  const hasFoodBooth = filteredFoodBoothData.length > 0;
+
   return (
     <SectionCard className="flex flex-col gap-5">
       <div className="flex items-end gap-5">
@@ -34,7 +37,13 @@ const FoodBoothSection = ({
           총 <span>{filteredFoodBoothData.length}</span>개의 부스
         </p>
       </div>
-      <FoodBoothGrid filteredFoodBoothData={filteredFoodBoothData} />
+      {hasFoodBooth ? (
+        <FoodBoothGrid filteredFoodBoothData={filteredFoodBoothData} />
+      ) : (
+        <div className="pt-15 pb-35">
+          <NoResult message="선택한 조건에 맞는 음식 부스가 없어요." />
+        </div>
+      )}
     </SectionCard>
   );
 };
