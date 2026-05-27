@@ -3,6 +3,7 @@ import { FoodCategoryValue } from "@/src/constants/foodCategories";
 import { FoodBooth } from "@/src/types/foodBooth";
 
 import FoodBoothGrid from "./booth-list/FoodBoothGrid";
+import { getFoodBoothStadiumId } from "./utils/getFoodBoothStadiumId";
 
 type FoodBoothSectionProps = {
   selectedStadiumId: string;
@@ -15,8 +16,10 @@ const FoodBoothSection = ({
   selectedFoodCategoryId,
   foodBoothData,
 }: FoodBoothSectionProps) => {
+  const foodBoothStadiumId = getFoodBoothStadiumId(selectedStadiumId);
+
   const filteredFoodBoothData = foodBoothData.filter((booth) => {
-    const isSameStadium = booth.stadiumId === selectedStadiumId;
+    const isSameStadium = booth.stadiumId === foodBoothStadiumId;
     const isSameCategory =
       selectedFoodCategoryId === "all" || booth.menuCategory === selectedFoodCategoryId;
 
