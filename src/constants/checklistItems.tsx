@@ -6,16 +6,16 @@ export const checklistItems = [
     checked: true,
   },
   {
+    id: "uniform",
+    label: "유니폼",
+    image: "/image/checklist/uniform.png",
+    checked: true,
+  },
+  {
     id: "raincoat",
     label: "우비",
     image: "/image/checklist/raincoat.png",
     checked: false,
-  },
-  {
-    id: "water",
-    label: "물",
-    image: "/image/checklist/water.png",
-    checked: true,
   },
   {
     id: "ticket",
@@ -24,10 +24,10 @@ export const checklistItems = [
     checked: true,
   },
   {
-    id: "uniform",
-    label: "유니폼",
-    image: "/image/checklist/uniform.png",
-    checked: false,
+    id: "water",
+    label: "물",
+    image: "/image/checklist/water.png",
+    checked: true,
   },
   {
     id: "cap",
@@ -35,10 +35,10 @@ export const checklistItems = [
     image: "/image/checklist/cap.png",
     checked: false,
   },
-  {
+  /*{
     id: "battery",
     label: "보조배터리",
     image: "/image/checklist/battery.png",
     checked: true,
-  },
+  },*/
 ];

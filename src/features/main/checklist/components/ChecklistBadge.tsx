@@ -19,22 +19,20 @@ const ChecklistBadge = ({ item }: ChecklistBadgeProps) => {
   return (
     <div
       className={cn(
-        "flex min-w-21 items-center justify-between gap-1 rounded-full border px-1 py-0.5 text-xs font-semibold md:min-w-29 md:px-3 md:py-1.5 md:text-[13px] lg:min-w-25 lg:px-2 lg:text-xs",
-        item.checked ? "bg-primary-soft border-primary" : "border-border bg-surface",
+        "flex h-8 w-full items-center justify-between gap-1 rounded-full border px-2 text-xs font-semibold transition-all duration-300 ease-out md:h-9 md:px-3 md:text-[13px] lg:px-3.5 lg:text-xs",
+        item.checked
+          ? "bg-primary-soft border-primary scale-[1.02]"
+          : "border-border bg-surface scale-100",
       )}
     >
       <div className="flex items-center gap-1 md:gap-2 lg:gap-1">
-        <Image
-          src={item.image}
-          alt={item.label}
-          width={100}
-          height={100}
-          className="h-3.5 w-auto object-contain md:h-5"
-        />
-        {item.label}
+        <div className="relative h-3.5 w-3.5 md:h-5 md:w-5">
+          <Image src={item.image} alt={item.label} fill className="object-contain" sizes="20px" />
+        </div>
+        <div className="truncate">{item.label}</div>
       </div>
       {item.checked ? (
-        <GameStatusCheckIcon filled className="text-primary" />
+        <GameStatusCheckIcon filled className="text-primary animate-[checkPop_250ms_ease-out]" />
       ) : (
         <div className="border-border bg-surface h-4 w-4 rounded-full border" />
       )}
