@@ -2,6 +2,7 @@
 
 import StadiumFilterBadgeList from "@/src/components/common/stadium-filter/StadiumFilterBadgeList";
 import FoodFilterBadgeList from "@/src/features/food/food-filter/FoodFilterBadgeList";
+import FoodBoothSection from "@/src/features/food/FoodBoothSection";
 import { useFoodBoothFilter } from "@/src/features/food/hooks/useFoodBoothFilter";
 import { FoodBooth } from "@/src/types/foodBooth";
 
@@ -23,6 +24,7 @@ const FoodBoothClient = ({ foodBoothData }: FoodBoothClientProps) => {
         selectedFoodCategoryId={selectedFoodCategoryId}
         onSelectedFoodBoothId={handleSelectFoodBooth}
       />
+      <FoodBoothSection />
     </div>
   );
 };

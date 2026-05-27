@@ -1,19 +1,20 @@
 import { FOOD_CATEGORIES } from "@/src/constants/foodCategories";
 import { FoodBooth } from "@/src/types/foodBooth";
+import { getFoodCategory } from "@/src/utils/getFoodCategory";
 
 type FoodProps = {
   food: FoodBooth;
 };
 
 const FoodCategoryBadge = ({ food }: FoodProps) => {
-  const category = FOOD_CATEGORIES.find((category) => food.menuCategory === category.label);
+  const foodCategory = getFoodCategory(food.menuCategory);
 
-  const Icon = category?.icon;
+  const Icon = foodCategory?.icon;
 
   return (
     <div className="bg-warning-soft text-warning flex h-5 items-center justify-start gap-0.5 rounded-sm px-0.5 text-center text-xs font-bold md:min-w-12 lg:h-6 lg:min-w-14 lg:px-1 lg:text-sm">
       {Icon && <Icon className="text-warning h-4 w-4 lg:h-5 lg:w-5" />}
-      <span className="hidden md:block">{food.menuCategory}</span>
+      <span className="hidden md:block">{foodCategory?.label}</span>
     </div>
   );
 };

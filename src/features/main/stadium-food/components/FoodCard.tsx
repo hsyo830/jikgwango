@@ -2,6 +2,7 @@ import Image from "next/image";
 
 import { FOOD_CATEGORIES } from "@/src/constants/foodCategories";
 import { FoodBooth } from "@/src/types/foodBooth";
+import { getFoodCategory } from "@/src/utils/getFoodCategory";
 
 import LocationIcon from "../../../../components/icons/foodBooth/card/LocationIcon";
 import MenuIcon from "../../../../components/icons/foodBooth/card/MenuIcon";
@@ -12,6 +13,8 @@ type FoodProps = {
 };
 
 const FoodCard = ({ food }: FoodProps) => {
+  const foodCategory = getFoodCategory(food.menuCategory);
+
   return (
     <div className="bg-surface border-border flex h-50 w-35 flex-col overflow-hidden rounded-xl border md:h-85 md:w-75 lg:h-83 lg:w-full lg:items-center">
       <div className="relative h-21.5 w-full shrink-0 bg-gray-100 md:h-40">
@@ -43,7 +46,7 @@ const FoodCard = ({ food }: FoodProps) => {
         <div className="text-muted flex items-center gap-0.5 py-1 text-[11px] md:gap-1 md:py-2.5 md:text-[12px] lg:pb-0 lg:text-sm">
           <MenuIcon className="text-primary h-4 w-4 shrink-0 md:h-6 md:w-6" />
           <p className="text-primary w-10 font-bold md:w-12 lg:w-14">대표메뉴</p>
-          <p className="truncate font-medium">{food.menuCategory}</p>
+          <p className="truncate font-medium">{foodCategory?.label}</p>
         </div>
       </div>
     </div>
