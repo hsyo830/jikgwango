@@ -9,7 +9,7 @@ import SwiperNavButton from "@/src/components/common/SwiperNavButton";
 import { foodBooths } from "@/src/data/foodBooths";
 import { Stadium } from "@/src/types/stadium";
 
-import FoodCard from "../../main/stadium-food/components/FoodCard";
+import FoodCard from "../../../components/common/food-card/FoodCard";
 
 type StadiumFoodListProps = {
   data: Stadium;

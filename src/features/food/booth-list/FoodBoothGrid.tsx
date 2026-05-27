@@ -1,6 +1,6 @@
 import { FoodBooth } from "@/src/types/foodBooth";
 
-import FoodCard from "../../main/stadium-food/components/FoodCard";
+import FoodCard from "../../../components/common/food-card/FoodCard";
 
 type FoodBoothGridProps = {
   filteredFoodBoothData: FoodBooth[];

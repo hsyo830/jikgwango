@@ -5,8 +5,8 @@ import { cn } from "@/src/lib/utils";
 import { FoodBooth } from "@/src/types/foodBooth";
 import { getFoodCategory } from "@/src/utils/getFoodCategory";
 
-import LocationIcon from "../../../../components/icons/foodBooth/card/LocationIcon";
-import MenuIcon from "../../../../components/icons/foodBooth/card/MenuIcon";
+import LocationIcon from "../../icons/foodBooth/card/LocationIcon";
+import MenuIcon from "../../icons/foodBooth/card/MenuIcon";
 import FoodCategoryBadge from "./FoodCategoryBadge";
 
 type FoodProps = {

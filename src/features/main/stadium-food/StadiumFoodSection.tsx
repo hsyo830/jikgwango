@@ -1,6 +1,6 @@
 import { foodBooths } from "@/src/data/foodBooths";
 
-import FoodCard from "./components/FoodCard";
+import FoodCard from "../../../components/common/food-card/FoodCard";
 import SectionHeader from "./SectionHeader";
 
 const StadiumFoodSection = () => {
