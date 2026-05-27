@@ -2,7 +2,7 @@
 
 import "swiper/css";
 
-import { Navigation } from "swiper/modules";
+import { Autoplay, Navigation } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 import SwiperNavButton from "@/src/components/common/SwiperNavButton";
@@ -17,7 +17,7 @@ const StadiumInfoSlider = () => {
         <div className="relative min-w-0">
           <Swiper
             className="w-full"
-            modules={[Navigation]}
+            modules={[Autoplay, Navigation]}
             navigation={{
               prevEl: ".stadium-swiper-prev",
               nextEl: ".stadium-swiper-next",
@@ -25,6 +25,10 @@ const StadiumInfoSlider = () => {
             slidesPerView={1}
             slidesPerGroup={1}
             spaceBetween={10}
+            autoplay={{
+              delay: 3500,
+              disableOnInteraction: false,
+            }}
             loop={stadiums.length > 4}
           >
             {stadiums.map((stadium) => (
