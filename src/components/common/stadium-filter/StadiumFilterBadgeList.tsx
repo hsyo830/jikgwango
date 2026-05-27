@@ -22,7 +22,7 @@ const StadiumFilterBadgeList = ({
   return (
     <div className="w-full overflow-scroll md:overflow-hidden">
       <section className="hidden w-full md:block md:px-4.5">
-        <div className="relative">
+        <ul className="relative">
           <Swiper
             modules={[Navigation]}
             navigation={{
@@ -47,13 +47,15 @@ const StadiumFilterBadgeList = ({
           >
             {Object.values(KBO_TEAMS).map((team) => (
               <SwiperSlide key={team.id}>
-                <StadiumFilterBadge
-                  name={team.name}
-                  logo={team.logo}
-                  stadiumId={team.stadiumId}
-                  selectedStadiumId={selectedStadiumId}
-                  onSelectedStadiumId={onSelectedStadiumId}
-                />
+                <li>
+                  <StadiumFilterBadge
+                    name={team.name}
+                    logo={team.logo}
+                    stadiumId={team.stadiumId}
+                    selectedStadiumId={selectedStadiumId}
+                    onSelectedStadiumId={onSelectedStadiumId}
+                  />
+                </li>
               </SwiperSlide>
             ))}
           </Swiper>
@@ -66,20 +68,23 @@ const StadiumFilterBadgeList = ({
             direction="next"
             className="stadium-swiper-next right-0 translate-x-1/2"
           />
-        </div>
+        </ul>
       </section>
 
       <section className="flex w-230 gap-1.5 md:hidden">
-        {Object.values(KBO_TEAMS).map((team) => (
-          <StadiumFilterBadge
-            key={team.id}
-            name={team.name}
-            logo={team.logo}
-            stadiumId={team.stadiumId}
-            selectedStadiumId={selectedStadiumId}
-            onSelectedStadiumId={onSelectedStadiumId}
-          />
-        ))}
+        <ul>
+          {Object.values(KBO_TEAMS).map((team) => (
+            <li key={team.id}>
+              <StadiumFilterBadge
+                name={team.name}
+                logo={team.logo}
+                stadiumId={team.stadiumId}
+                selectedStadiumId={selectedStadiumId}
+                onSelectedStadiumId={onSelectedStadiumId}
+              />
+            </li>
+          ))}
+        </ul>
       </section>
     </div>
   );
