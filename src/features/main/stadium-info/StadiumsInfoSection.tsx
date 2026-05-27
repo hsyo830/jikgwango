@@ -2,6 +2,7 @@ import { getStadiums } from "@/src/services/stadium/getStadiums";
 
 import StadiumInfoCard from "./components/StadiumInfoCard";
 import SectionHeader from "./SectionHeader";
+import StadiumInfoSlider from "./StadiumInfoSlider";
 
 const StadiumsInfoSection = async () => {
   const stadiumInfoData = await getStadiums();
@@ -9,7 +10,7 @@ const StadiumsInfoSection = async () => {
   return (
     <div>
       <SectionHeader />
-      <StadiumInfoCard stadium={stadiumInfoData} />
+      <StadiumInfoSlider />
     </div>
   );
 };

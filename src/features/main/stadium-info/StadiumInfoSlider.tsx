@@ -1,0 +1,58 @@
+"use client";
+
+import "swiper/css";
+
+import { Navigation } from "swiper/modules";
+import { Swiper, SwiperSlide } from "swiper/react";
+
+import SwiperNavButton from "@/src/components/common/SwiperNavButton";
+import { stadiums } from "@/src/data/stadiums";
+
+import StadiumInfoCard from "./components/StadiumInfoCard";
+
+const StadiumInfoSlider = () => {
+  return (
+    <section>
+      <div className="mx-2 hidden md:block">
+        <div className="relative min-w-0">
+          <Swiper
+            className="w-full"
+            modules={[Navigation]}
+            navigation={{
+              prevEl: ".stadium-swiper-prev",
+              nextEl: ".stadium-swiper-next",
+            }}
+            slidesPerView={1}
+            slidesPerGroup={1}
+            spaceBetween={10}
+            loop={stadiums.length > 4}
+          >
+            {stadiums.map((stadium) => (
+              <SwiperSlide key={stadium.id}>
+                <StadiumInfoCard stadium={stadium} />
+              </SwiperSlide>
+            ))}
+          </Swiper>
+
+          <SwiperNavButton
+            direction="prev"
+            className="stadium-swiper-prev left-0 -translate-x-1/2"
+          />
+          <SwiperNavButton
+            direction="next"
+            className="stadium-swiper-next right-0 translate-x-1/2"
+          />
+        </div>
+      </div>
+      <div className="flex gap-2 overflow-scroll md:hidden">
+        {stadiums.map((stadium) => (
+          <div key={stadium.id} className="w-100 shrink-0">
+            <StadiumInfoCard stadium={stadium} />
+          </div>
+        ))}
+      </div>
+    </section>
+  );
+};
+
+export default StadiumInfoSlider;
