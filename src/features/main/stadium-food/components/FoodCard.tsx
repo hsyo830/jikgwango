@@ -10,13 +10,16 @@ import FoodCategoryBadge from "./FoodCategoryBadge";
 
 type FoodProps = {
   food: FoodBooth;
+  className?: string;
 };
 
-const FoodCard = ({ food }: FoodProps) => {
+const FoodCard = ({ food, className = "" }: FoodProps) => {
   const foodCategory = getFoodCategory(food.menuCategory);
 
   return (
-    <div className="bg-surface border-border flex h-50 w-35 flex-col overflow-hidden rounded-xl border md:h-85 md:w-75 lg:h-83 lg:w-full lg:items-center">
+    <div
+      className={`bg-surface border-border flex h-50 w-35 flex-col overflow-hidden rounded-xl border md:h-85 md:w-75 lg:h-83 lg:w-full lg:items-center ${className}`}
+    >
       <div className="relative h-21.5 w-full shrink-0 bg-gray-100 md:h-40">
         <Image
           src={food.imageUrl || "/image/food-booth/placeholder-image.webp"}

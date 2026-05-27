@@ -1,0 +1,23 @@
+import { FoodBooth } from "@/src/types/foodBooth";
+
+import FoodCard from "../../main/stadium-food/components/FoodCard";
+
+type FoodBoothGridProps = {
+  filteredFoodBoothData: FoodBooth[];
+};
+
+const FoodBoothGrid = ({ filteredFoodBoothData }: FoodBoothGridProps) => {
+  return (
+    <section className="w-full">
+      <ul className="grid grid-cols-2 gap-3 md:grid-cols-3 lg:grid-cols-3 xl:gap-5 2xl:grid-cols-4">
+        {filteredFoodBoothData.map((booth) => (
+          <li key={booth.id} className="min-w-0">
+            <FoodCard food={booth} />
+          </li>
+        ))}
+      </ul>
+    </section>
+  );
+};
+
+export default FoodBoothGrid;

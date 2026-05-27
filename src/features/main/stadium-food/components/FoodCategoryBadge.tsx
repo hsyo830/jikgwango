@@ -1,4 +1,3 @@
-import { FOOD_CATEGORIES } from "@/src/constants/foodCategories";
 import { FoodBooth } from "@/src/types/foodBooth";
 import { getFoodCategory } from "@/src/utils/getFoodCategory";
 

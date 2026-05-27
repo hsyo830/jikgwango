@@ -24,7 +24,11 @@ const FoodBoothClient = ({ foodBoothData }: FoodBoothClientProps) => {
         selectedFoodCategoryId={selectedFoodCategoryId}
         onSelectedFoodBoothId={handleSelectFoodBooth}
       />
-      <FoodBoothSection />
+      <FoodBoothSection
+        selectedStadiumId={selectedStadiumId}
+        selectedFoodCategoryId={selectedFoodCategoryId}
+        foodBoothData={foodBoothData}
+      />
     </div>
   );
 };
