@@ -1,8 +1,8 @@
 import axios from "axios";
 
-import { WEATHER_API_ENDPOINTS } from "../constants/apiEndPoint";
-import { StadiumWeatherParams } from "../types/weather";
-import { formatWeatherData } from "../utils/weatherFormatter";
+import { WEATHER_API_ENDPOINTS } from "../../constants/apiEndPoint";
+import { StadiumWeatherParams } from "../../types/weather";
+import { formatWeatherData } from "../../utils/weatherFormatter";
 
 const getStadiumWeather = async (params: StadiumWeatherParams) => {
   const { base_date, base_time, nx, ny } = params;
