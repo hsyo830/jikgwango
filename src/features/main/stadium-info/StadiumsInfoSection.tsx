@@ -1,6 +1,5 @@
 import { getStadiums } from "@/src/services/stadium/getStadiums";
 
-import StadiumInfoCard from "./components/StadiumInfoCard";
 import SectionHeader from "./SectionHeader";
 import StadiumInfoSlider from "./StadiumInfoSlider";
 

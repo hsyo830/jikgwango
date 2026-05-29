@@ -50,7 +50,9 @@ const StadiumInfoCard = ({ stadium }: StadiumInfoCardProps) => {
               </div>
               <div className="text-muted flex min-w-0 items-center gap-1 text-[11px] font-medium md:gap-2 md:text-base lg:gap-1 lg:text-[13px]">
                 <SubwayIcon size={17} className="text-warning shrink-0" />
-                <span className="min-w-0 truncate">{stadium.transport?.subway}</span>
+                <span className="min-w-0 truncate">
+                  {stadium.transport?.subway || "인근 지하철역 없음"}
+                </span>
               </div>
             </div>
           </div>
