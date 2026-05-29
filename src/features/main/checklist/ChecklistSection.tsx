@@ -1,5 +1,6 @@
 import Link from "next/link";
 
+import SectionCard from "@/src/components/common/SectionCard";
 import { checklistItems } from "@/src/constants/checklistItems";
 
 import Button from "../../../components/common/Button";
@@ -9,7 +10,7 @@ import SectionHeader from "./SectionHeader";
 
 const ChecklistSection = () => {
   return (
-    <div>
+    <SectionCard>
       <SectionHeader />
       <section className="flex flex-col justify-center gap-3">
         <div className="text-muted text-sm">
@@ -32,7 +33,7 @@ const ChecklistSection = () => {
           </div>
         </div>
       </section>
-    </div>
+    </SectionCard>
   );
 };
 

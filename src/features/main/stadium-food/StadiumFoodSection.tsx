@@ -1,3 +1,4 @@
+import SectionCard from "@/src/components/common/SectionCard";
 import { foodBooths } from "@/src/data/foodBooths";
 
 import FoodCard from "../../../components/common/food-card/FoodCard";
@@ -5,7 +6,7 @@ import SectionHeader from "./SectionHeader";
 
 const StadiumFoodSection = () => {
   return (
-    <section className="w-full">
+    <SectionCard className="w-full">
       <SectionHeader />
       <div className="flex gap-2 lg:hidden lg:gap-5">
         <FoodCard food={foodBooths[0]} />
@@ -18,7 +19,7 @@ const StadiumFoodSection = () => {
         <FoodCard food={foodBooths[100]} />
         <FoodCard food={foodBooths[330]} />
       </div>
-    </section>
+    </SectionCard>
   );
 };
 

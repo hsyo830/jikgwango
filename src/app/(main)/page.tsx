@@ -14,20 +14,12 @@ export default function MainPage() {
         intro="오늘의 경기, 구장 정보와 맛있는 음식 부스까지 한 번에 확인하세요."
       />
       <div className="mx-2.5 -mt-6 flex flex-col gap-5 md:mx-0 md:-mt-3 md:px-8.25 lg:-mt-10 xl:-mt-15">
-        <SectionCard>
-          <TodayGameSection />
-        </SectionCard>
-        <SectionCard>
-          <StadiumFoodSection />
-        </SectionCard>
+        <TodayGameSection />
+        <StadiumFoodSection />
         <StadiumTodayWeatherSection />
         <div className="grid grid-cols-1 gap-3 md:grid-cols-2">
-          <SectionCard>
-            <StadiumInfoSection />
-          </SectionCard>
-          <SectionCard>
-            <ChecklistSection />
-          </SectionCard>
+          <StadiumInfoSection />
+          <ChecklistSection />
         </div>
       </div>
     </div>
