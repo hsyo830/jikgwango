@@ -43,29 +43,29 @@ const StadiumWeatherCard = () => {
             </div>
           </div>
           <div className="w-full">
-            <div className="divide-border flex w-full divide-x">
+            <dl className="divide-border flex w-full divide-x">
               <div className="flex flex-1 items-center justify-center text-xs md:gap-1 md:text-sm">
                 <TemperatureIcon className="size-5 md:size-7" />
                 <div>
-                  <p className="font-semibold">체감</p>
-                  <p className="text-muted font-semibold">22℃</p>
+                  <dt className="font-semibold">체감</dt>
+                  <dd className="text-muted font-semibold">22℃</dd>
                 </div>
               </div>
               <div className="flex flex-1 items-center justify-center text-xs md:gap-1 md:text-sm">
                 <UmbrellaIcon className="size-5 md:size-7" />
                 <div>
-                  <p className="font-semibold whitespace-nowrap">강수확률</p>
-                  <p className="text-muted font-semibold">20%</p>
+                  <dt className="font-semibold whitespace-nowrap">강수확률</dt>
+                  <dd className="text-muted font-semibold">20%</dd>
                 </div>
               </div>
               <div className="flex flex-1 items-center justify-center gap-0.5 text-xs md:gap-1 md:text-sm">
                 <WindIcon className="size-4 md:size-6" />
                 <div>
-                  <p className="font-semibold">바람</p>
-                  <p className="text-muted font-semibold">1m/s</p>
+                  <dt className="font-semibold">바람</dt>
+                  <dd className="text-muted font-semibold">1m/s</dd>
                 </div>
               </div>
-            </div>
+            </dl>
             <div className="bg-primary-soft mx-2 mt-1 h-10 w-full rounded-md md:mx-0 md:mt-3" />
           </div>
         </div>
