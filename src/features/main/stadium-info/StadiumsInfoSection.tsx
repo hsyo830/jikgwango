@@ -4,7 +4,7 @@ import SectionHeader from "./SectionHeader";
 import StadiumInfoSlider from "./StadiumInfoSlider";
 
 const StadiumsInfoSection = async () => {
-  const stadiumInfoData = await getStadiums();
+  // const stadiumInfoData = await getStadiums();
 
   return (
     <div>

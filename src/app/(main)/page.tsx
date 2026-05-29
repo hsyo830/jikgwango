@@ -3,6 +3,7 @@ import SectionCard from "@/src/components/common/SectionCard";
 import ChecklistSection from "@/src/features/main/checklist/ChecklistSection";
 import StadiumFoodSection from "@/src/features/main/stadium-food/StadiumFoodSection";
 import StadiumInfoSection from "@/src/features/main/stadium-info/StadiumsInfoSection";
+import StadiumTodayWeatherSection from "@/src/features/main/stadium-weather/StadiumTodayWeatherSection";
 import TodayGameSection from "@/src/features/main/today-game/TodayGameSection";
 
 export default function MainPage() {
@@ -19,7 +20,7 @@ export default function MainPage() {
         <SectionCard>
           <StadiumFoodSection />
         </SectionCard>
-        <SectionCard>야구장 날씨</SectionCard>
+        <StadiumTodayWeatherSection />
         <div className="grid grid-cols-1 gap-3 md:grid-cols-2">
           <SectionCard>
             <StadiumInfoSection />
