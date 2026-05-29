@@ -62,7 +62,7 @@ const StadiumInfoCard = ({ data }: StadiumInfoCardProps) => {
               <SubwayIcon size={17} />
               <span className="font-semibold">교통</span>
             </div>
-            <div>{data.transport.subway}</div>
+            <div>{data.transport.subway || "인근 지하철역 없음"}</div>
           </div>
           <div className="text-muted flex items-start gap-6 text-sm md:gap-7 md:text-base">
             <div className="flex shrink-0 items-center gap-2">
