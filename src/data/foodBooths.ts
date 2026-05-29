@@ -10,6 +10,7 @@ export const foodBooths: FoodBooth[] = [
     location: "1루측 2층 124 GATE",
     name: "가온밀면",
     menuCategory: "korean",
+    imageUrl: "/image/food-booth/busan/gaon-milmyeon.webp",
   },
   {
     id: "sajik-3ru-2f-324-gate-01",
@@ -19,6 +20,7 @@ export const foodBooths: FoodBooth[] = [
     location: "3루측 2층 324 GATE",
     name: "계란빵클럽",
     menuCategory: "dessert",
+    imageUrl: "/image/food-booth/busan/gyeranbbang-club.webp",
   },
   {
     id: "sajik-1ru-2f-125-gate-01",
@@ -28,6 +30,7 @@ export const foodBooths: FoodBooth[] = [
     location: "1루측 2층 125 GATE",
     name: "남도포차 1루측",
     menuCategory: "korean",
+    imageUrl: "/image/food-booth/busan/namdo-pocha.webp",
   },
   {
     id: "sajik-center-4f-043-gate-01",
@@ -37,6 +40,7 @@ export const foodBooths: FoodBooth[] = [
     location: "중앙 4층(중앙상단석) 043 GATE",
     name: "남도포차 중앙상단",
     menuCategory: "korean",
+    imageUrl: "/image/food-booth/busan/namdo-pocha.webp",
   },
 
   {
@@ -47,6 +51,7 @@ export const foodBooths: FoodBooth[] = [
     location: "1루측 3층 131 GATE",
     name: "다리집 1루측",
     menuCategory: "bunsik",
+    imageUrl: "/image/food-booth/busan/darijip.webp",
   },
   {
     id: "sajik-3ru-2f-323-gate-01",
@@ -56,6 +61,7 @@ export const foodBooths: FoodBooth[] = [
     location: "3루측 2층 323 GATE",
     name: "다리집 3루측",
     menuCategory: "bunsik",
+    imageUrl: "/image/food-booth/busan/darijip.webp",
   },
   {
     id: "sajik-3ru-3f-01",
@@ -65,6 +71,7 @@ export const foodBooths: FoodBooth[] = [
     location: "3루측 3층",
     name: "동래라거",
     menuCategory: "alcohol",
+    imageUrl: "/image/food-booth/busan/dongnae-lager.webp",
   },
   {
     id: "sajik-1ru-2f-126-gate-01",
@@ -74,6 +81,7 @@ export const foodBooths: FoodBooth[] = [
     location: "1루측 2층 126 GATE",
     name: "땅땅치킨 1루측",
     menuCategory: "chicken",
+    imageUrl: "/image/food-booth/busan/ttangttangchicken.webp",
   },
 
   {
@@ -84,6 +92,7 @@ export const foodBooths: FoodBooth[] = [
     location: "1층 외부 1층외부매장",
     name: "땅땅치킨 1층외부",
     menuCategory: "chicken",
+    imageUrl: "/image/food-booth/busan/ttangttangchicken.webp",
   },
   {
     id: "sajik-3ru-3f-331-gate-01",
@@ -93,6 +102,7 @@ export const foodBooths: FoodBooth[] = [
     location: "3루측 3층 331 GATE",
     name: "땅땅치킨 3루측",
     menuCategory: "chicken",
+    imageUrl: "/image/food-booth/busan/ttangttangchicken.webp",
   },
   {
     id: "sajik-1ru-2f-123-gate-01",
@@ -102,6 +112,7 @@ export const foodBooths: FoodBooth[] = [
     location: "1루측 2층 123 GATE",
     name: "밀락당",
     menuCategory: "dessert",
+    imageUrl: "/image/food-booth/busan/millakdang.webp",
   },
   {
     id: "sajik-center-3f-031-gate-01",
@@ -111,6 +122,7 @@ export const foodBooths: FoodBooth[] = [
     location: "중앙 3층 031 GATE",
     name: "박수식당",
     menuCategory: "korean",
+    imageUrl: "/image/food-booth/busan/baksusikdang.webp",
   },
 
   {
@@ -121,6 +133,7 @@ export const foodBooths: FoodBooth[] = [
     location: "중앙 3층 032 GATE",
     name: "버거샵",
     menuCategory: "burger",
+    //imageUrl: "/image/food-booth/busan/burgershop.webp",
   },
   {
     id: "sajik-3ru-2f-326-gate-01",
@@ -130,6 +143,7 @@ export const foodBooths: FoodBooth[] = [
     location: "3루측 2층 326 GATE",
     name: "보영만두 1호점",
     menuCategory: "bunsik",
+    imageUrl: "/image/food-booth/busan/boyungmandu.webp",
   },
   {
     id: "sajik-3ru-outfield-2f-724-gate-01",
@@ -139,6 +153,7 @@ export const foodBooths: FoodBooth[] = [
     location: "3루측 외야 2층 724 GATE",
     name: "보영만두 2호점",
     menuCategory: "bunsik",
+    imageUrl: "/image/food-booth/busan/boyungmandu.webp",
   },
   {
     id: "sajik-1ru-outfield-2f-923-gate-01",
@@ -156,7 +171,7 @@ export const foodBooths: FoodBooth[] = [
     stadiumName: "사직야구장",
     locationCategory: "중앙",
     location: "중앙 3층 031 GATE",
-    name: "송희진 숯불소세지",
+    name: "송헌집 숯불소세지",
     menuCategory: "dessert",
   },
   {
@@ -485,6 +500,7 @@ export const foodBooths: FoodBooth[] = [
     location: "내부 3루 2층",
     name: "보영만두",
     menuCategory: "bunsik",
+    imageUrl: "/image/food-booth/busan/boyungmandu.webp",
   },
   {
     id: "jamsil-3ru-2f-06",
@@ -2348,6 +2364,7 @@ export const foodBooths: FoodBooth[] = [
     location: "내부 3루 2층",
     name: "땅땅치킨",
     menuCategory: "chicken",
+    imageUrl: "/image/food-booth/busan/ttangttangchicken.webp",
   },
   {
     id: "gocheok-3ru-2f-03",
@@ -2531,6 +2548,7 @@ export const foodBooths: FoodBooth[] = [
     location: "내부 1루 2층",
     name: "땅땅치킨",
     menuCategory: "chicken",
+    imageUrl: "/image/food-booth/busan/ttangttangchicken.webp",
   },
   {
     id: "gocheok-1ru-2f-06",
@@ -2614,6 +2632,7 @@ export const foodBooths: FoodBooth[] = [
     location: "외야 3~4층",
     name: "땅땅치킨",
     menuCategory: "chicken",
+    imageUrl: "/image/food-booth/busan/ttangttangchicken.webp",
   },
   {
     id: "gocheok-oeya-3-4f-04",
@@ -2733,6 +2752,7 @@ export const foodBooths: FoodBooth[] = [
     location: "중앙~3루 2층",
     name: "보영만두",
     menuCategory: "bunsik",
+    imageUrl: "/image/food-booth/busan/boyungmandu.webp",
   },
   {
     id: "suwon-central-3ru-2f-03",
