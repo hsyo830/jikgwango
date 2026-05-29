@@ -17,13 +17,25 @@ const StadiumWeatherCard = () => {
             <p className="text-primary text-sm font-semibold md:text-base">오늘 18:30 경기</p>
           </div>
           <div className="relative h-9 w-9 md:h-11 md:w-11">
-            <Image src={LotteLogo} alt="롯데 로고" fill />
+            <Image
+              src={LotteLogo}
+              alt="롯데 로고"
+              fill
+              sizes="(min-width: 768px) 44px, 36px"
+              className="object-contain"
+            />
           </div>
         </div>
         <div className="flex md:flex-col md:gap-4">
           <div className="border-border flex justify-center gap-2 border-r pr-2 md:gap-10 md:border-r-0 md:border-b md:pr-0 md:pb-4">
             <div className="relative h-10 w-10 md:h-15 md:w-15">
-              <Image src={SunnyIcon} alt="햇빛" fill />
+              <Image
+                src={SunnyIcon}
+                alt="햇빛"
+                fill
+                sizes="(min-width: 768px) 60px, 40px"
+                className="object-contain"
+              />
             </div>
             <div className="flex flex-col">
               <p className="text-xl font-bold md:text-4xl">21℃</p>
