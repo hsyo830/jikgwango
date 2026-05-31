@@ -394,7 +394,7 @@ export const foodBooths: FoodBooth[] = [
     locationCategory: "외부",
     location: "외부 외야~1루",
     name: "스테이션",
-    menuCategory: "bunsik",
+    menuCategory: "dessert",
     imageUrl: "/image/food-booth/jamsil/station.webp",
   },
   {
@@ -464,6 +464,7 @@ export const foodBooths: FoodBooth[] = [
     location: "외부 1루",
     name: "도미노피자",
     menuCategory: "pizza",
+    imageUrl: "/image/food-booth/busan/dominos.webp",
   },
   {
     id: "jamsil-1ru-out-05",
@@ -482,6 +483,7 @@ export const foodBooths: FoodBooth[] = [
     location: "내부 3루 2층",
     name: "미스터피자",
     menuCategory: "pizza",
+    imageUrl: "/image/food-booth/busan/mrpizza.webp",
   },
   {
     id: "jamsil-3ru-2f-02",
@@ -1109,7 +1111,7 @@ export const foodBooths: FoodBooth[] = [
     locationCategory: "내부 3루",
     location: "내부 3루 5층",
     name: "스테이션",
-    menuCategory: "bunsik",
+    menuCategory: "dessert",
     imageUrl: "/image/food-booth/jamsil/station.webp",
   },
   {
@@ -1745,7 +1747,7 @@ export const foodBooths: FoodBooth[] = [
     locationCategory: "내부 1루",
     location: "내부 1루 3층",
     name: "STATION(새우)",
-    menuCategory: "bunsik",
+    menuCategory: "dessert",
     imageUrl: "/image/food-booth/jamsil/station.webp",
   },
   {
@@ -3248,7 +3250,7 @@ export const foodBooths: FoodBooth[] = [
     locationCategory: "3루",
     location: "3루 1층",
     name: "스테이션",
-    menuCategory: "bunsik",
+    menuCategory: "dessert",
     imageUrl: "/image/food-booth/jamsil/station.webp",
   },
   {
