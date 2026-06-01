@@ -445,6 +445,7 @@ export const foodBooths: FoodBooth[] = [
     location: "외부 1루",
     name: "광장식당",
     menuCategory: "korean",
+    imageUrl: "/image/food-booth/jamsil/gwangjangsikdang.webp",
   },
   {
     id: "jamsil-1ru-out-03",
@@ -513,6 +514,7 @@ export const foodBooths: FoodBooth[] = [
     location: "내부 3루 2층",
     name: "XOXO핫도그",
     menuCategory: "dessert",
+    imageUrl: "/image/food-booth/gwangju/xoxohotdog.webp",
   },
   {
     id: "jamsil-3ru-2f-05",
@@ -631,6 +633,7 @@ export const foodBooths: FoodBooth[] = [
     location: "내부 3루 2층",
     name: "피자헛",
     menuCategory: "pizza",
+    imageUrl: "/image/food-booth/jamsil/pizzahut.webp",
   },
   {
     id: "jamsil-3ru-2f-17",
@@ -650,6 +653,7 @@ export const foodBooths: FoodBooth[] = [
     location: "내부 3루 3층",
     name: "우이락",
     menuCategory: "korean",
+    imageUrl: "/image/food-booth/jamsil/wuirok.webp",
   },
   {
     id: "jamsil-3ru-3f-02",
@@ -659,6 +663,7 @@ export const foodBooths: FoodBooth[] = [
     location: "내부 3루 3층",
     name: "픽베이크",
     menuCategory: "dessert",
+    imageUrl: "/image/food-booth/jamsil/pickbake.webp",
   },
   {
     id: "jamsil-3ru-3f-03",
@@ -707,6 +712,7 @@ export const foodBooths: FoodBooth[] = [
     location: "내부 4층 네이비석 상단 318블럭",
     name: "올떡",
     menuCategory: "bunsik",
+    imageUrl: "/image/food-booth/jamsil/oldduck.webp",
   },
   {
     id: "jamsil-4f-04",
@@ -716,6 +722,7 @@ export const foodBooths: FoodBooth[] = [
     location: "내부 4층 네이비석 상단 304블럭",
     name: "샤오마라",
     menuCategory: "dessert",
+    imageUrl: "/image/food-booth/jamsil/shaomara.webp",
   },
   {
     id: "jamsil-1ru-2f-01",
@@ -754,6 +761,7 @@ export const foodBooths: FoodBooth[] = [
     location: "내부 1루 2층",
     name: "OBC 수제맥주",
     menuCategory: "alcohol",
+    imageUrl: "/image/food-booth/jamsil/obcsuzaemekju.webp",
   },
   {
     id: "jamsil-1ru-2f-05",
@@ -791,6 +799,7 @@ export const foodBooths: FoodBooth[] = [
     location: "내부 1루 2층",
     name: "앤티앤스프레즐",
     menuCategory: "dessert",
+    imageUrl: "/image/food-booth/jamsil/auntieannes.webp",
   },
   {
     id: "jamsil-1ru-2f-09",
@@ -840,6 +849,7 @@ export const foodBooths: FoodBooth[] = [
     location: "내부 1루 2층",
     name: "타코잇",
     menuCategory: "dessert",
+    imageUrl: "/image/food-booth/jamsil/tacoeat.webp",
   },
   {
     id: "jamsil-1ru-2f-14",
@@ -899,6 +909,7 @@ export const foodBooths: FoodBooth[] = [
     location: "내부 1루 3층",
     name: "샤오마라",
     menuCategory: "dessert",
+    imageUrl: "/image/food-booth/jamsil/shaomara.webp",
   },
   {
     id: "jamsil-25f-01",
@@ -908,6 +919,7 @@ export const foodBooths: FoodBooth[] = [
     location: "내부 2.5층",
     name: "브뤼셀프라이",
     menuCategory: "dessert",
+    imageUrl: "/image/food-booth/jamsil/brusselsfries.webp",
   },
   {
     id: "jamsil-25f-02",
@@ -915,7 +927,7 @@ export const foodBooths: FoodBooth[] = [
     stadiumName: "잠실야구장",
     locationCategory: "내부 2.5층",
     location: "내부 2.5층",
-    name: "짝태패밀리 도시래",
+    name: "짝태패밀리",
     menuCategory: "alcohol",
   },
 
@@ -928,6 +940,7 @@ export const foodBooths: FoodBooth[] = [
     location: "내부 1루 3층",
     name: "소프텔리에",
     menuCategory: "dessert",
+    imageUrl: "/image/food-booth/daegu/softelie.webp",
   },
   {
     id: "daegu-1ru-3f-02",
@@ -937,6 +950,7 @@ export const foodBooths: FoodBooth[] = [
     location: "내부 1루 3층",
     name: "호남원조식당",
     menuCategory: "korean",
+    imageUrl: "/image/food-booth/daegu/honamwonjo.webp",
   },
   {
     id: "daegu-1ru-3f-03",
@@ -946,6 +960,7 @@ export const foodBooths: FoodBooth[] = [
     location: "내부 1루 3층",
     name: "CU 편의점",
     menuCategory: "convenienceStore",
+    imageUrl: "/image/food-booth/daegu/cu.webp",
   },
   {
     id: "daegu-1ru-3f-04",
@@ -955,6 +970,7 @@ export const foodBooths: FoodBooth[] = [
     location: "내부 1루 3층",
     name: "노랑통닭",
     menuCategory: "chicken",
+    imageUrl: "/image/food-booth/daegu/noranftongdak.webp",
   },
   {
     id: "daegu-3ru-3f-01",
@@ -964,6 +980,7 @@ export const foodBooths: FoodBooth[] = [
     location: "내부 3루 3층",
     name: "노랑통닭",
     menuCategory: "chicken",
+    imageUrl: "/image/food-booth/daegu/noranftongdak.webp",
   },
   {
     id: "daegu-3ru-3f-02",
@@ -971,8 +988,9 @@ export const foodBooths: FoodBooth[] = [
     stadiumName: "대구 삼성라이온즈파크",
     locationCategory: "내부 3루",
     location: "내부 3루 3층",
-    name: "대신당콩빵",
+    name: "대신땅콩빵",
     menuCategory: "dessert",
+    imageUrl: "/image/food-booth/daegu/daesinttangcongbbang.webp",
   },
   {
     id: "daegu-3ru-3f-03",
@@ -1001,6 +1019,7 @@ export const foodBooths: FoodBooth[] = [
     location: "내부 3루 3층",
     name: "북촌손만두",
     menuCategory: "bunsik",
+    imageUrl: "/image/food-booth/daegu/bukchonsonmandu.webp",
   },
   {
     id: "daegu-3ru-3f-06",
@@ -1008,8 +1027,9 @@ export const foodBooths: FoodBooth[] = [
     stadiumName: "대구 삼성라이온즈파크",
     locationCategory: "내부 3루",
     location: "내부 3루 3층",
-    name: "서문빙수, 장여사",
+    name: "서문빙수",
     menuCategory: "dessert",
+    imageUrl: "/image/food-booth/daegu/seomunbingsu.webp",
   },
   {
     id: "daegu-3ru-3f-07",
@@ -1019,6 +1039,7 @@ export const foodBooths: FoodBooth[] = [
     location: "내부 3루 3층",
     name: "알통떡강정",
     menuCategory: "bunsik",
+    imageUrl: "/image/food-booth/busan/darkgangjung.webp",
   },
   {
     id: "daegu-3ru-3f-08",
@@ -1028,6 +1049,7 @@ export const foodBooths: FoodBooth[] = [
     location: "내부 3루 3층",
     name: "역전우동",
     menuCategory: "bunsik",
+    imageUrl: "/image/food-booth/daegu/yokjunwudong.webp",
   },
   {
     id: "daegu-3ru-3f-09",
@@ -1037,6 +1059,7 @@ export const foodBooths: FoodBooth[] = [
     location: "내부 3루 3층",
     name: "이쁜여우핫도그",
     menuCategory: "dessert",
+    imageUrl: "/image/food-booth/jamsil/ippeunyeouhotdog.webp",
   },
   {
     id: "daegu-3ru-3f-10",
@@ -1055,6 +1078,7 @@ export const foodBooths: FoodBooth[] = [
     location: "내부 3루 3층",
     name: "해피치즈스마일",
     menuCategory: "bunsik",
+    imageUrl: "/image/food-booth/daegu/happycheesesmile.webp",
   },
   {
     id: "daegu-3ru-5f-01",
@@ -1064,6 +1088,7 @@ export const foodBooths: FoodBooth[] = [
     location: "내부 3루 5층",
     name: "몬나니떡볶이",
     menuCategory: "bunsik",
+    imageUrl: "/image/food-booth/daegu/monnani.webp",
   },
   {
     id: "daegu-3ru-5f-02",
@@ -1092,6 +1117,7 @@ export const foodBooths: FoodBooth[] = [
     location: "내부 3루 5층",
     name: "CU편의점",
     menuCategory: "convenienceStore",
+    imageUrl: "/image/food-booth/daegu/cu.webp",
   },
   {
     id: "daegu-3ru-5f-05",
@@ -1101,6 +1127,7 @@ export const foodBooths: FoodBooth[] = [
     location: "내부 3루 5층",
     name: "보배반점",
     menuCategory: "korean",
+    imageUrl: "/image/food-booth/daegu/bobaebanjum.webp",
   },
   {
     id: "daegu-3ru-5f-06",
@@ -1119,6 +1146,7 @@ export const foodBooths: FoodBooth[] = [
     location: "내부 3루 5층",
     name: "설빙",
     menuCategory: "dessert",
+    imageUrl: "/image/food-booth/daegu/sulbing.webp",
   },
   {
     id: "daegu-3ru-5f-08",
@@ -1156,6 +1184,7 @@ export const foodBooths: FoodBooth[] = [
     location: "내부 2층 푸드스트릿",
     name: "CU 편의점",
     menuCategory: "convenienceStore",
+    imageUrl: "/image/food-booth/daegu/cu.webp",
   },
   {
     id: "daegu-food-street-2f-02",
@@ -1165,6 +1194,7 @@ export const foodBooths: FoodBooth[] = [
     location: "내부 2층 푸드스트릿",
     name: "북촌손만두",
     menuCategory: "bunsik",
+    imageUrl: "/image/food-booth/daegu/bukchonsonmandu.webp",
   },
   {
     id: "daegu-food-street-2f-03",
@@ -1174,6 +1204,7 @@ export const foodBooths: FoodBooth[] = [
     location: "내부 2층 푸드스트릿",
     name: "역전우동",
     menuCategory: "bunsik",
+    imageUrl: "/image/food-booth/daegu/yokjunwudong.webp",
   },
   {
     id: "daegu-food-street-2f-04",
@@ -1193,14 +1224,15 @@ export const foodBooths: FoodBooth[] = [
     location: "내부 2층 푸드스트릿",
     name: "해피치즈스마일",
     menuCategory: "bunsik",
+    imageUrl: "/image/food-booth/daegu/happycheesesmile.webp",
   },
   {
     id: "daegu-outfield-2f-01",
     stadiumId: "daegu",
     stadiumName: "대구 삼성라이온즈파크",
     locationCategory: "외야",
-    location: "내부 외야 2층",
-    name: "HABANERO(RF9)",
+    location: "내부 외야 2층 RF 9구역",
+    name: "HABANERO",
     menuCategory: "dessert",
   },
   {
@@ -1208,8 +1240,8 @@ export const foodBooths: FoodBooth[] = [
     stadiumId: "daegu",
     stadiumName: "대구 삼성라이온즈파크",
     locationCategory: "외야",
-    location: "내부 외야 2층",
-    name: "생맥주(RF9)",
+    location: "내부 외야 2층 RF 9구역",
+    name: "생맥주",
     menuCategory: "alcohol",
   },
   {
@@ -1217,8 +1249,8 @@ export const foodBooths: FoodBooth[] = [
     stadiumId: "daegu",
     stadiumName: "대구 삼성라이온즈파크",
     locationCategory: "외야",
-    location: "내부 외야 2층",
-    name: "디저트(LF9)",
+    location: "내부 외야 2층 LF 9구역",
+    name: "디저트",
     menuCategory: "dessert",
   },
   {
@@ -1226,8 +1258,8 @@ export const foodBooths: FoodBooth[] = [
     stadiumId: "daegu",
     stadiumName: "대구 삼성라이온즈파크",
     locationCategory: "외야",
-    location: "내부 외야 2층",
-    name: "생맥주(LF9)",
+    location: "내부 외야 2층 LF 9구역",
+    name: "생맥주",
     menuCategory: "alcohol",
   },
   {
@@ -1235,8 +1267,8 @@ export const foodBooths: FoodBooth[] = [
     stadiumId: "daegu",
     stadiumName: "대구 삼성라이온즈파크",
     locationCategory: "외야",
-    location: "내부 외야 2층",
-    name: "크레페(LF5)",
+    location: "내부 외야 2층 LF 5구역",
+    name: "크레페",
     menuCategory: "dessert",
   },
   {
@@ -1244,8 +1276,8 @@ export const foodBooths: FoodBooth[] = [
     stadiumId: "daegu",
     stadiumName: "대구 삼성라이온즈파크",
     locationCategory: "외야",
-    location: "내부 외야 2층",
-    name: "생맥주(LF5)",
+    location: "내부 외야 2층 LF 5구역",
+    name: "생맥주",
     menuCategory: "alcohol",
   },
   {
@@ -1265,6 +1297,7 @@ export const foodBooths: FoodBooth[] = [
     location: "외부 2층",
     name: "맘스터치",
     menuCategory: "burger",
+    imageUrl: "/image/food-booth/daegu/momstouch.webp",
   },
   {
     id: "daegu-outside-2f-02",
@@ -1293,6 +1326,7 @@ export const foodBooths: FoodBooth[] = [
     location: "외부 2층",
     name: "브뤼셀프라이",
     menuCategory: "dessert",
+    imageUrl: "/image/food-booth/jamsil/brusselsfries.webp",
   },
   {
     id: "daegu-outside-2f-05",
@@ -1312,6 +1346,7 @@ export const foodBooths: FoodBooth[] = [
     location: "외부 2층",
     name: "스트릿츄러스",
     menuCategory: "dessert",
+    imageUrl: "/image/food-booth/daegu/streetchurros.webp",
   },
   {
     id: "daegu-outside-2f-07",
@@ -1321,6 +1356,7 @@ export const foodBooths: FoodBooth[] = [
     location: "외부 2층",
     name: "알통떡강정",
     menuCategory: "bunsik",
+    imageUrl: "/image/food-booth/busan/darkgangjung.webp",
   },
 
   // 대전 한화생명 볼파크
@@ -1352,6 +1388,7 @@ export const foodBooths: FoodBooth[] = [
     location: "내부 1루 1층",
     name: "명랑핫도그",
     menuCategory: "dessert",
+    imageUrl: "/image/food-booth/daejeon/myungranghotdog.webp",
   },
   {
     id: "daejeon-1ru-1f-04",
@@ -1361,6 +1398,7 @@ export const foodBooths: FoodBooth[] = [
     location: "내부 1루 1층",
     name: "바로그집",
     menuCategory: "korean",
+    imageUrl: "/image/food-booth/daejeon/barogujip.webp",
   },
   {
     id: "daejeon-1ru-1f-05",
@@ -1370,6 +1408,7 @@ export const foodBooths: FoodBooth[] = [
     location: "내부 1루 1층",
     name: "반올림피자",
     menuCategory: "pizza",
+    imageUrl: "/image/food-booth/daejeon/banollimpizza.webp",
   },
   {
     id: "daejeon-1ru-1f-06",
@@ -1379,6 +1418,7 @@ export const foodBooths: FoodBooth[] = [
     location: "내부 1루 1층",
     name: "북촌손만두",
     menuCategory: "bunsik",
+    imageUrl: "/image/food-booth/daegu/bukchonsonmandu.webp",
   },
   {
     id: "daejeon-1ru-1f-07",
@@ -1388,6 +1428,7 @@ export const foodBooths: FoodBooth[] = [
     location: "내부 1루 1층",
     name: "선비꼬마김밥",
     menuCategory: "bunsik",
+    imageUrl: "/image/food-booth/daejeon/sunbiggoma.webp",
   },
   {
     id: "daejeon-1ru-1f-08",
@@ -1397,6 +1438,7 @@ export const foodBooths: FoodBooth[] = [
     location: "내부 1루 1층",
     name: "완미족발",
     menuCategory: "korean",
+    imageUrl: "/image/food-booth/daejeon/jokbal.webp",
   },
   {
     id: "daejeon-1ru-1f-09",
@@ -1415,6 +1457,7 @@ export const foodBooths: FoodBooth[] = [
     location: "내부 1루 1층",
     name: "자담치킨",
     menuCategory: "chicken",
+    imageUrl: "/image/food-booth/daejeon/jadamchicken.webp",
   },
   {
     id: "daejeon-1ru-1f-11",
@@ -1445,6 +1488,7 @@ export const foodBooths: FoodBooth[] = [
     location: "중앙 1층",
     name: "공차",
     menuCategory: "cafe",
+    imageUrl: "/image/food-booth/daejeon/gongcha.webp",
   },
   {
     id: "daejeon-center-1f-03",
@@ -1464,6 +1508,7 @@ export const foodBooths: FoodBooth[] = [
     location: "중앙 1층",
     name: "반올림피자",
     menuCategory: "pizza",
+    imageUrl: "/image/food-booth/daejeon/banollimpizza.webp",
   },
   {
     id: "daejeon-center-1f-05",
@@ -1473,6 +1518,7 @@ export const foodBooths: FoodBooth[] = [
     location: "중앙 1층",
     name: "완미족발",
     menuCategory: "korean",
+    imageUrl: "/image/food-booth/daejeon/jokbal.webp",
   },
   {
     id: "daejeon-center-1f-06",
@@ -1509,6 +1555,7 @@ export const foodBooths: FoodBooth[] = [
     location: "중앙 1층",
     name: "자담치킨",
     menuCategory: "chicken",
+    imageUrl: "/image/food-booth/daejeon/jadamchicken.webp",
   },
 
   {
@@ -1529,6 +1576,7 @@ export const foodBooths: FoodBooth[] = [
     location: "내부 3루 1층",
     name: "구르닭치킨",
     menuCategory: "chicken",
+    imageUrl: "/image/food-booth/daejeon/gurudakchicken.webp",
   },
   {
     id: "daejeon-3ru-1f-03",
@@ -1547,6 +1595,7 @@ export const foodBooths: FoodBooth[] = [
     location: "내부 3루 1층",
     name: "마성떡볶이",
     menuCategory: "bunsik",
+    imageUrl: "/image/food-booth/daejeon/maseongtteokbokki.webp",
   },
   {
     id: "daejeon-3ru-1f-05",
@@ -1556,6 +1605,7 @@ export const foodBooths: FoodBooth[] = [
     location: "내부 3루 1층",
     name: "브뤼셀프라이",
     menuCategory: "dessert",
+    imageUrl: "/image/food-booth/jamsil/brusselsfries.webp",
   },
   {
     id: "daejeon-3ru-1f-06",
@@ -1575,6 +1625,7 @@ export const foodBooths: FoodBooth[] = [
     location: "내부 3루 1층",
     name: "자담치킨",
     menuCategory: "chicken",
+    imageUrl: "/image/food-booth/daejeon/jadamchicken.webp",
   },
 
   {
@@ -1632,6 +1683,7 @@ export const foodBooths: FoodBooth[] = [
     location: "내부 1루 2층",
     name: "자담치킨",
     menuCategory: "chicken",
+    imageUrl: "/image/food-booth/daejeon/jadamchicken.webp",
   },
 
   {
@@ -1642,6 +1694,7 @@ export const foodBooths: FoodBooth[] = [
     location: "내부 3루 2층",
     name: "고투웍",
     menuCategory: "korean",
+    imageUrl: "/image/food-booth/daejeon/gotowok.webp",
   },
   {
     id: "daejeon-3ru-2f-02",
@@ -1651,6 +1704,7 @@ export const foodBooths: FoodBooth[] = [
     location: "내부 3루 2층",
     name: "백스비어",
     menuCategory: "alcohol",
+    imageUrl: "/image/food-booth/daejeon/paiksbeer.webp",
   },
   {
     id: "daejeon-3ru-2f-03",
@@ -1658,8 +1712,9 @@ export const foodBooths: FoodBooth[] = [
     stadiumName: "대전 한화생명 볼파크",
     locationCategory: "내부 3루",
     location: "내부 3루 2층",
-    name: "백보이피자",
+    name: "빽보이피자",
     menuCategory: "pizza",
+    imageUrl: "/image/food-booth/daejeon/ppaekboypizza.webp",
   },
   {
     id: "daejeon-3ru-2f-04",
@@ -1669,6 +1724,7 @@ export const foodBooths: FoodBooth[] = [
     location: "내부 3루 2층",
     name: "새마을식당",
     menuCategory: "korean",
+    imageUrl: "/image/food-booth/daejeon/saemaeulsikdang.webp",
   },
   {
     id: "daejeon-3ru-2f-05",
@@ -1678,6 +1734,7 @@ export const foodBooths: FoodBooth[] = [
     location: "내부 3루 2층",
     name: "역전우동",
     menuCategory: "bunsik",
+    imageUrl: "/image/food-booth/daegu/yokjunwudong.webp",
   },
   {
     id: "daejeon-3ru-2f-06",
@@ -1687,6 +1744,7 @@ export const foodBooths: FoodBooth[] = [
     location: "내부 3루 2층",
     name: "연돈볼카츠",
     menuCategory: "dessert",
+    imageUrl: "/image/food-booth/daejeon/yeondonbolkatsu.webp",
   },
   {
     id: "daejeon-3ru-2f-07",
@@ -1696,6 +1754,7 @@ export const foodBooths: FoodBooth[] = [
     location: "내부 3루 2층",
     name: "한신포차",
     menuCategory: "korean",
+    imageUrl: "/image/food-booth/daejeon/hansinpocha.webp",
   },
 
   {
@@ -1735,6 +1794,7 @@ export const foodBooths: FoodBooth[] = [
     location: "외부",
     name: "빽다방 빵연구소",
     menuCategory: "cafe",
+    imageUrl: "/image/food-booth/daejeon/paikscoffee.webp",
   },
 
   // 광주 기아챔피언스필드
@@ -1756,6 +1816,7 @@ export const foodBooths: FoodBooth[] = [
     location: "내부 1루 3층",
     name: "CU편의점",
     menuCategory: "convenienceStore",
+    imageUrl: "/image/food-booth/daegu/cu.webp",
   },
   {
     id: "gwangju-1ru-3f-03",
@@ -1775,6 +1836,7 @@ export const foodBooths: FoodBooth[] = [
     location: "내부 1루 3층",
     name: "XOXO핫도그",
     menuCategory: "dessert",
+    imageUrl: "/image/food-booth/gwangju/xoxohotdog.webp",
   },
   {
     id: "gwangju-1ru-3f-05",
@@ -1784,6 +1846,7 @@ export const foodBooths: FoodBooth[] = [
     location: "내부 1루 3층",
     name: "마성떡볶이",
     menuCategory: "bunsik",
+    imageUrl: "/image/food-booth/daejeon/maseongtteokbokki.webp",
   },
   {
     id: "gwangju-1ru-3f-06",
@@ -1793,6 +1856,7 @@ export const foodBooths: FoodBooth[] = [
     location: "내부 1루 3층",
     name: "스트릿츄러스",
     menuCategory: "dessert",
+    imageUrl: "/image/food-booth/daegu/streetchurros.webp",
   },
   {
     id: "gwangju-1ru-3f-07",
@@ -1802,6 +1866,7 @@ export const foodBooths: FoodBooth[] = [
     location: "내부 1루 3층",
     name: "마왕족발",
     menuCategory: "korean",
+    imageUrl: "/image/food-booth/daejeon/jokbal.webp",
   },
   {
     id: "gwangju-1ru-3f-08",
@@ -1822,6 +1887,7 @@ export const foodBooths: FoodBooth[] = [
     location: "내부 1루 4층",
     name: "XOXO핫도그",
     menuCategory: "dessert",
+    imageUrl: "/image/food-booth/gwangju/xoxohotdog.webp",
   },
   {
     id: "gwangju-1ru-4f-02",
@@ -1831,6 +1897,7 @@ export const foodBooths: FoodBooth[] = [
     location: "내부 1루 4층",
     name: "광주원샷",
     menuCategory: "dessert",
+    imageUrl: "/image/food-booth/jamsil/jamsiloneshot.webp",
   },
   {
     id: "gwangju-1ru-4f-03",
@@ -1892,6 +1959,7 @@ export const foodBooths: FoodBooth[] = [
     location: "내부 3루 3층",
     name: "CU편의점",
     menuCategory: "convenienceStore",
+    imageUrl: "/image/food-booth/daegu/cu.webp",
   },
   {
     id: "gwangju-3ru-3f-04",
@@ -1901,6 +1969,7 @@ export const foodBooths: FoodBooth[] = [
     location: "내부 3루 3층",
     name: "BHC치킨 PUB",
     menuCategory: "chicken",
+    imageUrl: "/image/food-booth/jamsil/bhc-chicken.webp",
   },
   {
     id: "gwangju-3ru-3f-05",
@@ -1910,6 +1979,7 @@ export const foodBooths: FoodBooth[] = [
     location: "내부 3루 3층",
     name: "광주원샷",
     menuCategory: "dessert",
+    imageUrl: "/image/food-booth/jamsil/jamsiloneshot.webp",
   },
   {
     id: "gwangju-3ru-3f-06",
@@ -1919,6 +1989,7 @@ export const foodBooths: FoodBooth[] = [
     location: "내부 3루 3층",
     name: "마성떡볶이",
     menuCategory: "bunsik",
+    imageUrl: "/image/food-booth/daejeon/maseongtteokbokki.webp",
   },
   {
     id: "gwangju-3ru-3f-07",
@@ -1928,6 +1999,7 @@ export const foodBooths: FoodBooth[] = [
     location: "내부 3루 3층",
     name: "스트릿츄러스",
     menuCategory: "dessert",
+    imageUrl: "/image/food-booth/daegu/streetchurros.webp",
   },
   {
     id: "gwangju-3ru-3f-08",
@@ -1937,6 +2009,7 @@ export const foodBooths: FoodBooth[] = [
     location: "내부 3루 3층",
     name: "프랭크버거",
     menuCategory: "burger",
+    imageUrl: "/image/food-booth/gwangju/frankburger.webp",
   },
 
   {
@@ -1947,6 +2020,7 @@ export const foodBooths: FoodBooth[] = [
     location: "내부 3루 4층",
     name: "광주원샷",
     menuCategory: "dessert",
+    imageUrl: "/image/food-booth/jamsil/jamsiloneshot.webp",
   },
   {
     id: "gwangju-3ru-4f-02",
@@ -1966,6 +2040,7 @@ export const foodBooths: FoodBooth[] = [
     location: "내부 3루 4층",
     name: "프랭크버거",
     menuCategory: "burger",
+    imageUrl: "/image/food-booth/gwangju/frankburger.webp",
   },
 
   {
@@ -1976,6 +2051,7 @@ export const foodBooths: FoodBooth[] = [
     location: "내부 3루 5층",
     name: "CU편의점",
     menuCategory: "convenienceStore",
+    imageUrl: "/image/food-booth/daegu/cu.webp",
   },
   {
     id: "gwangju-3ru-5f-02",
@@ -1985,6 +2061,7 @@ export const foodBooths: FoodBooth[] = [
     location: "내부 3루 5층",
     name: "마성떡볶이",
     menuCategory: "bunsik",
+    imageUrl: "/image/food-booth/daejeon/maseongtteokbokki.webp",
   },
 
   {
@@ -1995,6 +2072,7 @@ export const foodBooths: FoodBooth[] = [
     location: "외부",
     name: "INC COFFEE",
     menuCategory: "cafe",
+    imageUrl: "/image/food-booth/gwangju/inkcoffee.webp",
   },
 
   // 인천 SSG랜더스필드
@@ -2006,6 +2084,7 @@ export const foodBooths: FoodBooth[] = [
     location: "내부 1루 4층",
     name: "우리동네 미미네",
     menuCategory: "bunsik",
+    imageUrl: "/image/food-booth/incheon/uridongnemimine.webp",
   },
   {
     id: "incheon-1ru-4f-02",
@@ -2024,7 +2103,7 @@ export const foodBooths: FoodBooth[] = [
     stadiumName: "인천 SSG랜더스필드",
     locationCategory: "내부 3루",
     location: "내부 3루 2층",
-    name: "먹거리 분식",
+    name: "먹거리",
     menuCategory: "bunsik",
   },
   {
@@ -2033,8 +2112,9 @@ export const foodBooths: FoodBooth[] = [
     stadiumName: "인천 SSG랜더스필드",
     locationCategory: "내부 3루",
     location: "내부 3루 2층",
-    name: "쌈빠치킨",
+    name: "쌈빠치킨·떡볶이",
     menuCategory: "chicken",
+    imageUrl: "/image/food-booth/incheon/ssampachicken.webp",
   },
   {
     id: "incheon-3ru-2f-03",
@@ -2044,6 +2124,7 @@ export const foodBooths: FoodBooth[] = [
     location: "내부 3루 2층",
     name: "이마트24",
     menuCategory: "convenienceStore",
+    imageUrl: "/image/food-booth/incheon/emart24.webp",
   },
   {
     id: "incheon-3ru-2f-04",
@@ -2053,6 +2134,7 @@ export const foodBooths: FoodBooth[] = [
     location: "내부 3루 2층",
     name: "킹콩떡볶이",
     menuCategory: "bunsik",
+    imageUrl: "/image/food-booth/daejeon/tteoktuisun.webp",
   },
   {
     id: "incheon-3ru-2f-05",
@@ -2071,6 +2153,7 @@ export const foodBooths: FoodBooth[] = [
     location: "내부 3루 2층",
     name: "자담치킨",
     menuCategory: "chicken",
+    imageUrl: "/image/food-booth/daejeon/jadamchicken.webp",
   },
 
   {
@@ -2081,6 +2164,7 @@ export const foodBooths: FoodBooth[] = [
     location: "내부 3루 4층",
     name: "우리동네 미미네",
     menuCategory: "bunsik",
+    imageUrl: "/image/food-booth/incheon/uridongnemimine.webp",
   },
   {
     id: "incheon-3ru-4f-02",
@@ -2090,6 +2174,7 @@ export const foodBooths: FoodBooth[] = [
     location: "내부 3루 4층",
     name: "반올림피자",
     menuCategory: "pizza",
+    imageUrl: "/image/food-booth/daejeon/banollimpizza.webp",
   },
 
   {
@@ -2100,6 +2185,7 @@ export const foodBooths: FoodBooth[] = [
     location: "중앙-1루 1층",
     name: "BHC",
     menuCategory: "chicken",
+    imageUrl: "/image/food-booth/jamsil/bhc-chicken.webp",
   },
   {
     id: "incheon-center-1ru-1f-02",
@@ -2118,6 +2204,7 @@ export const foodBooths: FoodBooth[] = [
     location: "중앙-1루 1층",
     name: "스타벅스",
     menuCategory: "cafe",
+    imageUrl: "/image/food-booth/incheon/starbucks.webp",
   },
   {
     id: "incheon-center-1ru-1f-04",
@@ -2127,6 +2214,7 @@ export const foodBooths: FoodBooth[] = [
     location: "중앙-1루 1층",
     name: "스트릿츄러스",
     menuCategory: "dessert",
+    imageUrl: "/image/food-booth/daegu/streetchurros.webp",
   },
   {
     id: "incheon-center-1ru-1f-05",
@@ -2154,6 +2242,7 @@ export const foodBooths: FoodBooth[] = [
     location: "중앙-1루 1층",
     name: "국대떡볶이",
     menuCategory: "bunsik",
+    imageUrl: "/image/food-booth/incheon/gukdaetteokbokki.webp",
   },
   {
     id: "incheon-center-1ru-1f-08",
@@ -2163,6 +2252,7 @@ export const foodBooths: FoodBooth[] = [
     location: "중앙-1루 1층",
     name: "버거 원더스",
     menuCategory: "burger",
+    imageUrl: "/image/food-booth/incheon/burgerwonders.webp",
   },
   {
     id: "incheon-center-1ru-1f-09",
@@ -2172,6 +2262,7 @@ export const foodBooths: FoodBooth[] = [
     location: "중앙-1루 1층",
     name: "우리동네 미미네",
     menuCategory: "bunsik",
+    imageUrl: "/image/food-booth/incheon/uridongnemimine.webp",
   },
   {
     id: "incheon-center-1ru-1f-10",
@@ -2181,6 +2272,7 @@ export const foodBooths: FoodBooth[] = [
     location: "중앙-1루 1층",
     name: "이마트24",
     menuCategory: "convenienceStore",
+    imageUrl: "/image/food-booth/incheon/emart24.webp",
   },
 
   {
@@ -2191,6 +2283,7 @@ export const foodBooths: FoodBooth[] = [
     location: "중앙-3루 1층",
     name: "푸라닭",
     menuCategory: "chicken",
+    imageUrl: "/image/food-booth/incheon/puradak.webp",
   },
   {
     id: "incheon-center-3ru-1f-02",
@@ -2200,6 +2293,7 @@ export const foodBooths: FoodBooth[] = [
     location: "중앙-3루 1층",
     name: "북촌손만두",
     menuCategory: "bunsik",
+    imageUrl: "/image/food-booth/daegu/bukchonsonmandu.webp",
   },
   {
     id: "incheon-center-3ru-1f-03",
@@ -2209,6 +2303,7 @@ export const foodBooths: FoodBooth[] = [
     location: "중앙-3루 1층",
     name: "오레오츄러스",
     menuCategory: "dessert",
+    imageUrl: "/image/food-booth/incheon/oreochurros.webp",
   },
   {
     id: "incheon-center-3ru-1f-04",
@@ -2258,6 +2353,7 @@ export const foodBooths: FoodBooth[] = [
     location: "외야 2층",
     name: "스트릿츄러스",
     menuCategory: "dessert",
+    imageUrl: "/image/food-booth/daegu/streetchurros.webp",
   },
   {
     id: "incheon-outfield-2f-05",
@@ -2267,6 +2363,7 @@ export const foodBooths: FoodBooth[] = [
     location: "외야 2층",
     name: "우이락 고추튀김",
     menuCategory: "dessert",
+    imageUrl: "/image/food-booth/jamsil/wuirok.webp",
   },
   {
     id: "incheon-outfield-2f-06",
@@ -2276,6 +2373,7 @@ export const foodBooths: FoodBooth[] = [
     location: "외야 2층",
     name: "순살싸다리",
     menuCategory: "chicken",
+    imageUrl: "/image/food-booth/incheon/sunsalssadari.webp",
   },
   {
     id: "incheon-outfield-2f-07",
@@ -2303,6 +2401,7 @@ export const foodBooths: FoodBooth[] = [
     location: "외야 2층",
     name: "김치말이국수",
     menuCategory: "korean",
+    imageUrl: "/image/food-booth/incheon/gimchimaliguksu.webp",
   },
   {
     id: "incheon-outfield-2f-10",
@@ -2312,6 +2411,7 @@ export const foodBooths: FoodBooth[] = [
     location: "외야 2층",
     name: "자담치킨",
     menuCategory: "chicken",
+    imageUrl: "/image/food-booth/daejeon/jadamchicken.webp",
   },
 
   {
@@ -2351,6 +2451,7 @@ export const foodBooths: FoodBooth[] = [
     location: "내부 1루 2층",
     name: "노랑통닭",
     menuCategory: "chicken",
+    imageUrl: "/image/food-booth/daegu/noranftongdak.webp",
   },
   {
     id: "incheon-1ru-2f-05",
@@ -2360,6 +2461,7 @@ export const foodBooths: FoodBooth[] = [
     location: "내부 1루 2층",
     name: "노브랜드버거",
     menuCategory: "burger",
+    imageUrl: "/image/food-booth/incheon/nobrandburger.webp",
   },
   {
     id: "incheon-1ru-2f-06",
@@ -2378,6 +2480,7 @@ export const foodBooths: FoodBooth[] = [
     location: "내부 1루 2층",
     name: "문학철판삼겹",
     menuCategory: "korean",
+    imageUrl: "/image/food-booth/incheon/munhakchulpan.webp",
   },
   {
     id: "incheon-1ru-2f-08",
@@ -2387,6 +2490,7 @@ export const foodBooths: FoodBooth[] = [
     location: "내부 1루 2층",
     name: "스타벅스",
     menuCategory: "cafe",
+    imageUrl: "/image/food-booth/incheon/starbucks.webp",
   },
   {
     id: "incheon-1ru-2f-09",
@@ -2427,6 +2531,7 @@ export const foodBooths: FoodBooth[] = [
     location: "내부 3루 2층",
     name: "마왕족발",
     menuCategory: "korean",
+    imageUrl: "/image/food-booth/daejeon/jokbal.webp",
   },
   {
     id: "gocheok-3ru-2f-04",
@@ -2455,6 +2560,7 @@ export const foodBooths: FoodBooth[] = [
     location: "내부 3루 2층",
     name: "스트릿츄러스",
     menuCategory: "dessert",
+    imageUrl: "/image/food-booth/daegu/streetchurros.webp",
   },
   {
     id: "gocheok-3ru-2f-07",
@@ -2473,6 +2579,7 @@ export const foodBooths: FoodBooth[] = [
     location: "내부 3루 2층",
     name: "자담치킨",
     menuCategory: "chicken",
+    imageUrl: "/image/food-booth/daejeon/jadamchicken.webp",
   },
   {
     id: "gocheok-3ru-2f-09",
@@ -2521,6 +2628,7 @@ export const foodBooths: FoodBooth[] = [
     location: "내야 4층",
     name: "브뤼셀프라이",
     menuCategory: "dessert",
+    imageUrl: "/image/food-booth/jamsil/brusselsfries.webp",
   },
   {
     id: "gocheok-naeya-4f-05",
@@ -2530,6 +2638,7 @@ export const foodBooths: FoodBooth[] = [
     location: "내야 4층",
     name: "우이락, 편의점",
     menuCategory: "bunsik",
+    imageUrl: "/image/food-booth/jamsil/wuirok.webp",
   },
   {
     id: "gocheok-naeya-4f-06",
@@ -2539,6 +2648,7 @@ export const foodBooths: FoodBooth[] = [
     location: "내야 4층",
     name: "자담치킨",
     menuCategory: "chicken",
+    imageUrl: "/image/food-booth/daejeon/jadamchicken.webp",
   },
   {
     id: "gocheok-naeya-4f-07",
@@ -2709,6 +2819,7 @@ export const foodBooths: FoodBooth[] = [
     location: "외야 3~4층",
     name: "브뤼셀프라이",
     menuCategory: "dessert",
+    imageUrl: "/image/food-booth/jamsil/brusselsfries.webp",
   },
   {
     id: "gocheok-oeya-3-4f-06",
@@ -2718,6 +2829,7 @@ export const foodBooths: FoodBooth[] = [
     location: "외야 3~4층",
     name: "스트릿츄러스",
     menuCategory: "dessert",
+    imageUrl: "/image/food-booth/daegu/streetchurros.webp",
   },
   {
     id: "gocheok-oeya-3-4f-07",
@@ -2790,6 +2902,7 @@ export const foodBooths: FoodBooth[] = [
     location: "외야 3~4층",
     name: "자담치킨",
     menuCategory: "chicken",
+    imageUrl: "/image/food-booth/daejeon/jadamchicken.webp",
   },
 
   // 수원 KT위즈파크
@@ -2886,6 +2999,7 @@ export const foodBooths: FoodBooth[] = [
     location: "중앙~1루 2층",
     name: "마성떡볶이",
     menuCategory: "bunsik",
+    imageUrl: "/image/food-booth/daejeon/maseongtteokbokki.webp",
   },
   {
     id: "suwon-central-1ru-2f-03",
@@ -2895,6 +3009,7 @@ export const foodBooths: FoodBooth[] = [
     location: "중앙~1루 2층",
     name: "브뤼셀프라이",
     menuCategory: "dessert",
+    imageUrl: "/image/food-booth/jamsil/brusselsfries.webp",
   },
   {
     id: "suwon-central-1ru-2f-04",
@@ -2931,6 +3046,7 @@ export const foodBooths: FoodBooth[] = [
     location: "중앙~1루 2층",
     name: "완미족발",
     menuCategory: "korean",
+    imageUrl: "/image/food-booth/daejeon/jokbal.webp",
   },
   {
     id: "suwon-central-1ru-2f-08",
@@ -2986,6 +3102,7 @@ export const foodBooths: FoodBooth[] = [
     location: "5층",
     name: "브뤼셀프라이",
     menuCategory: "dessert",
+    imageUrl: "/image/food-booth/jamsil/brusselsfries.webp",
   },
   {
     id: "suwon-5f-04",
@@ -3178,7 +3295,8 @@ export const foodBooths: FoodBooth[] = [
     locationCategory: "3루",
     location: "3루 2층",
     name: "샤오마라",
-    menuCategory: "restaurant",
+    menuCategory: "dessert",
+    imageUrl: "/image/food-booth/jamsil/shaomara.webp",
   },
   {
     id: "suwon-3ru-2f-07",
@@ -3217,6 +3335,7 @@ export const foodBooths: FoodBooth[] = [
     location: "3루 1층",
     name: "노랑통닭",
     menuCategory: "chicken",
+    imageUrl: "/image/food-booth/daegu/noranftongdak.webp",
   },
   {
     id: "changwon-3ru-1f-02",
@@ -3226,6 +3345,7 @@ export const foodBooths: FoodBooth[] = [
     location: "3루 1층",
     name: "반올림피자",
     menuCategory: "pizza",
+    imageUrl: "/image/food-booth/daejeon/banollimpizza.webp",
   },
   {
     id: "changwon-3ru-1f-03",
@@ -3235,6 +3355,7 @@ export const foodBooths: FoodBooth[] = [
     location: "3루 1층",
     name: "북촌손만두",
     menuCategory: "bunsik",
+    imageUrl: "/image/food-booth/daegu/bukchonsonmandu.webp",
   },
   {
     id: "changwon-3ru-1f-04",
@@ -3262,6 +3383,7 @@ export const foodBooths: FoodBooth[] = [
     location: "3루 1층",
     name: "스타벅스",
     menuCategory: "cafe",
+    imageUrl: "/image/food-booth/incheon/starbucks.webp",
   },
   {
     id: "changwon-3ru-1f-07",
@@ -3290,6 +3412,7 @@ export const foodBooths: FoodBooth[] = [
     location: "3루 1층",
     name: "호남원조식당",
     menuCategory: "korean",
+    imageUrl: "/image/food-booth/daegu/honamwonjo.webp",
   },
 
   {
@@ -3328,6 +3451,7 @@ export const foodBooths: FoodBooth[] = [
     location: "중앙 1층",
     name: "알통떡강정",
     menuCategory: "chicken",
+    imageUrl: "/image/food-booth/busan/darkgangjung.webp",
   },
 
   {
@@ -3366,6 +3490,7 @@ export const foodBooths: FoodBooth[] = [
     location: "2층",
     name: "스타벅스",
     menuCategory: "cafe",
+    imageUrl: "/image/food-booth/incheon/starbucks.webp",
   },
   {
     id: "changwon-2f-05",
@@ -3404,6 +3529,7 @@ export const foodBooths: FoodBooth[] = [
     location: "외야",
     name: "브뤼셀프라이",
     menuCategory: "dessert",
+    imageUrl: "/image/food-booth/jamsil/brusselsfries.webp",
   },
   {
     id: "changwon-oeya-04",
@@ -3469,6 +3595,7 @@ export const foodBooths: FoodBooth[] = [
     location: "1루 1층",
     name: "반올림피자",
     menuCategory: "pizza",
+    imageUrl: "/image/food-booth/daejeon/banollimpizza.webp",
   },
   {
     id: "changwon-1ru-1f-04",
@@ -3533,6 +3660,7 @@ export const foodBooths: FoodBooth[] = [
     location: "1루 1층",
     name: "알통떡강정",
     menuCategory: "chicken",
+    imageUrl: "/image/food-booth/busan/darkgangjung.webp",
   },
   {
     id: "changwon-1ru-1f-11",
@@ -3542,6 +3670,7 @@ export const foodBooths: FoodBooth[] = [
     location: "1루 1층",
     name: "우이락 고추튀김",
     menuCategory: "bunsik",
+    imageUrl: "/image/food-booth/jamsil/wuirok.webp",
   },
   {
     id: "changwon-1ru-1f-12",
