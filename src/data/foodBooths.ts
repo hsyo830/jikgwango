@@ -2541,6 +2541,7 @@ export const foodBooths: FoodBooth[] = [
     location: "내부 3루 2층",
     name: "매머드커피",
     menuCategory: "cafe",
+    imageUrl: "/image/food-booth/gocheok/mammothcoffee.webp",
   },
   {
     id: "gocheok-3ru-2f-05",
@@ -2570,6 +2571,7 @@ export const foodBooths: FoodBooth[] = [
     location: "내부 3루 2층",
     name: "올떡볶이",
     menuCategory: "bunsik",
+    imageUrl: "/image/food-booth/gocheok/aldduk.webp",
   },
   {
     id: "gocheok-3ru-2f-08",
@@ -2610,6 +2612,7 @@ export const foodBooths: FoodBooth[] = [
     location: "내야 4층",
     name: "BK버거",
     menuCategory: "burger",
+    imageUrl: "/image/food-booth/gocheok/bkburger.webp",
   },
   {
     id: "gocheok-naeya-4f-03",
@@ -2636,7 +2639,7 @@ export const foodBooths: FoodBooth[] = [
     stadiumName: "고척스카이돔",
     locationCategory: "내야",
     location: "내야 4층",
-    name: "우이락, 편의점",
+    name: "우이락",
     menuCategory: "bunsik",
     imageUrl: "/image/food-booth/jamsil/wuirok.webp",
   },
@@ -2656,8 +2659,9 @@ export const foodBooths: FoodBooth[] = [
     stadiumName: "고척스카이돔",
     locationCategory: "내야",
     location: "내야 4층",
-    name: "카츠마마",
+    name: "카츄마마",
     menuCategory: "restaurant",
+    imageUrl: "/image/food-booth/gocheok/cachumama.webp",
   },
   {
     id: "gocheok-naeya-4f-08",
@@ -2667,6 +2671,7 @@ export const foodBooths: FoodBooth[] = [
     location: "내야 4층",
     name: "탐앤탐스",
     menuCategory: "cafe",
+    imageUrl: "/image/food-booth/gocheok/tomntomscoffee.webp",
   },
 
   {
@@ -2687,6 +2692,7 @@ export const foodBooths: FoodBooth[] = [
     location: "내부 1루 2층",
     name: "BK버거",
     menuCategory: "burger",
+    imageUrl: "/image/food-booth/gocheok/bkburger.webp",
   },
   {
     id: "gocheok-1ru-2f-03",
@@ -2725,6 +2731,7 @@ export const foodBooths: FoodBooth[] = [
     location: "내부 1루 2층",
     name: "매머드커피",
     menuCategory: "cafe",
+    imageUrl: "/image/food-booth/gocheok/mammothcoffee.webp",
   },
   {
     id: "gocheok-1ru-2f-07",
@@ -2734,6 +2741,7 @@ export const foodBooths: FoodBooth[] = [
     location: "내부 1루 2층",
     name: "명랑핫도그",
     menuCategory: "dessert",
+    imageUrl: "/image/food-booth/daejeon/myungranghotdog.webp",
   },
   {
     id: "gocheok-1ru-2f-08",
@@ -2743,6 +2751,7 @@ export const foodBooths: FoodBooth[] = [
     location: "내부 1루 2층",
     name: "쉬림프쉐프",
     menuCategory: "dessert",
+    imageUrl: "/image/food-booth/jamsil/station.webp",
   },
   {
     id: "gocheok-1ru-2f-09",
@@ -2752,6 +2761,7 @@ export const foodBooths: FoodBooth[] = [
     location: "내부 1루 2층",
     name: "올떡볶이",
     menuCategory: "bunsik",
+    imageUrl: "/image/food-booth/gocheok/aldduk.webp",
   },
   {
     id: "gocheok-1ru-2f-10",
@@ -2770,6 +2780,7 @@ export const foodBooths: FoodBooth[] = [
     location: "내부 1루 2층",
     name: "피자",
     menuCategory: "pizza",
+    imageUrl: "/image/food-booth/gocheok/pizza.webp",
   },
 
   {
@@ -2810,6 +2821,7 @@ export const foodBooths: FoodBooth[] = [
     location: "외야 3~4층",
     name: "매머드커피",
     menuCategory: "cafe",
+    imageUrl: "/image/food-booth/gocheok/mammothcoffee.webp",
   },
   {
     id: "gocheok-oeya-3-4f-05",
@@ -2839,6 +2851,7 @@ export const foodBooths: FoodBooth[] = [
     location: "외야 3~4층",
     name: "올떡볶이",
     menuCategory: "bunsik",
+    imageUrl: "/image/food-booth/gocheok/aldduk.webp",
   },
   {
     id: "gocheok-oeya-3-4f-08",
@@ -2884,6 +2897,7 @@ export const foodBooths: FoodBooth[] = [
     location: "외야 3~4층",
     name: "멕시카나치킨",
     menuCategory: "chicken",
+    imageUrl: "/image/food-booth/gocheok/mexicanachicken.webp",
   },
   {
     id: "gocheok-oeya-3-4f-13",
@@ -2893,6 +2907,7 @@ export const foodBooths: FoodBooth[] = [
     location: "외야 3~4층",
     name: "쉬림프쉐프",
     menuCategory: "dessert",
+    imageUrl: "/image/food-booth/jamsil/station.webp",
   },
   {
     id: "gocheok-oeya-3-4f-14",
@@ -3075,6 +3090,7 @@ export const foodBooths: FoodBooth[] = [
     location: "5층",
     name: "세븐일레븐",
     menuCategory: "convenienceStore",
+    imageUrl: "/image/food-booth/suwon/seveneleven.webp",
   },
   {
     id: "suwon-5f-02",
@@ -3084,6 +3100,7 @@ export const foodBooths: FoodBooth[] = [
     location: "5층",
     name: "세븐일레븐",
     menuCategory: "convenienceStore",
+    imageUrl: "/image/food-booth/suwon/seveneleven.webp",
   },
   {
     id: "suwon-3ru-5f-01",
@@ -3121,6 +3138,7 @@ export const foodBooths: FoodBooth[] = [
     location: "5층",
     name: "세븐일레븐",
     menuCategory: "convenienceStore",
+    imageUrl: "/image/food-booth/suwon/seveneleven.webp",
   },
 
   {
@@ -3140,6 +3158,7 @@ export const foodBooths: FoodBooth[] = [
     location: "외부 1층",
     name: "세븐일레븐",
     menuCategory: "convenienceStore",
+    imageUrl: "/image/food-booth/suwon/seveneleven.webp",
   },
 
   {
@@ -3204,6 +3223,7 @@ export const foodBooths: FoodBooth[] = [
     location: "1루 2층",
     name: "세븐일레븐",
     menuCategory: "convenienceStore",
+    imageUrl: "/image/food-booth/suwon/seveneleven.webp",
   },
   {
     id: "suwon-naeya-1ru-2f-02",
@@ -3213,6 +3233,7 @@ export const foodBooths: FoodBooth[] = [
     location: "1루 2층",
     name: "세븐일레븐",
     menuCategory: "convenienceStore",
+    imageUrl: "/image/food-booth/suwon/seveneleven.webp",
   },
   {
     id: "suwon-1ru-2f-07",
@@ -3269,6 +3290,7 @@ export const foodBooths: FoodBooth[] = [
     location: "3루 2층",
     name: "명랑핫도그",
     menuCategory: "dessert",
+    imageUrl: "/image/food-booth/daejeon/myungranghotdog.webp",
   },
   {
     id: "suwon-3ru-2f-04",
@@ -3306,6 +3328,7 @@ export const foodBooths: FoodBooth[] = [
     location: "3루 2층",
     name: "세븐일레븐",
     menuCategory: "convenienceStore",
+    imageUrl: "/image/food-booth/suwon/seveneleven.webp",
   },
   {
     id: "suwon-3ru-2f-08",
@@ -3315,6 +3338,7 @@ export const foodBooths: FoodBooth[] = [
     location: "3루 2층",
     name: "쉬림프쉐프",
     menuCategory: "dessert",
+    imageUrl: "/image/food-booth/jamsil/station.webp",
   },
   {
     id: "suwon-3ru-2f-09",
@@ -3374,6 +3398,7 @@ export const foodBooths: FoodBooth[] = [
     location: "3루 1층",
     name: "세븐일레븐",
     menuCategory: "convenienceStore",
+    imageUrl: "/image/food-booth/suwon/seveneleven.webp",
   },
   {
     id: "changwon-3ru-1f-06",
@@ -3442,6 +3467,7 @@ export const foodBooths: FoodBooth[] = [
     location: "중앙 1층",
     name: "세븐일레븐",
     menuCategory: "convenienceStore",
+    imageUrl: "/image/food-booth/suwon/seveneleven.webp",
   },
   {
     id: "changwon-central-1f-04",
@@ -3481,6 +3507,7 @@ export const foodBooths: FoodBooth[] = [
     location: "2층",
     name: "세븐일레븐",
     menuCategory: "convenienceStore",
+    imageUrl: "/image/food-booth/suwon/seveneleven.webp",
   },
   {
     id: "changwon-2f-04",
@@ -3643,6 +3670,7 @@ export const foodBooths: FoodBooth[] = [
     location: "1루 1층",
     name: "세븐일레븐",
     menuCategory: "convenienceStore",
+    imageUrl: "/image/food-booth/suwon/seveneleven.webp",
   },
   {
     id: "changwon-1ru-1f-09",
