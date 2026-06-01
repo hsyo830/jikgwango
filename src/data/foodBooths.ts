@@ -566,7 +566,7 @@ export const foodBooths: FoodBooth[] = [
     stadiumName: "잠실야구장",
     locationCategory: "내부 3루",
     location: "내부 3루 2층",
-    name: "팝콘",
+    name: "홈런팝",
     menuCategory: "dessert",
   },
   {
@@ -659,6 +659,7 @@ export const foodBooths: FoodBooth[] = [
     location: "내부 3루 3층",
     name: "스테프핫도그",
     menuCategory: "dessert",
+    imageUrl: "/image/food-booth/busan/steffhotdog.webp",
   },
   {
     id: "jamsil-3ru-3f-04",
@@ -684,8 +685,8 @@ export const foodBooths: FoodBooth[] = [
     stadiumId: "jamsil",
     stadiumName: "잠실야구장",
     locationCategory: "내부 4층",
-    location: "내부 4층 네이비석 상단",
-    name: "잠실원샷 331블럭",
+    location: "내부 4층 네이비석 상단 331블럭",
+    name: "잠실원샷",
     menuCategory: "alcohol",
   },
   {
@@ -693,8 +694,8 @@ export const foodBooths: FoodBooth[] = [
     stadiumId: "jamsil",
     stadiumName: "잠실야구장",
     locationCategory: "내부 4층",
-    location: "내부 4층 네이비석 상단",
-    name: "올떡 318블럭",
+    location: "내부 4층 네이비석 상단 318블럭",
+    name: "올떡",
     menuCategory: "bunsik",
   },
   {
@@ -702,8 +703,8 @@ export const foodBooths: FoodBooth[] = [
     stadiumId: "jamsil",
     stadiumName: "잠실야구장",
     locationCategory: "내부 4층",
-    location: "내부 4층 네이비석 상단",
-    name: "샤오마라 304블럭",
+    location: "내부 4층 네이비석 상단 304블럭",
+    name: "샤오마라",
     menuCategory: "dessert",
   },
   {
@@ -875,6 +876,7 @@ export const foodBooths: FoodBooth[] = [
     location: "내부 1루 3층",
     name: "스테프핫도그",
     menuCategory: "dessert",
+    imageUrl: "/image/food-booth/busan/steffhotdog.webp",
   },
   {
     id: "jamsil-1ru-3f-04",
@@ -2427,6 +2429,7 @@ export const foodBooths: FoodBooth[] = [
     location: "내부 3루 2층",
     name: "스테프핫도그",
     menuCategory: "dessert",
+    imageUrl: "/image/food-booth/busan/steffhotdog.webp",
   },
   {
     id: "gocheok-3ru-2f-06",
