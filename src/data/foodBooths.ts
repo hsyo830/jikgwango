@@ -3539,6 +3539,7 @@ export const foodBooths: FoodBooth[] = [
     location: "외야",
     name: "상하이마라꼬치",
     menuCategory: "dessert",
+    imageUrl: "/image/food-booth/busan/shanghaimaraggochi.webp",
   },
   {
     id: "changwon-oeya-05",
