@@ -2,13 +2,14 @@
 
 import { LoadingDots } from "@/src/components/common/loading/LoadingDots";
 import { useTodayGame } from "@/src/hooks/queries/useTodayGameQuery";
+import { getTodayGameDate } from "@/src/utils/getTodayGameDate";
 
 import TodayGameSlider from "./components/TodayGameSlider";
 import SectionHeader from "./SectionHeader";
 
 const TodayGameClient = () => {
   const { data, isLoading, isError } = useTodayGame({
-    gameDate: "20260603",
+    gameDate: getTodayGameDate(),
     leId: "1",
     srId: "0,1,3,4,5,7",
     headerCk: "0",
