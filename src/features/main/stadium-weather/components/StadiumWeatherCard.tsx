@@ -66,7 +66,7 @@ const StadiumWeatherCard = ({ stadiumData, gamesData }: StadiumWeatherCardProps)
               </p>
             </div>
           </div>
-          <div className="mt-3 w-full">
+          <div className="mt-3 w-full md:mt-0">
             <dl className="divide-border flex w-full divide-x">
               <div className="flex flex-1 items-center justify-center text-xs md:gap-1 md:text-sm">
                 <TemperatureIcon className="size-5 md:size-7" />
