@@ -6,7 +6,7 @@ import { getTodayGameDate } from "@/src/utils/getTodayGameDate";
 
 import StadiumTodayWeatherSlider from "./StadiumTodayWeatherSlider";
 
-const StadiumWeatherSlider = () => {
+const StadiumWeatherClient = () => {
   const { data, isLoading, isError } = useTodayGame({
     gameDate: getTodayGameDate(),
     leId: "1",
@@ -16,15 +16,28 @@ const StadiumWeatherSlider = () => {
 
   const games = data?.gameList ?? [];
 
+  console.log(games);
+
   const todayStadium = games.map((game) => game.stadiumFullName);
 
   const todayStadiumWeather = stadiums.filter((stadium) => todayStadium.includes(stadium.name));
 
+  console.log(todayStadium);
+
+  const uniqueTodayStadiumWeather = todayStadiumWeather.filter(
+    (stadium, index, array) => index === array.findIndex((item) => item.name === stadium.name),
+  );
+
   return (
     <section className="w-full">
-      {<StadiumTodayWeatherSlider todayStadiumWeather={todayStadiumWeather} gamesData={games} />}
+      {
+        <StadiumTodayWeatherSlider
+          todayStadiumWeather={uniqueTodayStadiumWeather}
+          gamesData={games}
+        />
+      }
     </section>
   );
 };
 
-export default StadiumWeatherSlider;
+export default StadiumWeatherClient;

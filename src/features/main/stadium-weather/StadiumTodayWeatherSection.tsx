@@ -1,13 +1,13 @@
 import SectionCard from "@/src/components/common/SectionCard";
 
 import SectionHeader from "./SectionHeader";
-import StadiumWeatherSlider from "./StadiumWeatherSlider";
+import StadiumWeatherClient from "./StadiumWeatherClient";
 
 const StadiumTodayWeatherSection = () => {
   return (
     <SectionCard>
       <SectionHeader />
-      <StadiumWeatherSlider />
+      <StadiumWeatherClient />
     </SectionCard>
   );
 };

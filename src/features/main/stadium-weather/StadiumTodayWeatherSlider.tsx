@@ -27,8 +27,8 @@ const StadiumTodayWeatherSlider = ({
           <Swiper
             modules={[Autoplay, Navigation]}
             navigation={{
-              prevEl: ".food-swiper-prev",
-              nextEl: ".food-swiper-next",
+              prevEl: ".stadium-weather-swiper-prev",
+              nextEl: ".stadium-weather-swiper-next",
             }}
             spaceBetween={15}
             slidesPerView={4}
@@ -48,7 +48,7 @@ const StadiumTodayWeatherSlider = ({
               delay: 3500,
               disableOnInteraction: false,
             }}
-            loop
+            loop={stadiumData.length > 3}
           >
             {stadiumData.map((stadium) => (
               <SwiperSlide key={stadium.id}>
@@ -59,11 +59,11 @@ const StadiumTodayWeatherSlider = ({
 
           <SwiperNavButton
             direction="prev"
-            className="stadium-swiper-prev left-0 -translate-x-1/2"
+            className="stadium-weather-swiper-prev left-0 -translate-x-1/2"
           />
           <SwiperNavButton
             direction="next"
-            className="stadium-swiper-next right-0 translate-x-1/2"
+            className="stadium-weather-swiper-next right-0 translate-x-1/2"
           />
         </div>
       </div>

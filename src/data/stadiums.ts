@@ -219,7 +219,7 @@ export const stadiums: Stadium[] = [
   {
     id: "gwangju",
     stadiumId: "gwangju",
-    name: "광주 기아 챔피언스 필드",
+    name: "광주기아챔피언스필드",
     teams: ["KIA"],
     logoUrl1: "/image/team-logo/kia-logo.svg",
     searchKeyword: "광주기아챔피언스필드",
