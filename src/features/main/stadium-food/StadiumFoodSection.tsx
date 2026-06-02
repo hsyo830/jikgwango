@@ -10,14 +10,14 @@ const StadiumFoodSection = () => {
       <SectionHeader />
       <div className="flex gap-2 lg:hidden lg:gap-5">
         <FoodCard food={foodBooths[0]} />
-        <FoodCard food={foodBooths[70]} />
-        <FoodCard food={foodBooths[100]} />
+        <FoodCard food={foodBooths[65]} />
+        <FoodCard food={foodBooths[94]} />
       </div>
       <div className="hidden gap-2 lg:flex lg:gap-5">
         <FoodCard food={foodBooths[0]} />
-        <FoodCard food={foodBooths[70]} />
-        <FoodCard food={foodBooths[100]} />
-        <FoodCard food={foodBooths[330]} />
+        <FoodCard food={foodBooths[65]} />
+        <FoodCard food={foodBooths[94]} />
+        <FoodCard food={foodBooths[195]} />
       </div>
     </SectionCard>
   );
