@@ -1,5 +1,6 @@
 "use client";
 
+import { LoadingDots } from "@/src/components/common/loading/LoadingDots";
 import { useTodayGame } from "@/src/hooks/queries/useTodayGameQuery";
 
 import TodayGameSlider from "./components/TodayGameSlider";
@@ -15,7 +16,7 @@ const TodayGameClient = () => {
 
   const games = data?.gameList ?? [];
 
-  if (isLoading) return <div>경기 정보를 불러오는 중...</div>;
+  if (isLoading) return <LoadingDots message="경기 정보를 불러오고 있어요" />;
   if (isError) return <div>경기 정보를 불러오지 못했어요.</div>;
 
   return (

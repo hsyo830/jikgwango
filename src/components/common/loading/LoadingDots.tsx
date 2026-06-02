@@ -1,4 +1,8 @@
-export const WeatherLoading = () => {
+type LoadingDotsProps = {
+  message: string;
+};
+
+export const LoadingDots = ({ message }: LoadingDotsProps) => {
   return (
     <div className="flex h-50 w-full flex-col items-center justify-center">
       <>
@@ -9,7 +13,7 @@ export const WeatherLoading = () => {
         </div>
         <div className="text-warning p-2.5">
           <div>
-            <span className="mr-2">날씨 정보를 불러오고 있어요</span>
+            <span className="mr-2">{message}</span>
             <span className="animate-[ping_1.5s_0.5s_ease-in-out_infinite]">.</span>
             <span className="animate-[ping_1.5s_0.7s_ease-in-out_infinite]">.</span>
             <span className="animate-[ping_1.5s_0.9s_ease-in-out_infinite]">.</span>
