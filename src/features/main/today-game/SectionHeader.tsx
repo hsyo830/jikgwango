@@ -7,7 +7,8 @@ type SectionHeaderProps = {
 };
 
 const SectionHeader = ({ games }: SectionHeaderProps) => {
-  const gameListCount = games.length;
+  // const gameListCount = games.length;
+  const gameListCount = 5;
 
   return (
     <div className="mb-3 flex items-center justify-between">

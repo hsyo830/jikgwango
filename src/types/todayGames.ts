@@ -30,3 +30,10 @@ export type KboTodayGamesResponse = {
   dateDiff: number;
   gameList: KboGame[];
 };
+
+export type GameParams = {
+  gameDate: string;
+  leId: string;
+  srId: string;
+  headerCk: string;
+};

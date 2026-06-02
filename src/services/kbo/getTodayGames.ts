@@ -1,6 +1,10 @@
-import { todayGames } from "@/src/mocks/kbo/todayGames";
-import { KboTodayGamesResponse } from "@/src/types/todayGames";
+import axios from "axios";
 
-export const getTodayGames = async (): Promise<KboTodayGamesResponse> => {
-  return todayGames;
+import { INTERNAL_API_ENDPOINTS } from "@/src/constants/apiEndPoint";
+import { GameParams, KboTodayGamesResponse } from "@/src/types/todayGames";
+
+export const getTodayGames = async (params: GameParams): Promise<KboTodayGamesResponse> => {
+  const response = await axios.post(INTERNAL_API_ENDPOINTS.todayGames, params);
+
+  return response.data;
 };
