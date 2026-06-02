@@ -34,7 +34,7 @@ const StadiumTodayWeatherSlider = ({
             slidesPerView={4}
             breakpoints={{
               768: {
-                slidesPerView: 2.2,
+                slidesPerView: 2,
                 spaceBetween: 10,
               },
               1024: {
@@ -69,7 +69,7 @@ const StadiumTodayWeatherSlider = ({
       </div>
       <div className="flex gap-2 overflow-scroll md:hidden">
         {stadiumData.map((stadium) => (
-          <div key={stadium.id} className="w-100 shrink-0">
+          <div key={stadium.id} className="w-60 shrink-0">
             <StadiumWeatherCard stadiumData={stadium} gamesData={gamesData} />
           </div>
         ))}

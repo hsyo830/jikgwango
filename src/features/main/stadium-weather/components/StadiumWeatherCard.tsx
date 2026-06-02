@@ -17,6 +17,8 @@ type StadiumWeatherCardProps = {
   gamesData: KboGame[];
 };
 const StadiumWeatherCard = ({ stadiumData, gamesData }: StadiumWeatherCardProps) => {
+  const gameData = gamesData.find((game) => game.stadiumFullName === stadiumData.name);
+
   const { base_date, base_time } = getWeatherBaseDateTime();
 
   const { data, isLoading, isError } = useStadiumWeather({
@@ -29,8 +31,6 @@ const StadiumWeatherCard = ({ stadiumData, gamesData }: StadiumWeatherCardProps)
 
   if (isLoading) return <LoadingDots message={"날씨 정보를 불러오고 있어요"} />;
   if (isError || !data) return <NoResult message="날씨 정보를 불러오지 못했습니다." />;
-
-  const gameData = gamesData.find((game) => game.stadiumFullName === stadiumData.name);
 
   const homeTeamLogo = gameData ? KBO_TEAMS[gameData.homeCode] : undefined;
 
@@ -54,19 +54,19 @@ const StadiumWeatherCard = ({ stadiumData, gamesData }: StadiumWeatherCardProps)
             />
           </div>
         </div>
-        <div className="flex md:flex-col md:gap-4">
-          <div className="border-border flex justify-center gap-2 border-r pr-2 md:gap-10 md:border-r-0 md:border-b md:pr-0 md:pb-4">
-            <div className="relative h-10 w-10 md:h-15 md:w-15">
+        <div className="flex flex-col md:gap-4">
+          <div className="border-border flex justify-center gap-10 border-b pb-4">
+            <div className="relative h-13 w-13 md:h-15 md:w-15">
               <Image src={data.current.icon} alt={data.current.weatherText} fill sizes="40px" />
             </div>
             <div className="flex flex-col">
-              <p className="text-xl font-bold md:text-4xl">{data.current.temperature}°C</p>
+              <p className="text-2xl font-bold md:text-4xl">{data.current.temperature}°C</p>
               <p className="text-muted pl-0.5 text-xs font-bold md:text-sm">
                 {data.current.weatherText}
               </p>
             </div>
           </div>
-          <div className="w-full">
+          <div className="mt-3 w-full">
             <dl className="divide-border flex w-full divide-x">
               <div className="flex flex-1 items-center justify-center text-xs md:gap-1 md:text-sm">
                 <TemperatureIcon className="size-5 md:size-7" />
@@ -90,7 +90,6 @@ const StadiumWeatherCard = ({ stadiumData, gamesData }: StadiumWeatherCardProps)
                 </div>
               </div>
             </dl>
-            <div className="bg-primary-soft mx-2 mt-1 h-10 w-full rounded-md md:mx-0 md:mt-3" />
           </div>
         </div>
       </li>
