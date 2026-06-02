@@ -2929,6 +2929,7 @@ export const foodBooths: FoodBooth[] = [
     location: "중앙~3루 2층",
     name: "메가닭꼬치",
     menuCategory: "dessert",
+    imageUrl: "/image/food-booth/suwon/megedakggochi.webp",
   },
   {
     id: "suwon-central-3ru-2f-02",
@@ -2948,6 +2949,7 @@ export const foodBooths: FoodBooth[] = [
     location: "중앙~3루 2층",
     name: "본수원갈비",
     menuCategory: "korean",
+    imageUrl: "/image/food-booth/suwon/bonsuwongalbi.webp",
   },
   {
     id: "suwon-central-3ru-2f-04",
@@ -2955,8 +2957,9 @@ export const foodBooths: FoodBooth[] = [
     stadiumName: "수원 KT위즈파크",
     locationCategory: "중앙~3루",
     location: "중앙~3루 2층",
-    name: "카츠마마",
+    name: "카츄마마",
     menuCategory: "restaurant",
+    imageUrl: "/image/food-booth/gocheok/cachumama.webp",
   },
   {
     id: "suwon-central-3ru-2f-05",
@@ -2976,6 +2979,7 @@ export const foodBooths: FoodBooth[] = [
     location: "중앙~3루 2층",
     name: "팝스마일 팝콘",
     menuCategory: "dessert",
+    imageUrl: "/image/food-booth/suwon/popsmilepopcorn.webp",
   },
   {
     id: "suwon-central-3ru-2f-07",
@@ -2983,8 +2987,9 @@ export const foodBooths: FoodBooth[] = [
     stadiumName: "수원 KT위즈파크",
     locationCategory: "중앙~3루",
     location: "중앙~3루 2층",
-    name: "정지영커피",
+    name: "정지영커피로스터즈",
     menuCategory: "cafe",
+    imageUrl: "/image/food-booth/suwon/jeongjiyoungcoffeeroasters.webp",
   },
   {
     id: "suwon-central-3ru-2f-08",
@@ -2994,6 +2999,7 @@ export const foodBooths: FoodBooth[] = [
     location: "중앙~3루 2층",
     name: "진미통닭",
     menuCategory: "chicken",
+    imageUrl: "/image/food-booth/suwon/jinmitongdak.webp",
   },
 
   {
@@ -3032,8 +3038,9 @@ export const foodBooths: FoodBooth[] = [
     stadiumName: "수원 KT위즈파크",
     locationCategory: "중앙~1루",
     location: "중앙~1루 2층",
-    name: "츄러스",
+    name: "스트릿츄러스",
     menuCategory: "dessert",
+    imageUrl: "/image/food-booth/daegu/streetchurros.webp",
   },
   {
     id: "suwon-central-1ru-2f-05",
@@ -3043,6 +3050,7 @@ export const foodBooths: FoodBooth[] = [
     location: "중앙~1루 2층",
     name: "아사히, 기린",
     menuCategory: "alcohol",
+    imageUrl: "/image/food-booth/suwon/asahi.webp",
   },
   {
     id: "suwon-central-1ru-2f-06",
@@ -3052,6 +3060,7 @@ export const foodBooths: FoodBooth[] = [
     location: "중앙~1루 2층",
     name: "오늘의초밥",
     menuCategory: "restaurant",
+    imageUrl: "/image/food-booth/suwon/oneuluichobap.webp",
   },
   {
     id: "suwon-central-1ru-2f-07",
@@ -3071,6 +3080,7 @@ export const foodBooths: FoodBooth[] = [
     location: "중앙~1루 2층",
     name: "윅스터",
     menuCategory: "restaurant",
+    imageUrl: "/image/food-booth/suwon/wokster.webp",
   },
   {
     id: "suwon-central-1ru-2f-09",
@@ -3078,8 +3088,9 @@ export const foodBooths: FoodBooth[] = [
     stadiumName: "수원 KT위즈파크",
     locationCategory: "중앙~1루",
     location: "중앙~1루 2층",
-    name: "토리메로",
+    name: "이자카야 토리메로",
     menuCategory: "restaurant",
+    imageUrl: "/image/food-booth/suwon/torimero.webp",
   },
 
   {
@@ -3127,8 +3138,9 @@ export const foodBooths: FoodBooth[] = [
     stadiumName: "수원 KT위즈파크",
     locationCategory: "5층",
     location: "5층",
-    name: "양꼬치, 샤라다",
+    name: "뉴욕양꼬치/쏘쏘사라다",
     menuCategory: "dessert",
+    imageUrl: "/image/food-booth/suwon/ssossosarada.webp",
   },
   {
     id: "suwon-camping-5f-01",
@@ -3169,6 +3181,7 @@ export const foodBooths: FoodBooth[] = [
     location: "1루 2층",
     name: "끼부리또",
     menuCategory: "restaurant",
+    imageUrl: "/image/food-booth/suwon/kkiburito.webp",
   },
   {
     id: "suwon-1ru-2f-02",
@@ -3189,15 +3202,6 @@ export const foodBooths: FoodBooth[] = [
     menuCategory: "alcohol",
   },
   {
-    id: "suwon-naeya-1ru-2f-01",
-    stadiumId: "suwon",
-    stadiumName: "수원 KT위즈파크",
-    locationCategory: "내야 1루",
-    location: "1루 2층",
-    name: "또리펍",
-    menuCategory: "alcohol",
-  },
-  {
     id: "suwon-1ru-2f-04",
     stadiumId: "suwon",
     stadiumName: "수원 KT위즈파크",
@@ -3205,6 +3209,7 @@ export const foodBooths: FoodBooth[] = [
     location: "1루 2층",
     name: "롯데리아",
     menuCategory: "burger",
+    imageUrl: "/image/food-booth/suwon/lotteria.webp",
   },
   {
     id: "suwon-1ru-2f-05",
@@ -3243,6 +3248,7 @@ export const foodBooths: FoodBooth[] = [
     location: "1루 2층",
     name: "이대로 통삼겹",
     menuCategory: "korean",
+    imageUrl: "/image/food-booth/incheon/munhakchulpan.webp",
   },
   {
     id: "suwon-1ru-2f-08",
@@ -3263,6 +3269,7 @@ export const foodBooths: FoodBooth[] = [
     location: "3루 2층",
     name: "땅땅강정",
     menuCategory: "chicken",
+    imageUrl: "/image/food-booth/busan/darkgangjung.webp",
   },
   {
     id: "suwon-3ru-2f-02",
@@ -3309,6 +3316,7 @@ export const foodBooths: FoodBooth[] = [
     location: "3루 2층",
     name: "샐러리아",
     menuCategory: "restaurant",
+    imageUrl: "/image/food-booth/suwon/saelleoria.webp",
   },
   {
     id: "suwon-3ru-2f-06",
@@ -3347,7 +3355,8 @@ export const foodBooths: FoodBooth[] = [
     locationCategory: "3루",
     location: "3루 2층",
     name: "작은동경",
-    menuCategory: "restaurant",
+    menuCategory: "dessert",
+    imageUrl: "/image/food-booth/suwon/jageundonggyeong.webp",
   },
 
   // 창원 NC파크
@@ -3428,6 +3437,7 @@ export const foodBooths: FoodBooth[] = [
     location: "3루 1층",
     name: "코아양과",
     menuCategory: "dessert",
+    imageUrl: "/image/food-booth/changwon/koayanggwa.webp",
   },
   {
     id: "changwon-3ru-1f-09",
@@ -3497,7 +3507,7 @@ export const foodBooths: FoodBooth[] = [
     locationCategory: "2층",
     location: "2층",
     name: "공룡상회",
-    menuCategory: "convenienceStore",
+    menuCategory: "alcohol",
   },
   {
     id: "changwon-2f-03",
@@ -3527,6 +3537,7 @@ export const foodBooths: FoodBooth[] = [
     location: "2층",
     name: "버터구이오징어",
     menuCategory: "dessert",
+    imageUrl: "/image/food-booth/changwon/beoteoguiojingeo.webp",
   },
 
   {
@@ -3547,6 +3558,7 @@ export const foodBooths: FoodBooth[] = [
     location: "외야",
     name: "만재네",
     menuCategory: "korean",
+    imageUrl: "/image/food-booth/incheon/munhakchulpan.webp",
   },
   {
     id: "changwon-oeya-03",
@@ -3595,6 +3607,7 @@ export const foodBooths: FoodBooth[] = [
     location: "외야",
     name: "요거트월드",
     menuCategory: "dessert",
+    imageUrl: "/image/food-booth/changwon/yogeoteuwoldeu.webp",
   },
 
   {
@@ -3605,6 +3618,7 @@ export const foodBooths: FoodBooth[] = [
     location: "1루 1층",
     name: "구슬아이스크림",
     menuCategory: "dessert",
+    imageUrl: "/image/food-booth/changwon/guseulaiseukeurim.webp",
   },
   {
     id: "changwon-1ru-1f-02",
@@ -3614,6 +3628,7 @@ export const foodBooths: FoodBooth[] = [
     location: "1루 1층",
     name: "만재네",
     menuCategory: "korean",
+    imageUrl: "/image/food-booth/incheon/munhakchulpan.webp",
   },
   {
     id: "changwon-1ru-1f-03",
@@ -3633,6 +3648,7 @@ export const foodBooths: FoodBooth[] = [
     location: "1루 1층",
     name: "버터구이오징어",
     menuCategory: "dessert",
+    imageUrl: "/image/food-booth/changwon/beoteoguiojingeo.webp",
   },
   {
     id: "changwon-1ru-1f-05",
@@ -3646,15 +3662,6 @@ export const foodBooths: FoodBooth[] = [
   },
   {
     id: "changwon-1ru-1f-06",
-    stadiumId: "changwon",
-    stadiumName: "창원 NC파크",
-    locationCategory: "1루",
-    location: "1루 1층",
-    name: "생맥주",
-    menuCategory: "alcohol",
-  },
-  {
-    id: "changwon-1ru-1f-07",
     stadiumId: "changwon",
     stadiumName: "창원 NC파크",
     locationCategory: "1루",
@@ -3708,6 +3715,7 @@ export const foodBooths: FoodBooth[] = [
     locationCategory: "1루",
     location: "1루 1층",
     name: "HABANERO",
-    menuCategory: "restaurant",
+    menuCategory: "dessert",
+    imageUrl: "/image/food-booth/changwon/habanero.webp",
   },
 ];
