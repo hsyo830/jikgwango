@@ -1,6 +1,7 @@
 "use client";
 
 import { LoadingDots } from "@/src/components/common/loading/LoadingDots";
+import NoResult from "@/src/components/common/NoResult";
 import { useTodayGame } from "@/src/hooks/queries/useTodayGameQuery";
 import { getTodayGameDate } from "@/src/utils/getTodayGameDate";
 
@@ -18,7 +19,12 @@ const TodayGameClient = () => {
   const games = data?.gameList ?? [];
 
   if (isLoading) return <LoadingDots message="경기 정보를 불러오고 있어요" />;
-  if (isError) return <div>경기 정보를 불러오지 못했어요.</div>;
+  if (isError)
+    return (
+      <div>
+        <NoResult message="경기 정보를 불러오지 못했습니다." />
+      </div>
+    );
 
   return (
     <>
