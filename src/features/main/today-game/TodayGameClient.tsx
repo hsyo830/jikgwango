@@ -19,12 +19,7 @@ const TodayGameClient = () => {
   const games = data?.gameList ?? [];
 
   if (isLoading) return <LoadingDots message="경기 정보를 불러오고 있어요" />;
-  if (isError)
-    return (
-      <div>
-        <NoResult message="경기 정보를 불러오지 못했습니다." />
-      </div>
-    );
+  if (isError) return <NoResult message="경기 정보를 불러오지 못했습니다." />;
 
   return (
     <>

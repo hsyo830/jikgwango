@@ -25,12 +25,7 @@ const StadiumWeather = ({ stadiumData }: StadiumWeatherProps) => {
   });
 
   if (isLoading) return <LoadingDots message={"날씨 정보를 불러오고 있어요"} />;
-  if (isError || !data)
-    return (
-      <div>
-        <NoResult message="날씨 정보를 불러오지 못했습니다." />
-      </div>
-    );
+  if (isError || !data) return <NoResult message="날씨 정보를 불러오지 못했습니다." />;
 
   return (
     <section className="flex flex-col gap-3">
