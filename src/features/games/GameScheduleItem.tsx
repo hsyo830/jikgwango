@@ -11,7 +11,7 @@ type GameScheduleItemProps = {
 
 const GameScheduleItem = ({ gameData: todayGame }: GameScheduleItemProps) => {
   return (
-    <div className="flex flex-col gap-2 px-2 py-4 md:grid md:grid-cols-[140px_minmax(0,1fr)_135px] md:items-center md:py-5 lg:grid-cols-[170px_minmax(0,1fr)_190px] xl:grid-cols-[220px_minmax(0,1fr)_240px]">
+    <article className="flex flex-col gap-2 px-2 py-4 md:grid md:grid-cols-[140px_minmax(0,1fr)_135px] md:items-center md:py-5 lg:grid-cols-[170px_minmax(0,1fr)_190px] xl:grid-cols-[220px_minmax(0,1fr)_240px]">
       <div className="border-border flex min-w-0 flex-row items-center gap-2 text-sm md:flex-col md:items-start md:gap-1.5 md:border-r md:pr-4 lg:text-base">
         <div className="bg-primary-soft w-11 rounded-md text-center font-bold md:w-13 lg:w-15">
           {todayGame.gameTime.slice(0, 5)}
@@ -21,7 +21,7 @@ const GameScheduleItem = ({ gameData: todayGame }: GameScheduleItemProps) => {
 
       <div className="flex items-center md:contents">
         <div className="border-border flex min-w-0 flex-1 justify-center border-r md:px-4 lg:px-6">
-          <div className="grid w-full max-w-md grid-cols-[1fr_auto_1fr] items-center gap-x-2 md:gap-x-5">
+          <div className="grid w-full max-w-md grid-cols-[1fr_auto_1fr] items-center gap-x-2 md:gap-x-5 xl:gap-x-10">
             <div className="flex min-w-0 flex-col items-center gap-1 md:flex-row md:justify-end md:gap-2">
               <div className="relative h-10 w-10 shrink-0 md:order-2 md:h-13 md:w-13">
                 <Image
@@ -73,7 +73,7 @@ const GameScheduleItem = ({ gameData: todayGame }: GameScheduleItemProps) => {
                 className="object-contain"
               />
             </div>
-            <div className="text-xs font-semibold md:text-sm lg:text-base">24°C</div>
+            <span className="text-xs font-semibold md:text-sm lg:text-base">24°C</span>
           </div>
           <div className="shrink-0">
             {todayGame.cancelSc === 0 ? (
@@ -84,7 +84,7 @@ const GameScheduleItem = ({ gameData: todayGame }: GameScheduleItemProps) => {
           </div>
         </div>
       </div>
-    </div>
+    </article>
   );
 };
 
