@@ -39,7 +39,7 @@ const GameStatusBadge = ({ status, variant = "filled" }: GameStatusBadgeProps) =
           "rounded-md px-2 py-1 md:rounded-lg md:px-3 md:py-1.5",
           gameStatus.bgClass,
         ],
-        variant === "inline" && "p-0",
+        variant === "inline" && "p-0 lg:text-base",
       )}
     >
       {variant === "inline" && <Icon size={16} className={gameStatus.iconClass} />}
