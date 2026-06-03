@@ -2,7 +2,7 @@ import SectionCard from "@/src/components/common/SectionCard";
 
 import TodayGameClient from "./TodayGameClient";
 
-const TodayGameSection = async () => {
+const TodayGameSection = () => {
   return (
     <SectionCard className="w-full min-w-0 overflow-hidden">
       <TodayGameClient />
