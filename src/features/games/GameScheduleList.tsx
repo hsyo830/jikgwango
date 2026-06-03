@@ -4,7 +4,6 @@ import { LoadingDots } from "@/src/components/common/loading/LoadingDots";
 import NoResult from "@/src/components/common/NoResult";
 import SectionCard from "@/src/components/common/SectionCard";
 import { useTodayGame } from "@/src/hooks/queries/useTodayGameQuery";
-import { todayGames } from "@/src/mocks/kbo/todayGames";
 import { getTodayGameDate } from "@/src/utils/getTodayGameDate";
 
 import GameScheduleItem from "./GameScheduleItem";
