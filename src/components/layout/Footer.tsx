@@ -26,6 +26,15 @@ const Footer = () => {
           <p className="text-muted text-sm font-semibold md:text-base">
             전국 야구장 정보와 먹거리, 교통, 날씨 정보를 한곳에 모았습니다.
           </p>
+          <a
+            href="https://github.com/hsyo830/jikgwango"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-muted hover:text-primary mt-3 inline-flex items-center gap-1 text-sm font-semibold"
+          >
+            GitHub 바로가기
+            <span>↗</span>
+          </a>
         </div>
 
         <div className="border-border bg-background flex w-full flex-col gap-2 rounded-lg border px-3.5 py-3.5 md:w-125 md:flex-row md:items-center md:justify-center md:gap-5">
