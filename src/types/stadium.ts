@@ -7,6 +7,7 @@ export interface Stadium {
   teams: string[];
   logoUrl1: string;
   logoUrl2?: string;
+  stadiumImage: string;
   searchKeyword: string;
   kakaoPlaceName: string;
   address: string;
