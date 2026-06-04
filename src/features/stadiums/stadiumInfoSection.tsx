@@ -18,10 +18,10 @@ const StadiumInfoCard = ({ data }: StadiumInfoCardProps) => {
     <SectionCard className="flex flex-col items-center gap-4 md:flex-row md:gap-7 lg:gap-10">
       <div className="relative h-35 w-full shrink-0 overflow-hidden rounded-xl md:h-70 md:w-75 lg:h-70 lg:w-100 xl:h-75 xl:w-150">
         <Image
-          src={"/image/food-booth/placeholder-image.webp"}
+          src={data.stadiumImage}
           alt="구장 이미지"
           fill
-          sizes="(max-width: 768px) 140px, 300px"
+          sizes="(max-width: 768px) 100vw, (max-width: 1280px) 400px, 600px"
           className="object-cover"
         />
       </div>
