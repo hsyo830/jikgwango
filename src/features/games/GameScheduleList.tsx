@@ -21,6 +21,16 @@ const GameScheduleList = () => {
   if (isLoading) return <LoadingDots message="경기 정보를 불러오고 있어요" />;
   if (isError) return <NoResult message="경기 정보를 불러오지 못했습니다." />;
 
+  const NoGameToday = games.length === 0;
+
+  if (NoGameToday) {
+    return (
+      <SectionCard className="pt-20 pb-25 md:pt-25 md:pb-30">
+        <NoResult message="오늘 예정된 경기가 없습니다." />
+      </SectionCard>
+    );
+  }
+
   return (
     <SectionCard>
       <div className="divide-border divide-y">
