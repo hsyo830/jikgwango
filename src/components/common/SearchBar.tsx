@@ -1,18 +1,44 @@
 "use client";
 
+import { useRouter } from "next/navigation";
 import { useState } from "react";
+
+import { stadiums } from "@/src/data/stadiums";
 
 import SearchIcon from "../icons/SearchIcon";
 
 const SearchBar = () => {
   const [keyword, setKeyword] = useState("");
+  const router = useRouter();
 
   const handleChangeKeyword = (e: React.ChangeEvent<HTMLInputElement>) => {
     setKeyword(e.target.value);
   };
 
+  const handleSearchKeyword = () => {
+    const matched = stadiums.find((stadium) => stadium.searchKeywords.includes(keyword));
+
+    const matchedStadiumId = matched?.id;
+
+    if (matched) {
+      router.push(`stadiums?stadium=${matchedStadiumId}`);
+    }
+  };
+
+  const handleKeyDown = (e: React.KeyboardEvent<HTMLInputElement>) => {
+    if (e.key === "Enter") {
+      handleSearchKeyword();
+    }
+  };
+
   return (
-    <form className="border-input-border bg-input h-8 w-full rounded-[7px] border md:h-10 lg:h-11">
+    <form
+      onSubmit={(e) => {
+        e.preventDefault();
+        handleSearchKeyword();
+      }}
+      className="border-input-border bg-input h-8 w-full rounded-[7px] border md:h-10 lg:h-11"
+    >
       <div className="flex h-full min-w-0 items-center gap-2.5 px-2.5">
         <SearchIcon className="text-placeholder h-4 w-4 shrink-0" />
         <input
@@ -21,6 +47,7 @@ const SearchBar = () => {
           className="text-foreground placeholder:text-placeholder min-w-0 flex-1 bg-transparent text-sm outline-none focus:outline-none md:text-base"
           value={keyword}
           onChange={handleChangeKeyword}
+          onKeyDown={handleKeyDown}
         />
       </div>
     </form>
