@@ -11,6 +11,7 @@ export interface Stadium {
   searchKeyword: string;
   kakaoPlaceName: string;
   address: string;
+  searchKeywords: string[];
   transport: {
     subway: string;
     bus: string[];
