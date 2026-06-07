@@ -15,8 +15,8 @@ type StadiumInfoCardProps = {
 const StadiumInfoCard = ({ stadium }: StadiumInfoCardProps) => {
   return (
     <article className="w-full">
-      <SectionCard className="flex h-39 w-full min-w-0 gap-2 md:h-95 md:flex-col md:gap-5 lg:h-55 lg:flex-row lg:gap-2 xl:gap-3">
-        <div className="relative h-full w-28 shrink-0 overflow-hidden rounded-md bg-blue-500 md:h-40 md:w-full md:rounded-lg lg:h-full lg:w-36 lg:rounded-xl xl:w-40">
+      <SectionCard className="flex h-65 w-52 min-w-0 flex-col gap-2 md:h-95 md:w-full md:gap-5 lg:h-55 lg:flex-row lg:gap-2 xl:gap-3">
+        <div className="relative h-25 w-full shrink-0 overflow-hidden rounded-md bg-blue-500 md:h-40 md:rounded-lg lg:h-full lg:w-36 lg:rounded-xl xl:w-40">
           <Image
             src={stadium.stadiumImage}
             alt="구장 이미지"
@@ -26,19 +26,31 @@ const StadiumInfoCard = ({ stadium }: StadiumInfoCardProps) => {
           />
         </div>
         <div className="flex w-full flex-col justify-between gap-2">
-          <div className="flex flex-col gap-2">
+          <div className="flex flex-col gap-1 md:gap-2">
             <div className="flex items-center gap-1.5 md:gap-3 lg:gap-2">
               <p className="text-foreground text-[15px] font-semibold md:text-2xl lg:text-xl">
                 {stadium.name}
               </p>
               <p className="text-disabled text-sm md:text-lg lg:text-base">|</p>
               <div className="flex gap-2">
-                <div className="relative h-10 w-10 md:h-13 md:w-13 lg:h-10 lg:w-10 xl:h-12 xl:w-12">
-                  <Image src={stadium.logoUrl1} alt="팀 로고" fill />
+                <div className="relative h-9 w-9 md:h-13 md:w-13 lg:h-10 lg:w-10 xl:h-12 xl:w-12">
+                  <Image
+                    src={stadium.logoUrl1}
+                    alt="팀 로고"
+                    fill
+                    sizes="(max-width: 768px) 40px, (max-width: 1024px) 52px, 48px"
+                    className="object-contain"
+                  />
                 </div>
                 {stadium.logoUrl2 && (
                   <div className="relative h-auto w-10 opacity-30 md:w-13 lg:w-10 xl:w-12">
-                    <Image src={stadium.logoUrl2} alt="팀 로고" fill />
+                    <Image
+                      src={stadium.logoUrl2}
+                      alt="팀 로고"
+                      fill
+                      sizes="(max-width: 768px) 40px, (max-width: 1024px) 52px, 48px"
+                      className="object-contain"
+                    />
                   </div>
                 )}
               </div>

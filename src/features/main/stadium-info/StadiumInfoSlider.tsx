@@ -50,7 +50,7 @@ const StadiumInfoSlider = () => {
       </div>
       <div className="flex gap-2 overflow-scroll md:hidden">
         {stadiums.map((stadium) => (
-          <div key={stadium.id} className="w-100 shrink-0">
+          <div key={stadium.id} className="shrink-0">
             <StadiumInfoCard stadium={stadium} />
           </div>
         ))}
