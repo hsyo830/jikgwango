@@ -5,6 +5,7 @@ import "swiper/css";
 import { Autoplay, Navigation } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 
+import NoResult from "@/src/components/common/NoResult";
 import SwiperNavButton from "@/src/components/common/SwiperNavButton";
 import { Stadium } from "@/src/types/stadium";
 import { KboGame } from "@/src/types/todayGames";
@@ -20,6 +21,16 @@ const StadiumTodayWeatherSlider = ({
   todayStadiumWeather: stadiumData,
   gamesData,
 }: StadiumTodayWeatherSliderProps) => {
+  const NoGameToday = gamesData.length === 0;
+
+  if (NoGameToday) {
+    return (
+      <div className="md:mb-5 lg:mb-10">
+        <NoResult message="오늘 예정된 경기가 없어 날씨 정보를 제공하지 않습니다." />
+      </div>
+    );
+  }
+
   return (
     <section>
       <div className="mx-2 hidden md:block">

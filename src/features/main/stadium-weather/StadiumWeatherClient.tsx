@@ -16,13 +16,9 @@ const StadiumWeatherClient = () => {
 
   const games = data?.gameList ?? [];
 
-  console.log(games);
-
   const todayStadium = games.map((game) => game.stadiumFullName);
 
   const todayStadiumWeather = stadiums.filter((stadium) => todayStadium.includes(stadium.name));
-
-  console.log(todayStadium);
 
   const uniqueTodayStadiumWeather = todayStadiumWeather.filter(
     (stadium, index, array) => index === array.findIndex((item) => item.name === stadium.name),
