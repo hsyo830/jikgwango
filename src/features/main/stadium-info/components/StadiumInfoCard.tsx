@@ -16,12 +16,12 @@ const StadiumInfoCard = ({ stadium }: StadiumInfoCardProps) => {
   return (
     <article className="w-full">
       <SectionCard className="flex h-39 w-full min-w-0 gap-2 md:h-95 md:flex-col md:gap-5 lg:h-55 lg:flex-row lg:gap-2 xl:gap-3">
-        <div className="relative h-full w-28 shrink-0 rounded-lg bg-blue-500 md:h-40 md:w-full lg:h-full lg:w-36 xl:w-40">
+        <div className="relative h-full w-28 shrink-0 overflow-hidden rounded-md bg-blue-500 md:h-40 md:w-full md:rounded-lg lg:h-full lg:w-36 lg:rounded-xl xl:w-40">
           <Image
-            src={"/image/food-booth/placeholder-image.webp"}
+            src={stadium.stadiumImage}
             alt="구장 이미지"
             fill
-            sizes="(max-width: 768px) 140px, 300px"
+            sizes="(max-width: 768px) 100vw, (max-width: 1280px) 400px, 600px"
             className="object-cover"
           />
         </div>
