@@ -5,6 +5,7 @@ import "swiper/css";
 import { Autoplay } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 
+import NoResult from "@/src/components/common/NoResult";
 import { KboGame } from "@/src/types/todayGames";
 
 import GameCard from "./GameCard";
@@ -14,6 +15,8 @@ type TodayGameSliderProps = {
 };
 
 const TodayGameSlider = ({ games }: TodayGameSliderProps) => {
+  const NoGameToday = games.length === 0;
+
   return (
     <>
       {/* 모바일 */}
@@ -45,6 +48,11 @@ const TodayGameSlider = ({ games }: TodayGameSliderProps) => {
           ))}
         </Swiper>
       </div>
+      {NoGameToday && (
+        <div className="md:mb-5 lg:mb-10">
+          <NoResult message="오늘 예정된 경기가 없습니다." />
+        </div>
+      )}
     </>
   );
 };
