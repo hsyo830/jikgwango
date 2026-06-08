@@ -7,6 +7,7 @@ import NoResult from "@/src/components/common/NoResult";
 import GameStatusCheckIcon from "@/src/components/icons/GameStatusCheckIcon";
 import { useStadiumWeather } from "@/src/hooks/queries/useStadiumWeatherQuery";
 import { Stadium } from "@/src/types/stadium";
+import { getWeatherTipByRainProbability } from "@/src/utils/getWeatherTipByRainProbability";
 import { getWeatherBaseDateTime } from "@/src/utils/weatherTime";
 
 type StadiumWeatherProps = {
@@ -73,7 +74,7 @@ const StadiumWeather = ({ stadiumData }: StadiumWeatherProps) => {
 
       <p className="text-primary flex items-center gap-1.5 font-semibold">
         <GameStatusCheckIcon filled />
-        {data.message}
+        {getWeatherTipByRainProbability(data.current.rainProbability)}
       </p>
     </section>
   );
