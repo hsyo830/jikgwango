@@ -8,8 +8,8 @@ const StadiumFoodSection = () => {
   return (
     <SectionCard className="w-full">
       <SectionHeader />
-      <div className="w-full overflow-x-scroll">
-        <div className="flex w-220 gap-2 md:w-275 lg:w-full lg:gap-5">
+      <div className="w-full overflow-x-auto">
+        <div className="flex w-200 gap-2 md:w-275 lg:w-full lg:gap-5">
           <FoodCard food={foodBooths[0]} />
           <FoodCard food={foodBooths[65]} />
           <FoodCard food={foodBooths[94]} />
