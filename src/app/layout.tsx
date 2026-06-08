@@ -1,11 +1,14 @@
 import "./globals.css";
 
 import type { Metadata } from "next";
-import Script from "next/script";
+import { Geist } from "next/font/google";
 
+import { cn } from "@/src/lib/utils";
 import ReactQueryProvider from "@/src/providers/ReactQueryProvider";
 
 import { pretendard } from "../styles/fonts";
+
+const geist = Geist({ subsets: ["latin"], variable: "--font-sans" });
 
 export const metadata: Metadata = {
   metadataBase: new URL("http://localhost:3000"),
@@ -40,7 +43,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="ko" className={`${pretendard.variable} h-full`} suppressHydrationWarning>
+    <html
+      lang="ko"
+      className={cn("h-full", pretendard.variable, "font-sans", geist.variable)}
+      suppressHydrationWarning
+    >
       <body className="flex min-h-full flex-col font-sans antialiased">
         <ReactQueryProvider>{children}</ReactQueryProvider>
       </body>
