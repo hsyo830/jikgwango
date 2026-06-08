@@ -13,17 +13,21 @@ export const POST = async (request: NextRequest) => {
   formData.append("srId", body.srId);
   formData.append("headerCk", body.headerCk);
 
-  const response = await axios.post(KBO_API_ENDPOINTS.todayGames, formData.toString(), {
-    headers: {
-      "Content-Type": "application/x-www-form-urlencoded; charset=UTF-8",
-      "X-Requested-With": "XMLHttpRequest",
-      Referer: KBO_API_ENDPOINTS.schedulePage,
-      "User-Agent": "Mozilla/5.0",
-    },
-    responseType: "text",
-  });
+  try {
+    const response = await axios.post(KBO_API_ENDPOINTS.todayGames, formData.toString(), {
+      headers: {
+        "Content-Type": "application/x-www-form-urlencoded; charset=UTF-8",
+        "X-Requested-With": "XMLHttpRequest",
+        Referer: KBO_API_ENDPOINTS.schedulePage,
+        "User-Agent": "Mozilla/5.0",
+      },
+      responseType: "text",
+    });
 
-  const data = JSON.parse(response.data);
+    const data = JSON.parse(response.data);
 
-  return NextResponse.json(data);
+    return NextResponse.json(data);
+  } catch {
+    return NextResponse.json({ error: "경기 데이터를 불러오지 못했습니다." }, { status: 500 });
+  }
 };
