@@ -78,8 +78,8 @@ const StadiumWeatherCard = ({ stadiumData, gamesData }: StadiumWeatherCardProps)
               <div className="flex flex-1 items-center justify-center text-xs md:gap-1 md:text-sm">
                 <UmbrellaIcon className="size-5 md:size-7" />
                 <div>
-                  <dt className="font-semibold whitespace-nowrap">강수확률</dt>
-                  <dd className="text-muted font-semibold">{data.current.rainProbability}%</dd>
+                  <dt className="font-semibold whitespace-nowrap">강수량</dt>
+                  <dd className="text-muted font-semibold">{data.current.rainAmount}mm</dd>
                 </div>
               </div>
               <div className="flex flex-1 items-center justify-center gap-0.5 text-xs md:gap-1 md:text-sm">

@@ -61,9 +61,6 @@ export const formatWeatherData = (items: WeatherItem[]) => {
   const humidity = Number(currentData?.REH);
   const temperature = first?.temperature;
 
-  console.log("RN1 raw value:", currentData?.RN1);
-  console.log("RN1 type:", typeof currentData?.RN1);
-
   return {
     current: {
       temperature,
