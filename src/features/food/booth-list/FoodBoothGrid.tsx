@@ -18,7 +18,7 @@ type FoodBoothGridProps = {
 const FoodBoothGrid = ({ filteredFoodBoothData }: FoodBoothGridProps) => {
   const [currentPage, setCurrentPage] = useState(1);
 
-  const pageSize = 8;
+  const pageSize = 6;
 
   const startIndex = (currentPage - 1) * pageSize;
   const endIndex = startIndex + pageSize;
@@ -28,7 +28,7 @@ const FoodBoothGrid = ({ filteredFoodBoothData }: FoodBoothGridProps) => {
 
   return (
     <section className="w-full">
-      <ul className="grid grid-cols-1 gap-3 md:grid-cols-2 lg:mb-5 lg:grid-cols-3 xl:gap-5 2xl:grid-cols-4">
+      <ul className="grid grid-cols-1 gap-3 md:grid-cols-2 lg:mb-5 lg:grid-cols-3 xl:gap-5">
         {paginatedFoodBooths.map((booth, index) => (
           <li key={booth.id} className="min-w-0">
             <FoodCard food={booth} variant="foodPage" index={index} />
