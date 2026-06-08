@@ -39,7 +39,7 @@ const SearchBar = () => {
           e.preventDefault();
           handleSearchKeyword();
         }}
-        className="border-input-border bg-input h-8 w-full rounded-[7px] border md:h-10 lg:h-11"
+        className="border-input-border bg-input h-9 w-full rounded-[7px] border md:h-10 lg:h-11"
       >
         <div className="flex h-full min-w-0 items-center gap-2.5 px-2.5">
           <SearchIcon className="text-placeholder h-4 w-4 shrink-0" />
