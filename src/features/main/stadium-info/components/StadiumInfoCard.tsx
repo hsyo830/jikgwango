@@ -16,7 +16,7 @@ const StadiumInfoCard = ({ stadium }: StadiumInfoCardProps) => {
   return (
     <article className="w-full">
       <SectionCard className="flex h-65 w-52 min-w-0 flex-col gap-2 md:h-95 md:w-full md:gap-5 lg:h-55 lg:flex-row lg:gap-2 xl:gap-3">
-        <div className="relative h-25 w-full shrink-0 overflow-hidden rounded-md bg-blue-500 md:h-40 md:rounded-lg lg:h-full lg:w-36 lg:rounded-xl xl:w-40">
+        <div className="bg-surface-2 relative h-25 w-full shrink-0 overflow-hidden rounded-md md:h-40 md:rounded-lg lg:h-full lg:w-36 lg:rounded-xl xl:w-40">
           <Image
             src={stadium.stadiumImage}
             alt="구장 이미지"
