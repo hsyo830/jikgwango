@@ -8,16 +8,13 @@ const StadiumFoodSection = () => {
   return (
     <SectionCard className="w-full">
       <SectionHeader />
-      <div className="flex gap-2 lg:hidden lg:gap-5">
-        <FoodCard food={foodBooths[0]} />
-        <FoodCard food={foodBooths[65]} />
-        <FoodCard food={foodBooths[94]} />
-      </div>
-      <div className="hidden gap-2 lg:flex lg:gap-5">
-        <FoodCard food={foodBooths[0]} />
-        <FoodCard food={foodBooths[65]} />
-        <FoodCard food={foodBooths[94]} />
-        <FoodCard food={foodBooths[195]} />
+      <div className="w-full overflow-x-scroll">
+        <div className="flex w-220 gap-2 md:w-275 lg:w-full lg:gap-5">
+          <FoodCard food={foodBooths[0]} />
+          <FoodCard food={foodBooths[65]} />
+          <FoodCard food={foodBooths[94]} />
+          <FoodCard food={foodBooths[195]} />
+        </div>
       </div>
     </SectionCard>
   );
