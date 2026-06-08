@@ -13,9 +13,10 @@ type FoodProps = {
   food: FoodBooth;
   variant?: "main" | "foodPage";
   index?: number;
+  priority?: boolean;
 };
 
-const FoodCard = ({ food, variant = "main", index }: FoodProps) => {
+const FoodCard = ({ food, variant = "main", index, priority }: FoodProps) => {
   const foodCategory = getFoodCategory(food.menuCategory);
 
   return (
@@ -39,7 +40,7 @@ const FoodCard = ({ food, variant = "main", index }: FoodProps) => {
           fill
           sizes="(max-width: 768px) 140px, 300px"
           className="object-cover"
-          priority={index === 0}
+          priority={priority || index === 0}
         />
       </div>
       <div className="flex min-w-0 flex-1 flex-col justify-start gap-0.5 px-2 pt-2 md:w-full md:justify-center md:gap-0 md:px-4 md:pt-0">

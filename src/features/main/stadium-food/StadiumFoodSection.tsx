@@ -10,7 +10,7 @@ const StadiumFoodSection = () => {
       <SectionHeader />
       <div className="w-full overflow-x-auto">
         <div className="flex w-200 gap-2 md:w-275 lg:w-full lg:gap-5">
-          <FoodCard food={foodBooths[0]} />
+          <FoodCard food={foodBooths[0]} priority />
           <FoodCard food={foodBooths[65]} />
           <FoodCard food={foodBooths[94]} />
           <FoodCard food={foodBooths[195]} />
