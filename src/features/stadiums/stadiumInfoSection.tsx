@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 import Button from "@/src/components/common/Button";
+import { LoadingCard } from "@/src/components/common/loading/LoadingCard";
 import SectionCard from "@/src/components/common/SectionCard";
 import LinkArrowIcon from "@/src/components/icons/stadiumInfo/LinkArrowIcon";
 import LocationIcon from "@/src/components/icons/stadiumInfo/LocationIcon";
@@ -17,6 +18,7 @@ const StadiumInfoCard = ({ data }: StadiumInfoCardProps) => {
   return (
     <SectionCard className="flex flex-col items-center gap-4 md:flex-row md:gap-7 lg:gap-10">
       <div className="bg-surface-2 relative h-35 w-full shrink-0 overflow-hidden rounded-xl md:h-70 md:w-75 lg:h-70 lg:w-100 xl:h-75 xl:w-150">
+        <LoadingCard />
         <Image
           src={data.stadiumImage}
           alt="구장 이미지"
