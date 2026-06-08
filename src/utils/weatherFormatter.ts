@@ -22,6 +22,10 @@ type WeatherItem = {
   fcstValue: string;
 };
 
+const calcFeelsLike = (temp: number, humidity: number) => {
+  return Math.round(temp - (100 - humidity) / 5);
+};
+
 export const formatWeatherData = (items: WeatherItem[]) => {
   const groupedByTime = items.reduce(
     (acc, item) => {
@@ -53,18 +57,24 @@ export const formatWeatherData = (items: WeatherItem[]) => {
     });
 
   const first = hourly[0];
+  const currentData = Object.values(groupedByTime)[0];
+  const humidity = Number(currentData?.REH);
+  const temperature = first?.temperature;
+
+  console.log("RN1 raw value:", currentData?.RN1);
+  console.log("RN1 type:", typeof currentData?.RN1);
 
   return {
     current: {
-      temperature: first?.temperature,
+      temperature,
       weatherText: first?.weatherText,
-      feelsLike: first?.temperature + 1,
-      humidity: Number(Object.values(groupedByTime)[0]?.REH),
-      windSpeed: Number(Object.values(groupedByTime)[0]?.WSD),
-      rainProbability: 20,
+      feelsLike: calcFeelsLike(temperature, humidity),
+      humidity,
+      windSpeed: Number(currentData?.WSD),
+      rainAmount: currentData?.RN1 === "강수없음" ? 0 : Number(currentData?.RN1),
+      pty: currentData?.PTY ?? "0",
       icon: first.icon,
     },
     hourly,
-    message: "우산을 챙기면 좋아요! 가벼운 바람이 불어요.",
   };
 };
