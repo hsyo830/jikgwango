@@ -6,7 +6,7 @@ type LogoProps = {
 
 export default function Logo({ mobileHeader }: LogoProps) {
   return (
-    <div className={`font-vitro ${mobileHeader ? "text-[20px] md:text-[35px]" : "text-[40px]"}`}>
+    <div className={`font-vitro ${mobileHeader ? "text-2xl md:text-[35px]" : "text-[40px]"}`}>
       <Link href="/">
         <span className={` ${mobileHeader ?? "text-inverse"}`}>직관</span>
         <span className="text-brand">GO</span>
