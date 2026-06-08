@@ -72,7 +72,7 @@ const StadiumWeather = ({ stadiumData }: StadiumWeatherProps) => {
         ))}
       </div>
 
-      <p className="text-primary flex items-center gap-1.5 font-semibold">
+      <p className="text-primary flex gap-1.5 font-semibold">
         <GameStatusCheckIcon filled />
         {getWeatherTipByRainProbability(data.current.rainProbability)}
       </p>
