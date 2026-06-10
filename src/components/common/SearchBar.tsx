@@ -45,7 +45,7 @@ const SearchBar = () => {
           <SearchIcon className="text-placeholder h-4 w-4 shrink-0" />
           <input
             type="search"
-            placeholder="원하는 팀의 정보를 검색해보세요."
+            placeholder="팀 이름으로 구장을 찾아보세요."
             className="text-foreground placeholder:text-placeholder min-w-0 flex-1 bg-transparent text-sm outline-none focus:outline-none md:text-base"
             value={keyword}
             onChange={handleChangeKeyword}
