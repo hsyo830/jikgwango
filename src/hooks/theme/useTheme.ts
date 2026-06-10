@@ -3,16 +3,21 @@
 import { useEffect, useState } from "react";
 
 const useTheme = () => {
-  const [theme, setTheme] = useState<"light" | "dark">(() => {
-    if (typeof window === "undefined") return "light";
-    const stored = localStorage.getItem("theme");
-    if (stored === "dark" || stored === "light") return stored;
-    return "light";
-  });
+  const [theme, setTheme] = useState<"light" | "dark">("light");
+  const [mounted, setMounted] = useState(false);
 
   const handleTheme = () => {
     setTheme((prev) => (prev === "light" ? "dark" : "light"));
   };
+
+  useEffect(() => {
+    const stored = localStorage.getItem("theme");
+    if (stored === "dark" || stored === "light") {
+      // eslint-disable-next-line react-hooks/set-state-in-effect
+      setTheme(stored);
+    }
+    setMounted(true);
+  }, []);
 
   useEffect(() => {
     if (theme === "dark") {
@@ -23,7 +28,7 @@ const useTheme = () => {
     localStorage.setItem("theme", theme);
   }, [theme]);
 
-  return { theme, handleTheme };
+  return { theme, handleTheme, mounted };
 };
 
 export default useTheme;

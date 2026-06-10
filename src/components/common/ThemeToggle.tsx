@@ -5,7 +5,10 @@ import "./ThemeToggle.css";
 import useTheme from "@/src/hooks/theme/useTheme";
 
 const ThemeToggle = () => {
-  const { theme, handleTheme } = useTheme();
+  const { theme, handleTheme, mounted } = useTheme();
+
+  if (!mounted) return null;
+
   return (
     <label className="switch">
       <span className="sun">
