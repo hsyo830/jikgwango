@@ -12,7 +12,7 @@ export default function MainPage() {
         title="야구 직관 정보를 한눈에!"
         intro="오늘의 경기, 구장 정보와 맛있는 음식 부스까지 한 번에 확인하세요."
       />
-      <div className="mx-2.5 -mt-6 flex flex-col gap-5 md:mx-0 md:-mt-3 md:px-8.25 lg:-mt-10 xl:-mt-15">
+      <div className="mx-2.5 -mt-6 flex flex-col gap-5 md:mx-0 md:-mt-3 md:px-8.25 lg:-mt-4 xl:-mt-15">
         <TodayGameSection />
         <StadiumFoodSection />
         <StadiumTodayWeatherSection />

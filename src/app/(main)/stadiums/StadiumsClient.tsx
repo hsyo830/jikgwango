@@ -30,7 +30,7 @@ const StadiumsClient = ({ stadiumData }: StadiumsClientProps) => {
   };
 
   return (
-    <div className="mx-2.5 -mt-6 flex flex-col gap-5 md:mx-0 md:-mt-3 md:px-8.25 lg:-mt-10 xl:-mt-15">
+    <div className="mx-2.5 -mt-6 flex flex-col gap-5 md:mx-0 md:-mt-3 md:px-8.25 lg:-mt-4 xl:-mt-15">
       <StadiumFilterBadgeList
         selectedStadiumId={selectedStadiumId}
         onSelectedStadiumId={handleSelectStadium}
