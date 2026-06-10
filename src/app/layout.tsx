@@ -2,6 +2,7 @@ import "./globals.css";
 
 import type { Metadata } from "next";
 import { Geist } from "next/font/google";
+import Script from "next/script";
 
 import { cn } from "@/src/lib/utils";
 import ReactQueryProvider from "@/src/providers/ReactQueryProvider";
@@ -48,6 +49,16 @@ export default function RootLayout({
       className={cn("h-full", pretendard.variable, "font-sans", geist.variable)}
       suppressHydrationWarning
     >
+      <head>
+        <Script id="theme-init" strategy="beforeInteractive">{`
+      try {
+        const theme = localStorage.getItem('theme');
+        if (theme === 'dark') {
+          document.documentElement.classList.add('dark');
+        }
+      } catch(e) {}
+    `}</Script>
+      </head>
       <body className="flex min-h-full flex-col font-sans antialiased">
         <ReactQueryProvider>{children}</ReactQueryProvider>
       </body>

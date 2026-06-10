@@ -1,6 +1,11 @@
+"use client";
+
 import "./ThemeToggle.css";
 
+import useTheme from "@/src/hooks/theme/useTheme";
+
 const ThemeToggle = () => {
+  const { theme, handleTheme } = useTheme();
   return (
     <label className="switch">
       <span className="sun">
@@ -18,7 +23,7 @@ const ThemeToggle = () => {
         </svg>
       </span>
 
-      <input type="checkbox" className="input" />
+      <input type="checkbox" className="input" onChange={handleTheme} checked={theme === "dark"} />
       <span className="slider" />
     </label>
   );

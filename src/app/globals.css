@@ -108,11 +108,14 @@
   --sidebar-accent-foreground: oklch(0.205 0 0);
   --sidebar-border: oklch(0.922 0 0);
   --sidebar-ring: oklch(0.708 0 0);
+
+  /* 배경 이미지 */
+  --hero-bg: url("/image/hero/PageHeroLightGR.png");
 }
 
 .dark {
   /* 배경 레이어 */
-  --color-bg: #081a2d; /* 페이지 전체 배경 */
+  --color-bg: #050f23; /* 페이지 전체 배경 */
   --color-surface: #0d243d; /* 카드, 패널 배경 */
   --color-surface-2: #122b46; /* 중첩 카드, 보조 섹션, hover 배경 */
 
@@ -203,6 +206,9 @@
   --sidebar-accent-foreground: oklch(0.985 0 0);
   --sidebar-border: oklch(1 0 0 / 10%);
   --sidebar-ring: oklch(0.556 0 0);
+
+  /* 배경 이미지 */
+  --hero-bg: url("/image/hero/PageHeroNight.png");
 }
 
 /* CSS 변수를 Tailwind 유틸리티 이름으로 연결 */
