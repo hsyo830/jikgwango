@@ -10,7 +10,7 @@ const SwiperNavButton = ({ direction, className = "" }: SwiperNavButtonProps) =>
     <button
       type="button"
       aria-label={isPrev ? "이전 버튼" : "다음 버튼"}
-      className={`${className} group hover:border-brand hover:text-brand active:border-brand active:text-brand active:bg-warning-soft absolute top-1/2 z-10 flex h-9 w-9 -translate-y-1/2 cursor-pointer items-center justify-center rounded-full border border-[#b6c2d3] bg-white text-[#b6c2d3] shadow-md transition-colors`}
+      className={`${className} group hover:border-brand hover:text-brand active:border-brand active:text-brand active:bg-warning-soft border-muted text-muted bg-surface absolute top-1/2 z-10 flex h-9 w-9 -translate-y-1/2 cursor-pointer items-center justify-center rounded-full border shadow-md transition-colors`}
     >
       <svg
         viewBox="0 0 24 24"
