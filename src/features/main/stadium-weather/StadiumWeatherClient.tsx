@@ -21,8 +21,13 @@ const StadiumWeatherClient = () => {
   const todayStadiumWeather = stadiums.filter((stadium) => todayStadium.includes(stadium.name));
 
   const uniqueTodayStadiumWeather = todayStadiumWeather.filter(
-    (stadium, index, array) => index === array.findIndex((item) => item.name === stadium.name),
+    (stadium, index, array) =>
+      index === array.findIndex((item) => item.stadiumId === stadium.stadiumId),
   );
+
+  console.log("todayStadium", todayStadium);
+  console.log("todayStadiumWeather", todayStadiumWeather);
+  console.log("unique", uniqueTodayStadiumWeather);
 
   return (
     <section className="w-full">

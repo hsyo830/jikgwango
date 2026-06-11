@@ -170,7 +170,7 @@ export const stadiums: Stadium[] = [
   {
     id: "daejeon",
     stadiumId: "daejeon",
-    name: "대전한화생명볼파크",
+    name: "대전 한화생명 볼파크",
     teams: ["한화"],
     logoUrl1: "/image/team-logo/hanwha-logo.svg",
     stadiumImage: "/image/stadiums/daejeon-stadium.webp",
