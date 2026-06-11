@@ -24,7 +24,7 @@ const TodayGameSlider = ({ games }: TodayGameSliderProps) => {
       {/* 모바일 */}
       <div className="flex w-full gap-2 overflow-x-auto md:hidden">
         {games.map((game) => (
-          <div key={game.gameId} className="w-35 shrink-0 md:w-70">
+          <div key={game.gameId} className="w-47 shrink-0 md:w-70">
             <GameCard game={game} />
           </div>
         ))}

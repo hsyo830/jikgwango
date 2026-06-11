@@ -33,10 +33,10 @@ const GameStatusBadge = ({ status, variant = "filled" }: GameStatusBadgeProps) =
   return (
     <div
       className={cn(
-        "inline-flex items-center gap-1.5 text-xs font-semibold md:text-sm",
+        "inline-flex shrink-0 items-center gap-1.5 text-xs font-semibold md:text-sm",
         gameStatus.textClass,
         variant === "filled" && [
-          "rounded-md px-2 py-1 md:rounded-lg md:px-3 md:py-1.5",
+          "rounded-md px-2 py-1 md:rounded-sm md:px-3 md:py-1.5",
           gameStatus.bgClass,
         ],
         variant === "inline" && "p-0 lg:text-base",
