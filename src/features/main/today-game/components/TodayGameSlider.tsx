@@ -37,7 +37,7 @@ const TodayGameSlider = ({ games }: TodayGameSliderProps) => {
           modules={[Autoplay]}
           slidesPerView={SLIDES_PER_VIEW}
           spaceBetween={20}
-          loop={games.length >= SLIDES_PER_VIEW * 2}
+          loop={games.length >= SLIDES_PER_VIEW}
           autoplay={{
             delay: 2500,
             disableOnInteraction: false,
