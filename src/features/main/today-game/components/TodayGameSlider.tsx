@@ -17,6 +17,8 @@ type TodayGameSliderProps = {
 const TodayGameSlider = ({ games }: TodayGameSliderProps) => {
   const NoGameToday = games.length === 0;
 
+  const SLIDES_PER_VIEW = 3;
+
   return (
     <>
       {/* 모바일 */}
@@ -33,9 +35,9 @@ const TodayGameSlider = ({ games }: TodayGameSliderProps) => {
         <Swiper
           className="w-full"
           modules={[Autoplay]}
-          slidesPerView={3}
+          slidesPerView={SLIDES_PER_VIEW}
           spaceBetween={20}
-          loop={games.length > 3}
+          loop={games.length >= SLIDES_PER_VIEW * 2}
           autoplay={{
             delay: 2500,
             disableOnInteraction: false,
