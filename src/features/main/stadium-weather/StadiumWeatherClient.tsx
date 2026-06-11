@@ -1,5 +1,6 @@
 "use client";
 
+import LoadingMainWeather from "@/src/components/common/loading/LoadingMainWeather";
 import { stadiums } from "@/src/data/stadiums";
 import { useTodayGame } from "@/src/hooks/queries/useTodayGameQuery";
 import { getTodayGameDate } from "@/src/utils/getTodayGameDate";
@@ -25,9 +26,7 @@ const StadiumWeatherClient = () => {
       index === array.findIndex((item) => item.stadiumId === stadium.stadiumId),
   );
 
-  console.log("todayStadium", todayStadium);
-  console.log("todayStadiumWeather", todayStadiumWeather);
-  console.log("unique", uniqueTodayStadiumWeather);
+  if (isLoading) return <LoadingMainWeather />;
 
   return (
     <section className="w-full">

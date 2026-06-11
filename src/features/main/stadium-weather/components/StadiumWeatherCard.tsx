@@ -1,6 +1,8 @@
 import Image from "next/image";
 
 import { LoadingDots } from "@/src/components/common/loading/LoadingDots";
+import LoadingMainWeather from "@/src/components/common/loading/LoadingMainWeather";
+import LoadingStadiumWeatherCard from "@/src/components/common/loading/LoadingStadiumWeatherCard";
 import NoResult from "@/src/components/common/NoResult";
 import SectionCard from "@/src/components/common/SectionCard";
 import TemperatureIcon from "@/src/components/icons/weather/weather-info/TemperatureIcon";
@@ -29,7 +31,7 @@ const StadiumWeatherCard = ({ stadiumData, gamesData }: StadiumWeatherCardProps)
     ny: stadiumData.weatherGrid!.ny,
   });
 
-  if (isLoading) return <LoadingDots message={"날씨 정보를 불러오고 있어요"} />;
+  if (isLoading) return <LoadingStadiumWeatherCard />;
   if (isError || !data) return <NoResult message="날씨 정보를 불러오지 못했습니다." />;
 
   const homeTeamLogo = gameData ? KBO_TEAMS[gameData.homeCode] : undefined;
