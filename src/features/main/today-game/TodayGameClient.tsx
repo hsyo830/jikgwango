@@ -1,6 +1,5 @@
 "use client";
 
-import { LoadingDots } from "@/src/components/common/loading/LoadingDots";
 import LoadingMainTodayGame from "@/src/components/common/loading/LoadingMainTodayGame";
 import NoResult from "@/src/components/common/NoResult";
 import { useTodayGame } from "@/src/hooks/queries/useTodayGameQuery";

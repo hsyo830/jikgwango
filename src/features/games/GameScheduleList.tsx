@@ -1,6 +1,6 @@
 "use client";
 
-import { LoadingDots } from "@/src/components/common/loading/LoadingDots";
+import LoadingGameScheduleList from "@/src/components/common/loading/LoadingGameScheduleList";
 import NoResult from "@/src/components/common/NoResult";
 import SectionCard from "@/src/components/common/SectionCard";
 import { useTodayGame } from "@/src/hooks/queries/useTodayGameQuery";
@@ -18,7 +18,7 @@ const GameScheduleList = () => {
 
   const games = data?.gameList ?? [];
 
-  if (isLoading) return <LoadingDots message="경기 정보를 불러오고 있어요" />;
+  if (isLoading) return <LoadingGameScheduleList />;
   if (isError) return <NoResult message="경기 정보를 불러오지 못했습니다." />;
 
   const NoGameToday = games.length === 0;

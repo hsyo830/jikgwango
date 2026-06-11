@@ -1,7 +1,6 @@
 import Link from "next/link";
 
 import { KboGame } from "@/src/types/todayGames";
-import { getWeatherBaseDateTime } from "@/src/utils/weatherTime";
 
 type SectionHeaderProps = {
   games: KboGame[];

@@ -1,7 +1,5 @@
 import Image from "next/image";
 
-import { LoadingDots } from "@/src/components/common/loading/LoadingDots";
-import LoadingMainWeather from "@/src/components/common/loading/LoadingMainWeather";
 import LoadingStadiumWeatherCard from "@/src/components/common/loading/LoadingStadiumWeatherCard";
 import NoResult from "@/src/components/common/NoResult";
 import SectionCard from "@/src/components/common/SectionCard";

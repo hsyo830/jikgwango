@@ -1,12 +1,11 @@
 import Image from "next/image";
 import Link from "next/link";
 
+import Button from "@/src/components/common/Button";
+import SectionCard from "@/src/components/common/SectionCard";
 import LocationIcon from "@/src/components/icons/stadiumInfo/LocationIcon";
 import SubwayIcon from "@/src/components/icons/stadiumInfo/SubwayIcon";
 import { Stadium } from "@/src/types/stadium";
-
-import Button from "../../../../components/common/Button";
-import SectionCard from "../../../../components/common/SectionCard";
 
 type StadiumInfoCardProps = {
   stadium: Stadium;
