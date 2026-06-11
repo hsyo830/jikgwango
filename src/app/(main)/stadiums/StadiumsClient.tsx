@@ -11,15 +11,13 @@ import { Stadium } from "@/src/types/stadium";
 
 type StadiumsClientProps = {
   stadiumData: Stadium[];
+  initialStadiumId: string;
 };
 
-const StadiumsClient = ({ stadiumData }: StadiumsClientProps) => {
+const StadiumsClient = ({ stadiumData, initialStadiumId }: StadiumsClientProps) => {
   const router = useRouter();
-  const searchParams = useSearchParams();
 
-  const stadiumIdFromUrl = searchParams.get("stadium");
-
-  const selectedStadiumId = stadiumIdFromUrl ?? stadiumData[0].id ?? "";
+  const selectedStadiumId = initialStadiumId;
 
   const data = stadiumData.find((item) => item.id === selectedStadiumId);
 
