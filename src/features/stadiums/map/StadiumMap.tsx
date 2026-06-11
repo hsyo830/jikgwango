@@ -23,6 +23,12 @@ const StadiumMap = ({ stadiumData }: StadiumMapProps) => {
   const [isKakaoLoaded, setIsKakaoLoaded] = useState(false);
 
   useEffect(() => {
+    if (window.kakao) {
+      setTimeout(() => setIsKakaoLoaded(true), 0);
+    }
+  }, []);
+
+  useEffect(() => {
     if (!isKakaoLoaded || !window.kakao || !mapRef.current) return;
 
     const lat = Number(stadiumData.map?.lat);
