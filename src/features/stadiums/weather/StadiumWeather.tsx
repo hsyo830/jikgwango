@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 
-import { LoadingDots } from "@/src/components/common/loading/LoadingDots";
+import LoadingStadiumWeather from "@/src/components/common/loading/LoadingStadiumWeather";
 import NoResult from "@/src/components/common/NoResult";
 import GameStatusCheckIcon from "@/src/components/icons/GameStatusCheckIcon";
 import { useStadiumWeather } from "@/src/hooks/queries/useStadiumWeatherQuery";
@@ -25,7 +25,7 @@ const StadiumWeather = ({ stadiumData }: StadiumWeatherProps) => {
     ny: stadiumData.weatherGrid!.ny,
   });
 
-  if (isLoading) return <LoadingDots message={"날씨 정보를 불러오고 있어요"} />;
+  if (isLoading) return <LoadingStadiumWeather />;
   if (isError || !data) return <NoResult message="날씨 정보를 불러오지 못했습니다." />;
 
   return (

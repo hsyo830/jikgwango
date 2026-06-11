@@ -2,6 +2,7 @@
 
 import { useEffect, useRef, useState } from "react";
 
+import { LoadingCard } from "@/src/components/common/loading/LoadingCard";
 import { Stadium } from "@/src/types/stadium";
 
 import KakaoMapScript from "./KakaoMapScript";
@@ -55,16 +56,16 @@ const StadiumMap = ({ stadiumData }: StadiumMapProps) => {
 
   return (
     <>
-      <KakaoMapScript
-        onLoad={() => {
-          setIsKakaoLoaded(true);
-        }}
-      />
+      <KakaoMapScript onLoad={() => setIsKakaoLoaded(true)} />
 
-      <div
-        ref={mapRef}
-        className="bg-surface-2 relative h-45 w-full overflow-hidden rounded-xl md:h-60"
-      />
+      <div className="bg-surface-2 relative h-45 w-full overflow-hidden rounded-xl md:h-60">
+        {!isKakaoLoaded && (
+          <div className="absolute inset-0 overflow-hidden rounded-xl">
+            <LoadingCard />
+          </div>
+        )}
+        <div ref={mapRef} className="h-full w-full" />
+      </div>
     </>
   );
 };
