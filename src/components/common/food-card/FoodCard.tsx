@@ -1,6 +1,5 @@
 import Image from "next/image";
 
-import { FOOD_CATEGORIES } from "@/src/constants/foodCategories";
 import { cn } from "@/src/lib/utils";
 import { FoodBooth } from "@/src/types/foodBooth";
 import { getFoodCategory } from "@/src/utils/getFoodCategory";

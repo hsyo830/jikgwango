@@ -1,8 +1,7 @@
 import Image from "next/image";
 
+import GameStatusCheckIcon from "@/src/components/icons/GameStatusCheckIcon";
 import { cn } from "@/src/lib/utils";
-
-import GameStatusCheckIcon from "../../../../components/icons/GameStatusCheckIcon";
 
 type ChecklistItem = {
   id: string;
