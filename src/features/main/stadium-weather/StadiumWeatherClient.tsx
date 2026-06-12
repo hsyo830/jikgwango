@@ -27,6 +27,7 @@ const StadiumWeatherClient = () => {
   );
 
   if (isLoading) return <LoadingMainWeather />;
+  if (isError) return null;
 
   return (
     <section className="w-full">
