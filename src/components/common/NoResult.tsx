@@ -24,7 +24,7 @@ const NoResult = ({ message }: NoResultProps) => {
       <div className="h-30 w-30 md:h-37 md:w-37">
         <Lottie animationData={animationData} loop autoplay />
       </div>
-      <div className="text-sm text-gray-300 md:text-base">{message}</div>
+      <p className="text-sm text-gray-300 md:text-base">{message}</p>
     </div>
   );
 };

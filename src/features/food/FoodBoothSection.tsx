@@ -34,7 +34,8 @@ const FoodBoothSection = ({
       <div className="flex items-end gap-5">
         <h2 className="text-xl font-bold">전체 부스</h2>
         <p className="text-muted text-base font-semibold">
-          총 <span>{filteredFoodBoothData.length}</span>개의 부스
+          총 <data value={filteredFoodBoothData.length}>{filteredFoodBoothData.length}</data>개의
+          부스
         </p>
       </div>
       {hasFoodBooth ? (

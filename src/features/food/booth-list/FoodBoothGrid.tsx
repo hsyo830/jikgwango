@@ -65,7 +65,7 @@ const FoodBoothGrid = ({ filteredFoodBoothData }: FoodBoothGridProps) => {
   const pageNumbers = getPageNumbers(currentPage, totalPages);
 
   return (
-    <section className="w-full">
+    <div className="w-full">
       <ul className="grid grid-cols-1 gap-3 md:grid-cols-2 lg:mb-5 lg:grid-cols-3 xl:gap-5">
         {paginatedFoodBooths.map((booth, index) => (
           <li key={booth.id} className="min-w-0">
@@ -140,7 +140,7 @@ const FoodBoothGrid = ({ filteredFoodBoothData }: FoodBoothGridProps) => {
           </PaginationItem>
         </PaginationContent>
       </Pagination>
-    </section>
+    </div>
   );
 };
 

@@ -10,7 +10,7 @@ const FoodPage = () => {
   const foodBoothData = getFoodBooth();
 
   return (
-    <div>
+    <main>
       <PageHero
         title="구장 내 음식 부스"
         intro="구장 안에서 즐길 수 있는 다양한 음식 부스를 찾아보세요!"
@@ -18,7 +18,7 @@ const FoodPage = () => {
       <Suspense fallback={<LoadingFoodBooth />}>
         <FoodBoothClient foodBoothData={foodBoothData} />
       </Suspense>
-    </div>
+    </main>
   );
 };
 

@@ -14,7 +14,7 @@ const FoodFilterBadgeList = ({
   onSelectedFoodBoothId,
 }: FoodFilterBadgeListProps) => {
   return (
-    <section>
+    <nav aria-label="음식 카테고리 필터">
       <ul className="flex w-full gap-2 overflow-scroll px-1 md:overflow-visible md:px-0">
         {Object.values(FOOD_CATEGORIES).map((category) => (
           <FoodFilterBadge
@@ -26,7 +26,7 @@ const FoodFilterBadgeList = ({
           />
         ))}
       </ul>
-    </section>
+    </nav>
   );
 };
 
