@@ -20,7 +20,7 @@ const StadiumFoodList = ({ data }: StadiumFoodListProps) => {
 
   return (
     <div className="w-full overflow-scroll md:overflow-hidden">
-      <section className="hidden w-full md:block md:px-4.5">
+      <div className="hidden w-full md:block md:px-4.5">
         <div className="relative">
           <Swiper
             modules={[Autoplay, Navigation]}
@@ -58,13 +58,15 @@ const StadiumFoodList = ({ data }: StadiumFoodListProps) => {
           <SwiperNavButton direction="prev" className="food-swiper-prev left-0 -translate-x-1/2" />
           <SwiperNavButton direction="next" className="food-swiper-next right-0 translate-x-1/2" />
         </div>
-      </section>
+      </div>
 
-      <section className="flex w-230 gap-3 md:hidden">
+      <ul className="flex w-230 gap-3 md:hidden">
         {foodBoothList.slice(0, 7).map((food) => (
-          <FoodCard key={food.id} food={food} />
+          <li key={food.id}>
+            <FoodCard food={food} />
+          </li>
         ))}
-      </section>
+      </ul>
     </div>
   );
 };

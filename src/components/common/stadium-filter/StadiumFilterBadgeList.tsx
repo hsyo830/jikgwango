@@ -21,7 +21,7 @@ const StadiumFilterBadgeList = ({
 }: StadiumFilterBadgeListProps) => {
   return (
     <div className="w-full overflow-scroll md:overflow-hidden">
-      <section className="hidden w-full md:block md:px-4.5">
+      <nav className="hidden w-full md:block md:px-4.5" aria-label="구장 필터">
         <ul className="relative">
           <Swiper
             modules={[Navigation]}
@@ -69,9 +69,9 @@ const StadiumFilterBadgeList = ({
             className="stadium-swiper-next right-0 translate-x-1/2"
           />
         </ul>
-      </section>
+      </nav>
 
-      <ul className="flex w-230 gap-1.5 md:hidden">
+      <ul className="flex w-230 gap-1.5 md:hidden" aria-label="구장 필터">
         {Object.values(KBO_TEAMS).map((team) => (
           <li key={team.id}>
             <StadiumFilterBadge

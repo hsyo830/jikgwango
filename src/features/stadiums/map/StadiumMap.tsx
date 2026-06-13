@@ -64,9 +64,13 @@ const StadiumMap = ({ stadiumData }: StadiumMapProps) => {
     <>
       <KakaoMapScript onLoad={() => setIsKakaoLoaded(true)} />
 
-      <div className="bg-surface-2 relative h-45 w-full overflow-hidden rounded-xl md:h-60">
+      <div
+        role="application"
+        aria-label={`${stadiumData.name} 위치 지도`}
+        className="bg-surface-2 relative h-45 w-full overflow-hidden rounded-xl md:h-60"
+      >
         {!isKakaoLoaded && (
-          <div className="absolute inset-0 overflow-hidden rounded-xl">
+          <div aria-hidden="true" className="absolute inset-0 overflow-hidden rounded-xl">
             <LoadingCard />
           </div>
         )}

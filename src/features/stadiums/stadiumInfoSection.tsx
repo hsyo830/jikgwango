@@ -21,7 +21,7 @@ const StadiumInfoCard = ({ data }: StadiumInfoCardProps) => {
         <LoadingCard />
         <Image
           src={data.stadiumImage}
-          alt="구장 이미지"
+          alt={`${data.name} 구장 전경`}
           fill
           sizes="(max-width: 768px) 100vw, (max-width: 1280px) 400px, 600px"
           className="object-cover"
@@ -29,11 +29,11 @@ const StadiumInfoCard = ({ data }: StadiumInfoCardProps) => {
       </div>
       <div className="flex w-full flex-col gap-4 px-1.5 md:gap-3 md:px-0">
         <div className="flex w-full items-center justify-between">
-          <div className="text-xl font-bold md:text-2xl">{data.name}</div>
+          <h2 className="text-xl font-bold md:text-2xl">{data.name}</h2>
           <div className="flex gap-2">
             <Image
               src={data.logoUrl1}
-              alt={data.name}
+              alt={`${data.name} 홈팀 로고`}
               width={96}
               height={96}
               className="h-auto w-12 md:w-15"
@@ -41,7 +41,7 @@ const StadiumInfoCard = ({ data }: StadiumInfoCardProps) => {
             {data.logoUrl2 ? (
               <Image
                 src={data.logoUrl2}
-                alt={data.name}
+                alt={`${data.name} 공동 홈팀 로고`}
                 width={96}
                 height={96}
                 className="h-auto w-12 opacity-35 md:w-15"
@@ -51,48 +51,48 @@ const StadiumInfoCard = ({ data }: StadiumInfoCardProps) => {
             )}
           </div>
         </div>
-        <div className="border-border flex flex-col gap-2 border-b pb-3">
+        <dl className="border-border flex flex-col gap-2 border-b pb-3">
           <div className="text-muted flex items-start gap-6 text-sm md:gap-7 md:text-base">
-            <div className="flex shrink-0 items-center gap-2">
+            <dt className="flex shrink-0 items-center gap-2">
               <LocationIcon size={17} />
               <span className="font-semibold">주소</span>
-            </div>
-            <div>{data.address}</div>
+            </dt>
+            <dd>{data.address}</dd>
           </div>
           <div className="text-muted flex items-start gap-6 text-sm md:gap-7 md:text-base">
-            <div className="flex shrink-0 items-center gap-2">
+            <dt className="flex shrink-0 items-center gap-2">
               <SubwayIcon size={17} />
               <span className="font-semibold">교통</span>
-            </div>
-            <div>{data.transport.subway || "인근 지하철역 없음"}</div>
+            </dt>
+            <dd>{data.transport.subway || "인근 지하철역 없음"}</dd>
           </div>
           <div className="text-muted flex items-start gap-6 text-sm md:gap-7 md:text-base">
-            <div className="flex shrink-0 items-center gap-2">
+            <dt className="flex shrink-0 items-center gap-2">
               <ParkingIcon size={17} />
               <span className="font-semibold">주차</span>
-            </div>
-            <div>
-              <div>{`${data.parking.available ? "주차 가능" : "주차 불가"}(${data.parking.paid ? "유료" : "무료"}) / ${data.parking.capacity !== null ? `약 ${data.parking.capacity.toLocaleString()}대 / ` : `${data.parking.note}`} `}</div>
-              <div>{`${data.parking.capacity ? `${data.parking.note}` : ""}`}</div>
-            </div>
+            </dt>
+            <dd>
+              <p>{`${data.parking.available ? "주차 가능" : "주차 불가"}(${data.parking.paid ? "유료" : "무료"}) / ${data.parking.capacity !== null ? `약 ${data.parking.capacity.toLocaleString()}대 / ` : `${data.parking.note}`} `}</p>
+              <p>{`${data.parking.capacity ? `${data.parking.note}` : ""}`}</p>
+            </dd>
           </div>
-        </div>
-        <div className="divide-border flex w-full divide-x text-sm md:text-base">
+        </dl>
+        <dl className="divide-border flex w-full divide-x text-sm md:text-base">
           <div className="flex flex-1 flex-col items-center gap-0.5 md:gap-1.5">
-            <div className="text-muted font-semibold">개장 연도</div>
-            <div className="font-semibold">{data.openedYear}년</div>
-          </div>
-          <div className="flex flex-1 flex-col items-center gap-0.5 md:gap-1.5">
-            <div className="text-muted font-semibold">수용 인원</div>
-            <div className="font-semibold">{data.capacity.toLocaleString()}명</div>
+            <dt className="text-muted font-semibold">개장 연도</dt>
+            <dd className="font-semibold">{data.openedYear}년</dd>
           </div>
           <div className="flex flex-1 flex-col items-center gap-0.5 md:gap-1.5">
-            <div className="text-muted font-semibold">실내/실외</div>
-            <div className="font-semibold">
+            <dt className="text-muted font-semibold">수용 인원</dt>
+            <dd className="font-semibold">{data.capacity.toLocaleString()}명</dd>
+          </div>
+          <div className="flex flex-1 flex-col items-center gap-0.5 md:gap-1.5">
+            <dt className="text-muted font-semibold">실내/실외</dt>
+            <dd className="font-semibold">
               {`${data.type === "outdoor" ? "실외 구장" : "돔(실내) 구장"}`}
-            </div>
+            </dd>
           </div>
-        </div>
+        </dl>
         <div className="flex w-full gap-3">
           <Link
             href={`https://map.kakao.com/?q=${encodeURIComponent("부산사직종합운동장 사직야구장")}`}

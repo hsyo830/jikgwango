@@ -35,7 +35,7 @@ const FoodCard = ({ food, variant = "main", index, priority }: FoodProps) => {
       >
         <Image
           src={food.imageUrl || "/image/food-booth/placeholder-image.webp"}
-          alt={food.name}
+          alt={`${food.name} 음식 부스 이미지`}
           fill
           sizes="(max-width: 768px) 140px, 300px"
           className="object-cover"
@@ -54,16 +54,21 @@ const FoodCard = ({ food, variant = "main", index, priority }: FoodProps) => {
             <FoodCategoryBadge food={food} />
           </div>
         </div>
-        <div className="text-muted border-border flex items-center gap-0.5 border-b py-1 text-xs md:gap-1 md:py-2.5 md:text-[12px] lg:text-sm">
-          <LocationIcon className="text-muted h-5 w-5 shrink-0 md:h-6 md:w-6" />
-          <p className="w-7 shrink-0 font-bold md:w-12 lg:w-14">위치</p>
-          <p className="truncate font-medium">{food.location}</p>
-        </div>
-        <div className="text-muted flex items-center gap-0.5 py-1 text-xs md:gap-1 md:py-2.5 md:text-[12px] lg:pb-0 lg:text-sm">
-          <MenuIcon className="text-primary h-5 w-5 shrink-0 md:h-6 md:w-6" />
-          <p className="text-primary w-12 font-bold md:w-12 lg:w-14">대표메뉴</p>
-          <p className="truncate font-medium">{foodCategory?.label}</p>
-        </div>
+        <dl className="flex flex-col">
+          <div className="text-muted border-border flex items-center gap-0.5 border-b py-1 text-xs md:gap-1 md:py-2.5 md:text-[12px] lg:text-sm">
+            <LocationIcon
+              aria-hidden="true"
+              className="text-muted h-5 w-5 shrink-0 md:h-6 md:w-6"
+            />
+            <dt className="w-7 shrink-0 font-bold md:w-12 lg:w-14">위치</dt>
+            <dd className="truncate font-medium">{food.location}</dd>
+          </div>
+          <div className="text-muted flex items-center gap-0.5 py-1 text-xs md:gap-1 md:py-2.5 md:text-[12px] lg:pb-0 lg:text-sm">
+            <MenuIcon aria-hidden="true" className="text-primary h-5 w-5 shrink-0 md:h-6 md:w-6" />
+            <dt className="text-primary w-12 font-bold md:w-12 lg:w-14">대표메뉴</dt>
+            <dd className="truncate font-medium">{foodCategory?.label}</dd>
+          </div>
+        </dl>
       </div>
     </article>
   );

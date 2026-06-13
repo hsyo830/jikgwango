@@ -29,7 +29,7 @@ const StadiumWeather = ({ stadiumData }: StadiumWeatherProps) => {
   if (isError || !data) return <NoResult message="날씨 정보를 불러오지 못했습니다." />;
 
   return (
-    <section className="flex flex-col gap-3">
+    <div className="flex flex-col gap-3">
       <div className="border-border flex items-start justify-between border-b pb-2 md:px-3 lg:px-5">
         <div className="flex items-center gap-2.5 lg:gap-4">
           <div className="relative h-19 w-19 md:h-17 md:w-17 lg:h-19 lg:w-19">
@@ -76,7 +76,7 @@ const StadiumWeather = ({ stadiumData }: StadiumWeatherProps) => {
         <GameStatusCheckIcon filled />
         {getWeatherTipByPty(data.current.pty)}
       </p>
-    </section>
+    </div>
   );
 };
 

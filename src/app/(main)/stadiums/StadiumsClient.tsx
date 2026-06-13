@@ -1,6 +1,6 @@
 "use client";
 
-import { useRouter, useSearchParams } from "next/navigation";
+import { useRouter } from "next/navigation";
 
 import StadiumFilterBadgeList from "@/src/components/common/stadium-filter/StadiumFilterBadgeList";
 import FoodSection from "@/src/features/stadiums/food/FoodSection";

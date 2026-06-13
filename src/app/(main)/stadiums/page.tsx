@@ -12,7 +12,7 @@ const StadiumsPage = async ({ searchParams }: { searchParams: Promise<{ stadium?
   const stadiumId = stadium ?? stadiumData[0].id ?? "";
 
   return (
-    <div>
+    <main>
       <PageHero
         title="구장 정보"
         intro="전국 야구장의 주요 정보와 편의시설, 교통, 주변 정보를 확인해보세요!"
@@ -20,7 +20,7 @@ const StadiumsPage = async ({ searchParams }: { searchParams: Promise<{ stadium?
       <Suspense fallback={<LoadingStadiumPage />}>
         <StadiumsClient stadiumData={stadiumData} initialStadiumId={stadiumId} />
       </Suspense>
-    </div>
+    </main>
   );
 };
 

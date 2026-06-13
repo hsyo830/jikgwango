@@ -25,7 +25,7 @@ const StadiumFilterBadge = ({
         <div className="relative h-7 w-7 md:h-10 md:w-10">
           <Image src={logo} alt={`${name} 로고`} fill sizes="40px" className="object-contain" />
         </div>
-        <h3 className="text-[11px] font-bold whitespace-nowrap md:text-xs">{name}</h3>
+        <span className="text-[11px] font-bold whitespace-nowrap md:text-xs">{name}</span>
       </div>
     </button>
   );
