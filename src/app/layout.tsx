@@ -12,7 +12,7 @@ import { pretendard } from "../styles/fonts";
 const geist = Geist({ subsets: ["latin"], variable: "--font-sans" });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("http://localhost:3000"),
+  metadataBase: new URL("https://jikgwango.vercel.app"),
   title: "직관GO | 야구 직관 정보를 한번에!",
   description: "KBO Baseball Stadium Information Platform",
   openGraph: {
