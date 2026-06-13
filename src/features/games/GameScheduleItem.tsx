@@ -11,11 +11,11 @@ type GameScheduleItemProps = {
 
 const GameScheduleItem = ({ gameData: todayGame }: GameScheduleItemProps) => {
   return (
-    <article className="flex flex-col gap-2 px-2 py-4 md:grid md:grid-cols-[140px_minmax(0,1fr)_135px] md:items-center md:py-5 lg:grid-cols-[170px_minmax(0,1fr)_190px] xl:grid-cols-[220px_minmax(0,1fr)_240px]">
+    <li className="flex flex-col gap-2 px-2 py-4 md:grid md:grid-cols-[140px_minmax(0,1fr)_135px] md:items-center md:py-5 lg:grid-cols-[170px_minmax(0,1fr)_190px] xl:grid-cols-[220px_minmax(0,1fr)_240px]">
       <div className="border-border flex min-w-0 flex-row items-center gap-2 text-sm md:flex-col md:items-start md:gap-1.5 md:border-r md:pr-4 lg:text-base">
-        <div className="bg-primary-soft w-11 rounded-md text-center font-bold md:w-13 lg:w-15">
+        <time className="bg-primary-soft w-11 rounded-md text-center font-bold md:w-13 lg:w-15">
           {todayGame.gameTime.slice(0, 5)}
-        </div>
+        </time>
         <div className="text-muted truncate font-semibold">{todayGame.stadiumFullName}</div>
       </div>
 
@@ -33,9 +33,9 @@ const GameScheduleItem = ({ gameData: todayGame }: GameScheduleItemProps) => {
                 />
               </div>
               <div className="min-w-0 md:order-1">
-                <div className="truncate text-center text-xs font-bold md:text-right md:text-base">
+                <span className="truncate text-center text-xs font-bold md:text-right md:text-base">
                   {todayGame.awayName}
-                </div>
+                </span>
               </div>
             </div>
 
@@ -54,9 +54,9 @@ const GameScheduleItem = ({ gameData: todayGame }: GameScheduleItemProps) => {
                 />
               </div>
               <div className="min-w-0">
-                <div className="truncate text-center text-xs font-bold md:text-left md:text-base">
+                <span className="truncate text-center text-xs font-bold md:text-left md:text-base">
                   {todayGame.homeName}
-                </div>
+                </span>
               </div>
             </div>
           </div>
@@ -84,7 +84,7 @@ const GameScheduleItem = ({ gameData: todayGame }: GameScheduleItemProps) => {
           </div>
         </div>
       </div>
-    </article>
+    </li>
   );
 };
 

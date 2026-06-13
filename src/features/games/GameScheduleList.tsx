@@ -33,11 +33,11 @@ const GameScheduleList = () => {
 
   return (
     <SectionCard>
-      <div className="divide-border divide-y">
+      <ul className="divide-border divide-y">
         {games.map((game) => (
           <GameScheduleItem key={game.gameId} gameData={game} />
         ))}
-      </div>
+      </ul>
     </SectionCard>
   );
 };
