@@ -12,7 +12,7 @@ import StadiumInfoCard from "./components/StadiumInfoCard";
 
 const StadiumInfoSlider = () => {
   return (
-    <section>
+    <div>
       <div className="mx-2 hidden md:block">
         <div className="relative min-w-0">
           <Swiper
@@ -48,14 +48,14 @@ const StadiumInfoSlider = () => {
           />
         </div>
       </div>
-      <div className="flex gap-2 overflow-scroll md:hidden">
+      <ul className="flex gap-2 overflow-scroll md:hidden">
         {stadiums.map((stadium) => (
-          <div key={stadium.id} className="shrink-0">
+          <li key={stadium.id} className="shrink-0">
             <StadiumInfoCard stadium={stadium} />
-          </div>
+          </li>
         ))}
-      </div>
-    </section>
+      </ul>
+    </div>
   );
 };
 

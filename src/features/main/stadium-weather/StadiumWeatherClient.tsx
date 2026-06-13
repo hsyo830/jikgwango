@@ -30,14 +30,12 @@ const StadiumWeatherClient = () => {
   if (isError) return null;
 
   return (
-    <section className="w-full">
-      {
-        <StadiumTodayWeatherSlider
-          todayStadiumWeather={uniqueTodayStadiumWeather}
-          gamesData={games}
-        />
-      }
-    </section>
+    <div className="w-full">
+      <StadiumTodayWeatherSlider
+        todayStadiumWeather={uniqueTodayStadiumWeather}
+        gamesData={games}
+      />
+    </div>
   );
 };
 

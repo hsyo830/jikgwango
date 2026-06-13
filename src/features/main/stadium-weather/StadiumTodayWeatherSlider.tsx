@@ -32,7 +32,7 @@ const StadiumTodayWeatherSlider = ({
   }
 
   return (
-    <section>
+    <div>
       <div className="mx-2 hidden md:block">
         <div className="relative min-w-0">
           <Swiper
@@ -78,14 +78,14 @@ const StadiumTodayWeatherSlider = ({
           />
         </div>
       </div>
-      <div className="flex gap-2 overflow-scroll md:hidden">
+      <ul className="flex gap-2 overflow-scroll md:hidden">
         {stadiumData.map((stadium) => (
-          <div key={stadium.id} className="w-60 shrink-0">
+          <li key={stadium.id} className="w-60 shrink-0">
             <StadiumWeatherCard stadiumData={stadium} gamesData={gamesData} />
-          </div>
+          </li>
         ))}
-      </div>
-    </section>
+      </ul>
+    </div>
   );
 };
 

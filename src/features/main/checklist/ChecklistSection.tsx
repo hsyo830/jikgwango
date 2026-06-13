@@ -12,11 +12,12 @@ const ChecklistSection = () => {
   return (
     <SectionCard>
       <SectionHeader />
-      <section className="flex flex-col justify-center gap-3">
-        <div className="text-muted text-sm">
-          <div>직관 준비물 다 챙기셨나요?</div>
-          <div>체크하고 빠뜨린 것 없이 즐거운 직관을 준비하세요!</div>
-        </div>
+      <div className="flex flex-col justify-center gap-3">
+        <p className="text-muted text-sm">
+          직관 준비물 다 챙기셨나요?
+          <br />
+          체크하고 빠뜨린 것 없이 즐거운 직관을 준비하세요!
+        </p>
         <div className="flex flex-col gap-3 lg:flex-row">
           <RecommendedChecklist />
           <div className="flex min-w-0 flex-col justify-between lg:flex-1">
@@ -32,7 +33,7 @@ const ChecklistSection = () => {
             </Link>
           </div>
         </div>
-      </section>
+      </div>
     </SectionCard>
   );
 };

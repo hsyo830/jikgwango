@@ -18,7 +18,7 @@ const StadiumInfoCard = ({ stadium }: StadiumInfoCardProps) => {
         <div className="bg-surface-2 relative h-25 w-full shrink-0 overflow-hidden rounded-md md:h-40 md:rounded-lg lg:h-full lg:w-36 lg:rounded-xl xl:w-40">
           <Image
             src={stadium.stadiumImage}
-            alt="구장 이미지"
+            alt={stadium.name}
             fill
             sizes="(max-width: 768px) 100vw, (max-width: 1280px) 400px, 600px"
             className="object-cover"
@@ -35,7 +35,7 @@ const StadiumInfoCard = ({ stadium }: StadiumInfoCardProps) => {
                 <div className="relative h-9 w-9 md:h-13 md:w-13 lg:h-10 lg:w-10 xl:h-12 xl:w-12">
                   <Image
                     src={stadium.logoUrl1}
-                    alt="팀 로고"
+                    alt={stadium.teams[0]}
                     fill
                     sizes="(max-width: 768px) 40px, (max-width: 1024px) 52px, 48px"
                     className="object-contain"
@@ -45,7 +45,7 @@ const StadiumInfoCard = ({ stadium }: StadiumInfoCardProps) => {
                   <div className="relative h-auto w-10 opacity-30 md:w-13 lg:w-10 xl:w-12">
                     <Image
                       src={stadium.logoUrl2}
-                      alt="팀 로고"
+                      alt={stadium.teams[1]}
                       fill
                       sizes="(max-width: 768px) 40px, (max-width: 1024px) 52px, 48px"
                       className="object-contain"

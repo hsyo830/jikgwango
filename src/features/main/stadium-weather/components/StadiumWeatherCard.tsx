@@ -36,7 +36,7 @@ const StadiumWeatherCard = ({ stadiumData, gamesData }: StadiumWeatherCardProps)
 
   return (
     <SectionCard>
-      <li className="flex flex-col gap-4">
+      <div className="flex flex-col gap-4">
         <div className="flex justify-between">
           <div className="flex flex-col">
             <h3 className="font-bold md:text-lg">{stadiumData.name}</h3>
@@ -92,7 +92,7 @@ const StadiumWeatherCard = ({ stadiumData, gamesData }: StadiumWeatherCardProps)
             </dl>
           </div>
         </div>
-      </li>
+      </div>
     </SectionCard>
   );
 };

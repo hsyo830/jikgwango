@@ -22,17 +22,18 @@ const TodayGameSlider = ({ games }: TodayGameSliderProps) => {
   return (
     <>
       {/* 모바일 */}
-      <div className="flex w-full gap-2 overflow-x-auto md:hidden">
+      <ul className="flex w-full gap-2 overflow-x-auto md:hidden">
         {games.map((game) => (
-          <div key={game.gameId} className="w-47 shrink-0 md:w-70">
+          <li key={game.gameId} className="w-47 shrink-0 md:w-70">
             <GameCard game={game} />
-          </div>
+          </li>
         ))}
-      </div>
+      </ul>
 
       {/* 태블릿~ */}
       <div className="hidden w-full min-w-0 overflow-hidden md:block">
         <Swiper
+          aria-label="오늘의 KBO 경기 목록"
           className="w-full"
           modules={[Autoplay]}
           slidesPerView={SLIDES_PER_VIEW}

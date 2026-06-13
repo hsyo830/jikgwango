@@ -19,10 +19,10 @@ const SectionHeader = ({ games }: SectionHeaderProps) => {
     <div className="mb-3 flex items-center justify-between">
       <div className="flex items-center gap-2 md:gap-3">
         <h2 className="text-foreground text-lg font-bold md:text-xl">오늘 경기</h2>
-        <div className="bg-primary-soft text-primary rounded-md px-2 py-1 text-xs font-bold md:text-sm">
+        <time className="bg-primary-soft text-primary rounded-md px-2 py-1 text-xs font-bold md:text-sm">
           {nowDate}
-        </div>
-        <div className="text-muted text-sm font-medium md:text-base">{gameListCount}경기</div>
+        </time>
+        <span className="text-muted text-sm font-medium md:text-base">{gameListCount}경기</span>
       </div>
       <Link
         href={"/games"}

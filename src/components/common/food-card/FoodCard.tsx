@@ -19,7 +19,7 @@ const FoodCard = ({ food, variant = "main", index, priority }: FoodProps) => {
   const foodCategory = getFoodCategory(food.menuCategory);
 
   return (
-    <div
+    <article
       className={cn(
         "bg-surface border-border flex overflow-hidden rounded-xl border md:h-85 md:w-75 md:flex-col lg:h-83 lg:w-full lg:items-center",
         variant === "main" && "h-63 w-50 flex-col md:w-75",
@@ -35,7 +35,7 @@ const FoodCard = ({ food, variant = "main", index, priority }: FoodProps) => {
       >
         <Image
           src={food.imageUrl || "/image/food-booth/placeholder-image.webp"}
-          alt="음식 부스 이미지"
+          alt={food.name}
           fill
           sizes="(max-width: 768px) 140px, 300px"
           className="object-cover"
@@ -65,7 +65,7 @@ const FoodCard = ({ food, variant = "main", index, priority }: FoodProps) => {
           <p className="truncate font-medium">{foodCategory?.label}</p>
         </div>
       </div>
-    </div>
+    </article>
   );
 };
 
