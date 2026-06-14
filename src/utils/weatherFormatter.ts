@@ -68,7 +68,7 @@ export const formatWeatherData = (items: WeatherItem[]) => {
       feelsLike: calcFeelsLike(temperature, humidity),
       humidity,
       windSpeed: Number(currentData?.WSD),
-      rainAmount: currentData?.RN1 === "강수없음" ? 0 : Number(currentData?.RN1),
+      rainAmount: currentData?.RN1 === "강수없음" ? 0 : parseFloat(currentData?.RN1),
       pty: currentData?.PTY ?? "0",
       icon: first.icon,
     },
