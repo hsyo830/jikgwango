@@ -36,6 +36,7 @@ const StadiumTodayWeatherSlider = ({
       <div className="mx-2 hidden md:block">
         <div className="relative min-w-0">
           <Swiper
+            aria-label="오늘 경기 구장 날씨 목록"
             modules={[Autoplay, Navigation]}
             navigation={{
               prevEl: ".stadium-weather-swiper-prev",
@@ -58,6 +59,7 @@ const StadiumTodayWeatherSlider = ({
             autoplay={{
               delay: 3500,
               disableOnInteraction: false,
+              pauseOnMouseEnter: true,
             }}
             loop={stadiumData.length > 3}
           >

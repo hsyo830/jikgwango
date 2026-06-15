@@ -3,6 +3,7 @@ import Image from "next/image";
 import LoadingStadiumWeatherCard from "@/src/components/common/loading/LoadingStadiumWeatherCard";
 import NoResult from "@/src/components/common/NoResult";
 import SectionCard from "@/src/components/common/SectionCard";
+import TeamsIcon from "@/src/components/icons/TeamsIcon";
 import TemperatureIcon from "@/src/components/icons/weather/weather-info/TemperatureIcon";
 import UmbrellaIcon from "@/src/components/icons/weather/weather-info/UmbrellaIcon";
 import WindIcon from "@/src/components/icons/weather/weather-info/WindIcon";
@@ -46,8 +47,8 @@ const StadiumWeatherCard = ({ stadiumData, gamesData }: StadiumWeatherCardProps)
           </div>
           <div className="relative h-9 w-9 md:h-11 md:w-11">
             <Image
-              src={homeTeamLogo?.logo}
-              alt={stadiumData.name}
+              src={homeTeamLogo?.logo ?? <TeamsIcon size="100%" className="text-muted" />}
+              alt={gameData?.homeName ?? stadiumData.name}
               fill
               sizes="(min-width: 768px) 44px, 36px"
               className="object-contain"
@@ -69,21 +70,21 @@ const StadiumWeatherCard = ({ stadiumData, gamesData }: StadiumWeatherCardProps)
           <div className="mt-3 w-full md:mt-0">
             <dl className="divide-border flex w-full divide-x">
               <div className="flex flex-1 items-center justify-center text-xs md:gap-1 md:text-sm">
-                <TemperatureIcon className="size-5 md:size-7" />
+                <TemperatureIcon aria-hidden="true" className="size-5 md:size-7" />
                 <div>
                   <dt className="font-semibold">체감</dt>
                   <dd className="text-muted font-semibold">{data.current.feelsLike}°C</dd>
                 </div>
               </div>
               <div className="flex flex-1 items-center justify-center text-xs md:gap-1 md:text-sm">
-                <UmbrellaIcon className="size-5 md:size-7" />
+                <UmbrellaIcon aria-hidden="true" className="size-5 md:size-7" />
                 <div>
                   <dt className="font-semibold whitespace-nowrap">강수량</dt>
                   <dd className="text-muted font-semibold">{data.current.rainAmount}mm</dd>
                 </div>
               </div>
               <div className="flex flex-1 items-center justify-center gap-0.5 text-xs md:gap-1 md:text-sm">
-                <WindIcon className="size-4 md:size-6" />
+                <WindIcon aria-hidden="true" className="size-4 md:size-6" />
                 <div>
                   <dt className="font-semibold">바람</dt>
                   <dd className="text-muted font-semibold">{data.current.windSpeed}m/s</dd>
