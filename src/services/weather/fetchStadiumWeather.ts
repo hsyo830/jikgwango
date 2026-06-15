@@ -10,7 +10,7 @@ const fetchStadiumWeatherFromKMA = async (params: StadiumWeatherParams) => {
 
   const response = await axios.get(WEATHER_API_ENDPOINTS.ultraShortForecast, {
     params: {
-      serviceKey: process.env.NEXT_PUBLIC_WEATHER_API_KEY,
+      serviceKey: process.env.WEATHER_API_KEY,
       pageNo: 1,
       numOfRows: 1000,
       dataType: "JSON",
