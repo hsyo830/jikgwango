@@ -4,16 +4,16 @@ import { KboGame } from "@/src/types/todayGames";
 
 type SectionHeaderProps = {
   games: KboGame[];
+  gameDate: string;
 };
 
-const SectionHeader = ({ games }: SectionHeaderProps) => {
+const SectionHeader = ({ games, gameDate }: SectionHeaderProps) => {
   const gameListCount = games.length;
 
-  const today = new Date();
-  const todayMonth = today.getMonth() + 1;
-  const todayDate = today.getDate();
+  const month = Number(gameDate.slice(4, 6));
+  const date = Number(gameDate.slice(6, 8));
 
-  const nowDate = `${todayMonth}월 ${todayDate}일`;
+  const nowDate = `${month}월 ${date}일`;
 
   return (
     <div className="mb-3 flex items-center justify-between">

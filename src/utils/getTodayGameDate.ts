@@ -1,11 +1,10 @@
 export const getTodayGameDate = () => {
-  const pad = (value: number) => String(value).padStart(2, "0");
+  const formatter = new Intl.DateTimeFormat("en-CA", {
+    timeZone: "Asia/Seoul",
+    year: "numeric",
+    month: "2-digit",
+    day: "2-digit",
+  });
 
-  const today = new Date();
-
-  const year = today.getFullYear();
-  const month = pad(today.getMonth() + 1);
-  const day = pad(today.getDate());
-
-  return `${year}${month}${day}`;
+  return formatter.format(new Date()).replace(/-/g, "");
 };

@@ -26,7 +26,7 @@ const TodayGameClient = ({ gameDate }: TodayGameClientProps) => {
 
   return (
     <>
-      <SectionHeader games={games} />
+      <SectionHeader games={games} gameDate={gameDate} />
       <TodayGameSlider games={games} />
     </>
   );
