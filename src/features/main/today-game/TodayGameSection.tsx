@@ -2,10 +2,14 @@ import SectionCard from "@/src/components/common/SectionCard";
 
 import TodayGameClient from "./TodayGameClient";
 
-const TodayGameSection = () => {
+type TodayGameSectionProps = {
+  gameDate: string;
+};
+
+const TodayGameSection = ({ gameDate }: TodayGameSectionProps) => {
   return (
     <SectionCard className="w-full min-w-0 overflow-hidden">
-      <TodayGameClient />
+      <TodayGameClient gameDate={gameDate} />
     </SectionCard>
   );
 };
