@@ -50,6 +50,17 @@ export default function RootLayout({
       suppressHydrationWarning
     >
       <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "WebSite",
+              name: "직관GO",
+              url: "https://jikgwango.vercel.app",
+            }),
+          }}
+        />
         <Script id="theme-init" strategy="beforeInteractive">{`
       try {
         const theme = localStorage.getItem('theme');
