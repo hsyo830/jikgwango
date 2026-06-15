@@ -110,7 +110,7 @@
   --sidebar-ring: oklch(0.708 0 0);
 
   /* 배경 이미지 */
-  --hero-bg: url("/image/hero/PageHeroLightGR.png");
+  --hero-bg: url("/image/hero/PageHeroLightGR.webp");
 }
 
 .dark {
@@ -208,7 +208,7 @@
   --sidebar-ring: oklch(0.556 0 0);
 
   /* 배경 이미지 */
-  --hero-bg: url("/image/hero/PageHeroNight.png");
+  --hero-bg: url("/image/hero/PageHeroNight.webp");
 }
 
 /* CSS 변수를 Tailwind 유틸리티 이름으로 연결 */
