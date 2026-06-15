@@ -33,13 +33,13 @@ export default async function MainPage() {
       <div className="mx-2.5 -mt-6 flex flex-col gap-5 md:mx-0 md:-mt-3 md:px-8.25 lg:-mt-4 xl:-mt-15">
         <HydrationBoundary state={dehydrate(queryClient)}>
           <TodayGameSection gameDate={todayGameParams.gameDate} />
+          <StadiumFoodSection />
+          <StadiumTodayWeatherSection gameDate={todayGameParams.gameDate} />
+          <div className="grid grid-cols-1 gap-3 md:grid-cols-2">
+            <StadiumInfoSection />
+            <ChecklistSection />
+          </div>
         </HydrationBoundary>
-        <StadiumFoodSection />
-        <StadiumTodayWeatherSection />
-        <div className="grid grid-cols-1 gap-3 md:grid-cols-2">
-          <StadiumInfoSection />
-          <ChecklistSection />
-        </div>
       </div>
     </main>
   );

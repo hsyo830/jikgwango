@@ -3,13 +3,16 @@
 import LoadingMainWeather from "@/src/components/common/loading/LoadingMainWeather";
 import { stadiums } from "@/src/data/stadiums";
 import { useTodayGame } from "@/src/hooks/queries/useTodayGameQuery";
-import { getTodayGameDate } from "@/src/utils/getTodayGameDate";
 
 import StadiumTodayWeatherSlider from "./StadiumTodayWeatherSlider";
 
-const StadiumWeatherClient = () => {
+type StadiumWeatherClientProps = {
+  gameDate: string;
+};
+
+const StadiumWeatherClient = ({ gameDate }: StadiumWeatherClientProps) => {
   const { data, isLoading, isError } = useTodayGame({
-    gameDate: getTodayGameDate(),
+    gameDate,
     leId: "1",
     srId: "0,1,3,4,5,7",
     headerCk: "0",

@@ -3,7 +3,6 @@
 import LoadingMainTodayGame from "@/src/components/common/loading/LoadingMainTodayGame";
 import NoResult from "@/src/components/common/NoResult";
 import { useTodayGame } from "@/src/hooks/queries/useTodayGameQuery";
-import { getTodayGameDate } from "@/src/utils/getTodayGameDate";
 
 import TodayGameSlider from "./components/TodayGameSlider";
 import SectionHeader from "./SectionHeader";
