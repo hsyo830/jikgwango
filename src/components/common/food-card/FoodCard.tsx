@@ -37,7 +37,7 @@ const FoodCard = ({ food, variant = "main", index, priority }: FoodProps) => {
           src={food.imageUrl || "/image/food-booth/placeholder-image.webp"}
           alt={`${food.name} 음식 부스 이미지`}
           fill
-          sizes="(max-width: 768px) 140px, 300px"
+          sizes="(max-width: 768px) 200px, 300px"
           className="object-cover"
           priority={priority || index === 0}
         />
