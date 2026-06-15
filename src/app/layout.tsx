@@ -50,6 +50,18 @@ export default function RootLayout({
       suppressHydrationWarning
     >
       <head>
+        <link
+          rel="preload"
+          as="image"
+          href="/image/hero/PageHeroLightGR.webp"
+          media="(prefers-color-scheme: light)"
+        />
+        <link
+          rel="preload"
+          as="image"
+          href="/image/hero/PageHeroNight.webp"
+          media="(prefers-color-scheme: dark)"
+        />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
