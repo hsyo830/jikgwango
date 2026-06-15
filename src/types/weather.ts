@@ -35,3 +35,26 @@ export type StadiumWeatherViewData = {
   }[];
   message: string;
 };
+
+export type HourlyWeather = {
+  time: string;
+  temperature: number;
+  weatherText: string;
+  icon: string;
+  sky: string;
+  pty: string;
+};
+
+export type StadiumWeatherResponse = {
+  current: {
+    temperature: number;
+    weatherText: string;
+    feelsLike: number;
+    humidity: number;
+    windSpeed: number;
+    rainAmount: number;
+    pty: string;
+    icon: string;
+  };
+  hourly: HourlyWeather[];
+};
