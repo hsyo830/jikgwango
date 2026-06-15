@@ -1,27 +1,12 @@
 import axios from "axios";
 
-import { WEATHER_API_ENDPOINTS } from "../../constants/apiEndPoint";
-import { StadiumWeatherParams } from "../../types/weather";
-import { formatWeatherData } from "../../utils/weatherFormatter";
+import { INTERNAL_API_ENDPOINTS } from "@/src/constants/apiEndPoint";
+import { StadiumWeatherParams } from "@/src/types/weather";
 
 const getStadiumWeather = async (params: StadiumWeatherParams) => {
-  const { base_date, base_time, nx, ny } = params;
+  const response = await axios.get(INTERNAL_API_ENDPOINTS.stadiumWeather, { params });
 
-  const response = await axios.get(WEATHER_API_ENDPOINTS.ultraShortForecast, {
-    params: {
-      serviceKey: process.env.NEXT_PUBLIC_WEATHER_API_KEY,
-      pageNo: 1,
-      numOfRows: 1000,
-      dataType: "JSON",
-      base_date,
-      base_time,
-      nx,
-      ny,
-    },
-  });
-  const items = response.data.response.body.items.item;
-
-  return formatWeatherData(items);
+  return response.data;
 };
 
 export default getStadiumWeather;

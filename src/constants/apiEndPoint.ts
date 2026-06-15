@@ -14,4 +14,5 @@ export const KBO_API_ENDPOINTS = {
 
 export const INTERNAL_API_ENDPOINTS = {
   todayGames: "/api/today-games",
+  stadiumWeather: "/api/stadiumWeather",
 } as const;
