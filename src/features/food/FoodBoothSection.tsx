@@ -1,3 +1,5 @@
+import { useMemo } from "react";
+
 import NoResult from "@/src/components/common/NoResult";
 import SectionCard from "@/src/components/common/SectionCard";
 import { FoodCategoryValue } from "@/src/constants/foodCategories";
@@ -19,13 +21,14 @@ const FoodBoothSection = ({
 }: FoodBoothSectionProps) => {
   const foodBoothStadiumId = getFoodBoothStadiumId(selectedStadiumId);
 
-  const filteredFoodBoothData = foodBoothData.filter((booth) => {
-    const isSameStadium = booth.stadiumId === foodBoothStadiumId;
-    const isSameCategory =
-      selectedFoodCategoryId === "all" || booth.menuCategory === selectedFoodCategoryId;
-
-    return isSameStadium && isSameCategory;
-  });
+  const filteredFoodBoothData = useMemo(() => {
+    return foodBoothData.filter((booth) => {
+      const isSameStadium = booth.stadiumId === foodBoothStadiumId;
+      const isSameCategory =
+        selectedFoodCategoryId === "all" || booth.menuCategory === selectedFoodCategoryId;
+      return isSameStadium && isSameCategory;
+    });
+  }, [foodBoothData, foodBoothStadiumId, selectedFoodCategoryId]);
 
   const hasFoodBooth = filteredFoodBoothData.length > 0;
 
@@ -39,7 +42,10 @@ const FoodBoothSection = ({
         </p>
       </div>
       {hasFoodBooth ? (
-        <FoodBoothGrid filteredFoodBoothData={filteredFoodBoothData} />
+        <FoodBoothGrid
+          key={`${selectedStadiumId}-${selectedFoodCategoryId}`}
+          filteredFoodBoothData={filteredFoodBoothData}
+        />
       ) : (
         <div className="pt-15 pb-35">
           <NoResult message="선택한 조건에 맞는 음식 부스가 없어요." />

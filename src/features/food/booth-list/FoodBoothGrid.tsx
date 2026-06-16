@@ -1,3 +1,5 @@
+"use client";
+
 import { useState } from "react";
 
 import FoodCard from "@/src/components/common/food-card/FoodCard";
@@ -17,7 +19,6 @@ type FoodBoothGridProps = {
 };
 
 // 보여줄 페이지 번호 배열을 계산하는 함수
-// 예) 현재 7페이지, 전체 15페이지 → [1, '...', 5, 6, 7, 8, 9, '...', 15]
 const getPageNumbers = (currentPage: number, totalPages: number): (number | "ellipsis")[] => {
   // 전체 페이지가 7 이하면 전부 표시
   if (totalPages <= 7) {
