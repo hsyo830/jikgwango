@@ -1,11 +1,11 @@
 import Image from "next/image";
 
+import LocationIcon from "@/src/components/icons/foodBooth/card/LocationIcon";
+import MenuIcon from "@/src/components/icons/foodBooth/card/MenuIcon";
 import { cn } from "@/src/lib/utils";
 import { FoodBooth } from "@/src/types/foodBooth";
 import { getFoodCategory } from "@/src/utils/getFoodCategory";
 
-import LocationIcon from "../../icons/foodBooth/card/LocationIcon";
-import MenuIcon from "../../icons/foodBooth/card/MenuIcon";
 import FoodCategoryBadge from "./FoodCategoryBadge";
 
 type FoodProps = {

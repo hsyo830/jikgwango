@@ -30,7 +30,7 @@ const FoodBoothSection = ({
   const hasFoodBooth = filteredFoodBoothData.length > 0;
 
   return (
-    <SectionCard className="flex flex-col gap-5">
+    <SectionCard className="flex flex-col gap-5" id="food-booth-section">
       <div className="flex items-end gap-5">
         <h2 className="text-xl font-bold">전체 부스</h2>
         <p className="text-muted text-base font-semibold">

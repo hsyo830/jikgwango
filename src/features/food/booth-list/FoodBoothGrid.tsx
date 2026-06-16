@@ -80,7 +80,13 @@ const FoodBoothGrid = ({ filteredFoodBoothData }: FoodBoothGridProps) => {
             <PaginationPrevious
               href="#"
               text="이전"
-              onClick={() => setCurrentPage((prev) => Math.max(prev - 1, 1))}
+              onClick={(e) => {
+                e.preventDefault();
+                setCurrentPage((prev) => Math.max(prev - 1, 1));
+                document
+                  .querySelector("#food-booth-section")
+                  ?.scrollIntoView({ behavior: "smooth" });
+              }}
               className="text-foreground hover:bg-surface-2 hover:text-foreground"
             />
           </PaginationItem>
