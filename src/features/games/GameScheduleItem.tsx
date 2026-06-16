@@ -74,7 +74,7 @@ const GameScheduleItem = ({ gameData: todayGame }: GameScheduleItemProps) => {
               />
             </div>
             <span className="text-xs font-semibold md:text-sm lg:text-base">
-              {todayGame.temp}°C
+              {todayGame.gameTemp}°C
             </span>
           </div>
           <div className="shrink-0">
