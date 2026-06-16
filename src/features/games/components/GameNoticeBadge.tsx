@@ -14,6 +14,7 @@ const GameNoticeBadge = () => {
         href="https://www.koreabaseball.com"
         target="_blank"
         rel="noopener noreferrer"
+        aria-label="KBO 공식 사이트 바로가기 (새 탭에서 열림)"
         className="text-warning hover:text-warning-hover shrink-0 cursor-pointer text-sm font-semibold md:text-base"
       >
         KBO 공식 사이트 바로가기 &gt;

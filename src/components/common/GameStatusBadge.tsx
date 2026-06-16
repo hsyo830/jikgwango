@@ -42,7 +42,9 @@ const GameStatusBadge = ({ status, variant = "filled" }: GameStatusBadgeProps) =
         variant === "inline" && "p-0 lg:text-base",
       )}
     >
-      {variant === "inline" && <Icon size={16} className={gameStatus.iconClass} />}
+      {variant === "inline" && (
+        <Icon size={16} className={gameStatus.iconClass} aria-hidden="true" />
+      )}
 
       {variant === "filled" ? gameStatus.label : gameStatus.listLabel}
     </div>
