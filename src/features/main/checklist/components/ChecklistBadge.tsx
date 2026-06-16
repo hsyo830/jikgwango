@@ -17,8 +17,8 @@ type ChecklistBadgeProps = {
 const ChecklistBadge = ({ item }: ChecklistBadgeProps) => {
   return (
     <div
-      role="checkbox"
-      aria-checked={item.checked}
+      role="status"
+      aria-label={`${item.label} ${item.checked ? "준비 완료" : "미완료"}`}
       className={cn(
         "flex h-8 w-full items-center justify-between gap-1 rounded-full border px-2 text-xs font-semibold transition-all duration-300 ease-out md:h-9 md:px-3 md:text-[13px] lg:px-3.5 lg:text-xs",
         item.checked

@@ -8,7 +8,7 @@ interface GameStatusCheckIconProps extends SVGProps<SVGSVGElement> {
   filled?: boolean;
 }
 
-export default function GameStatusCheckIcon({
+const GameStatusCheckIcon = ({
   size = 20,
   color = "currentColor",
   strokeWidth = 2.5,
@@ -16,7 +16,7 @@ export default function GameStatusCheckIcon({
   className,
   filled,
   ...props
-}: GameStatusCheckIconProps) {
+}: GameStatusCheckIconProps) => {
   return (
     <svg
       width={size}
@@ -50,4 +50,6 @@ export default function GameStatusCheckIcon({
       />
     </svg>
   );
-}
+};
+
+export default GameStatusCheckIcon;
