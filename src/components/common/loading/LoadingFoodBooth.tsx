@@ -19,7 +19,7 @@ const LoadingFoodBooth = () => {
         ))}
       </div>
 
-      <section className="bg-surface border-border flex flex-col gap-5 rounded-xl border p-5">
+      <div className="bg-surface border-border flex flex-col gap-5 rounded-xl border p-5">
         <div className="flex items-end gap-5">
           <div className="h-7 w-24">
             <LoadingCard />
@@ -44,7 +44,7 @@ const LoadingFoodBooth = () => {
             </div>
           ))}
         </div>
-      </section>
+      </div>
     </div>
   );
 };
