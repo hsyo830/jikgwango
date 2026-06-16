@@ -16,6 +16,7 @@ const StadiumInfoSlider = () => {
       <div className="mx-2 hidden md:block">
         <div className="relative min-w-0">
           <Swiper
+            aria-label="구장 안내 목록"
             className="w-full"
             modules={[Autoplay, Navigation]}
             navigation={{
@@ -28,6 +29,7 @@ const StadiumInfoSlider = () => {
             autoplay={{
               delay: 3500,
               disableOnInteraction: false,
+              pauseOnMouseEnter: true,
             }}
             loop={stadiums.length > 4}
           >

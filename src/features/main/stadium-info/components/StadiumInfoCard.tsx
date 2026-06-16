@@ -56,11 +56,11 @@ const StadiumInfoCard = ({ stadium }: StadiumInfoCardProps) => {
             </div>
             <div className="flex flex-col gap-1 md:gap-1.5">
               <div className="text-muted flex items-center gap-1 text-[11px] font-medium md:text-base lg:text-[13px]">
-                <LocationIcon size={17} className="text-warning" />
+                <LocationIcon aria-hidden="true" size={17} className="text-warning" />
                 {stadium.address}
               </div>
               <div className="text-muted flex min-w-0 items-center gap-1 text-[11px] font-medium md:gap-2 md:text-base lg:gap-1 lg:text-[13px]">
-                <SubwayIcon size={17} className="text-warning shrink-0" />
+                <SubwayIcon aria-hidden="true" size={17} className="text-warning shrink-0" />
                 <span className="min-w-0 truncate">
                   {stadium.transport?.subway || "인근 지하철역 없음"}
                 </span>
@@ -73,12 +73,21 @@ const StadiumInfoCard = ({ stadium }: StadiumInfoCardProps) => {
               target="_blank"
               rel="noopener noreferrer"
               className="flex-2 truncate"
+              aria-label={`${stadium.name} 공식 홈페이지 (새 탭에서 열림)`}
             >
               <Button className="w-full">구장 정보 더 보기 &gt;</Button>
             </Link>
-            <Button className="flex-1 xl:px-3.5" variant="inline">
-              길찾기 &gt;
-            </Button>
+            <Link
+              href={`https://map.kakao.com/?q=${encodeURIComponent(stadium.kakaoPlaceName)}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex-1"
+              aria-label={`${stadium.name} 길찾기 (카카오맵, 새 탭에서 열림)`}
+            >
+              <Button className="flex-1 xl:px-3.5" variant="inline">
+                길찾기 &gt;
+              </Button>
+            </Link>
           </div>
         </div>
       </SectionCard>
