@@ -6,8 +6,8 @@ import { getFoodBooth } from "@/src/services/stadium/getFoodBooth";
 
 import FoodBoothClient from "./FoodBoothClient";
 
-const FoodPage = () => {
-  const foodBoothData = getFoodBooth();
+const FoodPage = async () => {
+  const foodBoothData = await getFoodBooth();
 
   return (
     <main>
