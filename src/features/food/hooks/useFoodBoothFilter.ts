@@ -34,7 +34,7 @@ export const useFoodBoothFilter = ({ foodBoothData }: useFoodBoothFilterProps) =
     params.set("stadium", stadiumId);
     params.set("foodbooth", foodBoothId);
 
-    router.push(`/food?${params.toString()}`);
+    router.replace(`/food?${params.toString()}`);
   };
 
   const handleSelectStadium = (stadiumId: string) => {
