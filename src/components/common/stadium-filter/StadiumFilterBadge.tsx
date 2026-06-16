@@ -18,6 +18,7 @@ const StadiumFilterBadge = ({
 }: StadiumFilterBadgeProps) => {
   return (
     <button
+      type="button"
       className={`hover:bg-surface-2 hover:border-border inline-flex w-full cursor-pointer rounded-md border px-2 py-1 md:px-3.5 md:py-1 ${selectedStadiumId === stadiumId ? "bg-warning-soft border-warning" : "border-border bg-surface"}`}
       onClick={() => onSelectedStadiumId(stadiumId)}
     >

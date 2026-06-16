@@ -46,29 +46,27 @@ const StadiumInfoCard = ({ data }: StadiumInfoCardProps) => {
                 height={96}
                 className="h-auto w-12 opacity-35 md:w-15"
               />
-            ) : (
-              ""
-            )}
+            ) : null}
           </div>
         </div>
         <dl className="border-border flex flex-col gap-2 border-b pb-3">
           <div className="text-muted flex items-start gap-6 text-sm md:gap-7 md:text-base">
             <dt className="flex shrink-0 items-center gap-2">
-              <LocationIcon size={17} />
+              <LocationIcon size={17} aria-hidden="true" />
               <span className="font-semibold">주소</span>
             </dt>
             <dd>{data.address}</dd>
           </div>
           <div className="text-muted flex items-start gap-6 text-sm md:gap-7 md:text-base">
             <dt className="flex shrink-0 items-center gap-2">
-              <SubwayIcon size={17} />
+              <SubwayIcon size={17} aria-hidden="true" />
               <span className="font-semibold">교통</span>
             </dt>
             <dd>{data.transport.subway || "인근 지하철역 없음"}</dd>
           </div>
           <div className="text-muted flex items-start gap-6 text-sm md:gap-7 md:text-base">
             <dt className="flex shrink-0 items-center gap-2">
-              <ParkingIcon size={17} />
+              <ParkingIcon size={17} aria-hidden="true" />
               <span className="font-semibold">주차</span>
             </dt>
             <dd>
@@ -95,9 +93,10 @@ const StadiumInfoCard = ({ data }: StadiumInfoCardProps) => {
         </dl>
         <div className="flex w-full gap-3">
           <Link
-            href={`https://map.kakao.com/?q=${encodeURIComponent("부산사직종합운동장 사직야구장")}`}
+            href={`https://map.kakao.com/?q=${encodeURIComponent(data.kakaoPlaceName)}`}
             target="_blank"
             rel="noopener noreferrer"
+            aria-label={`${data.name} 길찾기 (카카오맵, 새 탭에서 열림)`}
             className="flex-1 truncate"
           >
             <Button className="w-full">길찾기 &gt;</Button>
@@ -107,6 +106,7 @@ const StadiumInfoCard = ({ data }: StadiumInfoCardProps) => {
             className="flex-2 truncate"
             target="_blank"
             rel="noopener noreferrer"
+            aria-label={`${data.name} 공식 홈페이지 (새 탭에서 열림)`}
           >
             <Button className="w-full items-center" variant="inline">
               <span className="text-muted">공식 홈페이지</span>

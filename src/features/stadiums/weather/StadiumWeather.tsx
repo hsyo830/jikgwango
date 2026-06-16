@@ -33,7 +33,7 @@ const StadiumWeather = ({ stadiumData }: StadiumWeatherProps) => {
       <div className="border-border flex items-start justify-between border-b pb-2 md:px-3 lg:px-5">
         <div className="flex items-center gap-2.5 lg:gap-4">
           <div className="relative h-19 w-19 md:h-17 md:w-17 lg:h-19 lg:w-19">
-            <Image src={data.current.icon} alt={data.current.weatherText} fill sizes="40px" />
+            <Image src={data.current.icon} alt={data.current.weatherText} fill sizes="76px" />
           </div>
           <div className="flex flex-col">
             <div className="text-3xl font-bold lg:text-4xl">{data.current.temperature}°C</div>
@@ -73,7 +73,7 @@ const StadiumWeather = ({ stadiumData }: StadiumWeatherProps) => {
       </div>
 
       <p className="text-primary flex gap-1.5 font-semibold">
-        <GameStatusCheckIcon filled />
+        <GameStatusCheckIcon filled aria-hidden="true" />
         {getWeatherTipByPty(data.current.pty)}
       </p>
     </div>

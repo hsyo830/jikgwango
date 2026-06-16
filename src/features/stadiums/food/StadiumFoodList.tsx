@@ -23,6 +23,7 @@ const StadiumFoodList = ({ data }: StadiumFoodListProps) => {
       <div className="hidden w-full md:block md:px-4.5">
         <div className="relative">
           <Swiper
+            aria-label="구장 내 음식 부스 목록"
             modules={[Autoplay, Navigation]}
             navigation={{
               prevEl: ".food-swiper-prev",
@@ -45,6 +46,7 @@ const StadiumFoodList = ({ data }: StadiumFoodListProps) => {
             autoplay={{
               delay: 3500,
               disableOnInteraction: false,
+              pauseOnMouseEnter: true,
             }}
             loop
           >
