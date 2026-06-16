@@ -73,7 +73,9 @@ const GameScheduleItem = ({ gameData: todayGame }: GameScheduleItemProps) => {
                 className="object-contain"
               />
             </div>
-            <span className="text-xs font-semibold md:text-sm lg:text-base">24°C</span>
+            <span className="text-xs font-semibold md:text-sm lg:text-base">
+              {todayGame.temp}°C
+            </span>
           </div>
           <div className="shrink-0">
             {todayGame.cancelSc === 0 ? (
