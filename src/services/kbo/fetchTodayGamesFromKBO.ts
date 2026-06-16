@@ -21,9 +21,6 @@ const fetchTodayGamesFromKBO = async (params: GameParams) => {
     responseType: "text",
   });
 
-  console.log("KBO status:", response.status);
-  console.log("KBO raw response:", response.data);
-
   return JSON.parse(response.data);
 };
 
