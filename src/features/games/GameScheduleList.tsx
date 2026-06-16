@@ -4,13 +4,16 @@ import LoadingGameScheduleList from "@/src/components/common/loading/LoadingGame
 import NoResult from "@/src/components/common/NoResult";
 import SectionCard from "@/src/components/common/SectionCard";
 import { useTodayGame } from "@/src/hooks/queries/useTodayGameQuery";
-import { getTodayGameDate } from "@/src/utils/getTodayGameDate";
 
 import GameScheduleItem from "./GameScheduleItem";
 
-const GameScheduleList = () => {
+type GameScheduleListProps = {
+  gameDate: string;
+};
+
+const GameScheduleList = ({ gameDate }: GameScheduleListProps) => {
   const { data, isLoading, isError } = useTodayGame({
-    gameDate: getTodayGameDate(),
+    gameDate,
     leId: "1",
     srId: "0,1,3,4,5,7",
     headerCk: "0",
