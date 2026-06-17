@@ -16,7 +16,7 @@ type NavItemProps = {
 const NavItem = ({ href, label, icon: Icon, variant }: NavItemProps) => {
   const pathname = usePathname();
 
-  const isActive = href === "/" ? pathname === "/" : pathname.startsWith(href);
+  const isActive = !!pathname && (href === "/" ? pathname === "/" : pathname.startsWith(href));
 
   if (variant === "bottom") {
     return (
