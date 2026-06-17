@@ -25,7 +25,7 @@ const SearchBar = () => {
     const matched = stadiums.find((stadium) => stadium.searchKeywords.includes(trimmedKeyword));
 
     if (!matched) {
-      setErrorMessage(`${keyword}에 대한 검색 결과가 없습니다.`);
+      setErrorMessage(`'${keyword}' 검색 결과가 없습니다. 팀명, 구장명으로 검색해보세요.`);
       return;
     }
 
