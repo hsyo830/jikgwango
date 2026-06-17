@@ -22,6 +22,7 @@ const NavItem = ({ href, label, icon: Icon, variant }: NavItemProps) => {
     return (
       <Link
         href={href}
+        aria-current={isActive ? "page" : undefined}
         className={`md:0.5 m-0.5 inline-flex w-12 flex-col items-center justify-center gap-0.5 md:w-15 md:gap-0.5`}
       >
         <Icon size={30} className={`text-inverse ${isActive ? "text-primary" : "text-muted"}`} />
@@ -35,6 +36,7 @@ const NavItem = ({ href, label, icon: Icon, variant }: NavItemProps) => {
   return (
     <Link
       href={href}
+      aria-current={isActive ? "page" : undefined}
       className={`flex items-center gap-3 rounded-xl p-3 ${isActive ? "bg-primary hover:bg-primary" : "hover:bg-primary-hover/50 bg-none"}`}
     >
       <Icon size={26} className="text-inverse" />

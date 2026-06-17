@@ -14,8 +14,6 @@ const Header = () => {
       </div>
       <div className="col-start-2 row-start-1 inline-flex shrink-0 gap-1 justify-self-end md:col-start-4 md:row-start-1">
         <ThemeToggle />
-        {/*<span className="h-10 w-10 bg-amber-300">라이트</span>
-        <span className="h-10 w-10 bg-amber-300">로그인</span>*/}
       </div>
     </header>
   );

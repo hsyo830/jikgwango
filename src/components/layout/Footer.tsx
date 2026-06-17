@@ -30,10 +30,11 @@ const Footer = () => {
             href="https://github.com/hsyo830/jikgwango"
             target="_blank"
             rel="noopener noreferrer"
+            aria-label="직관GO GitHub 저장소 바로가기 (새 탭에서 열림)"
             className="text-muted hover:text-primary mt-3 inline-flex items-center gap-1 text-sm font-semibold"
           >
             GitHub 바로가기
-            <span>↗</span>
+            <span aria-hidden="true">↗</span>
           </a>
         </div>
 
