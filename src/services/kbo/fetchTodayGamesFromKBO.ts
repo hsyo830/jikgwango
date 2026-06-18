@@ -24,6 +24,7 @@ const fetchTodayGamesFromKBO = async (params: GameParams) => {
   return JSON.parse(response.data);
 };
 
-export const getCachedTodayGames = unstable_cache(fetchTodayGamesFromKBO, ["today-games"], {
-  revalidate: 60,
-});
+export const getCachedTodayGames = (params: GameParams) =>
+  unstable_cache(fetchTodayGamesFromKBO, ["today-games", params.gameDate], {
+    revalidate: 60,
+  })(params);
