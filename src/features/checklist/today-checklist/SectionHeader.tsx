@@ -7,16 +7,12 @@ interface SectionHeaderProps {
   stadiumName: string;
   selectedTeam: string;
   onTeamChange: (payload: TeamWeatherPayload) => void;
-  base_time: string;
 }
 
-const SectionHeader = ({
-  stadiumName,
-  selectedTeam,
-  onTeamChange,
-  base_time,
-}: SectionHeaderProps) => {
-  const formatBaseTime = `${base_time.slice(0, 2)}:${base_time.slice(2, 4)}`;
+const SectionHeader = ({ stadiumName, selectedTeam, onTeamChange }: SectionHeaderProps) => {
+  const now = new Date();
+  const hour = now.getHours();
+  const formatBaseTime = `${hour}:00`;
 
   return (
     <header className="mb-2.5 flex flex-col gap-2 md:flex-row md:items-center md:justify-between">

@@ -1,25 +1,20 @@
 import LoadingStadiumWeather from "@/src/components/common/loading/LoadingStadiumWeather";
 import NoResult from "@/src/components/common/NoResult";
 import { useStadiumWeather } from "@/src/hooks/queries/useStadiumWeatherQuery";
+import { getWeatherBaseDateTime } from "@/src/utils/weatherTime";
 
 import TodayWeatherCard from "./TodayWeatherCard";
 import TodayWeatherChecklist from "./TodayWeatherChecklist";
 
 type WeatherChecklistCardProps = {
   stadiumId: string;
-  base_date: string;
-  base_time: string;
   nx: number;
   ny: number;
 };
 
-const WeatherChecklistCard = ({
-  stadiumId,
-  base_date,
-  base_time,
-  nx,
-  ny,
-}: WeatherChecklistCardProps) => {
+const WeatherChecklistCard = ({ stadiumId, nx, ny }: WeatherChecklistCardProps) => {
+  const { base_date, base_time } = getWeatherBaseDateTime();
+
   const { data, isLoading, isError } = useStadiumWeather({
     stadiumId,
     base_date,
