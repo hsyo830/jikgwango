@@ -26,8 +26,14 @@ const fetchStadiumWeatherFromKMA = async (params: StadiumWeatherParams) => {
   return formatWeatherData(items);
 };
 
-export const getCachedStadiumWeather = unstable_cache(
-  fetchStadiumWeatherFromKMA,
-  ["stadium-weather"],
-  { revalidate: 1800 },
-);
+export const getCachedStadiumWeather = async (params: StadiumWeatherParams) => {
+  const { stadiumId, base_date, base_time, nx, ny } = params;
+
+  const cached = unstable_cache(
+    fetchStadiumWeatherFromKMA,
+    ["stadium-weather", stadiumId, base_date, base_time, String(nx), String(ny)],
+    { revalidate: 1800 },
+  );
+
+  return cached(params);
+};

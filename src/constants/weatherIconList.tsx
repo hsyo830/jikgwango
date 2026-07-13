@@ -17,6 +17,7 @@ export const PTY_ICON: Record<string, StaticImageData> = {
   "1": rainIcon,
   "2": snowIcon,
   "3": snowIcon,
+  "4": rainIcon,
   "5": rainIcon,
   "6": snowIcon,
   "7": snowIcon,

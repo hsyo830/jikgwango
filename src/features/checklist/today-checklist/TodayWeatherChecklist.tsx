@@ -9,23 +9,19 @@ const TodayWeatherChecklist = () => {
       </p>
       <div className="flex justify-between py-5 md:gap-2">
         {/* 준비물 뱃지 */}
-        <div className="border-border bg-surface flex flex-col items-center rounded-xl border p-3 md:gap-1 md:px-1 md:py-2 xl:min-w-23">
+        <div className="border-border bg-surface flex w-full flex-col items-center rounded-xl border p-3 md:gap-1 md:px-1 md:py-2 xl:min-w-23">
           <Image src="/image/checklist/raincoat.png" alt="우비" width={75} height={75} />
           <p className="text-sm font-medium">우비</p>
         </div>
-        <div className="border-border bg-surface flex flex-col items-center rounded-xl border p-3 md:gap-1 md:px-1 md:py-2 xl:min-w-23">
+        <div className="border-border bg-surface flex w-full flex-col items-center rounded-xl border p-3 md:gap-1 md:px-1 md:py-2 xl:min-w-23">
           <Image src="/image/checklist/raincoat.png" alt="우비" width={75} height={75} />
           <p className="text-sm font-medium">우비</p>
         </div>
-        <div className="border-border bg-surface flex flex-col items-center rounded-xl border p-3 md:gap-1 md:px-1 md:py-2 xl:min-w-23">
+        <div className="border-border bg-surface flex w-full flex-col items-center rounded-xl border p-3 md:gap-1 md:px-1 md:py-2 xl:min-w-23">
           <Image src="/image/checklist/raincoat.png" alt="우비" width={75} height={75} />
           <p className="text-sm font-medium">우비</p>
         </div>
-        <div className="border-border bg-surface flex flex-col items-center rounded-xl border p-3 md:gap-1 md:px-1 md:py-2 xl:min-w-23">
-          <Image src="/image/checklist/raincoat.png" alt="우비" width={75} height={75} />
-          <p className="text-sm font-medium">우비</p>
-        </div>
-        <div className="border-border bg-surface flex flex-col items-center rounded-xl border p-3 md:gap-1 md:px-1 md:py-2 xl:min-w-23">
+        <div className="border-border bg-surface flex w-full flex-col items-center rounded-xl border p-3 md:gap-1 md:px-1 md:py-2 xl:min-w-23">
           <Image src="/image/checklist/raincoat.png" alt="우비" width={75} height={75} />
           <p className="text-sm font-medium">우비</p>
         </div>
