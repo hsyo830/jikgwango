@@ -8,8 +8,10 @@ type TodayWeatherCardProps = {
 
 const TodayWeatherCard = ({ data }: TodayWeatherCardProps) => {
   return (
-    <div>
-      <h3 className="text-foreground text-base font-bold md:text-lg">오늘 날씨</h3>
+    <section aria-labelledby="today-weather-heading">
+      <h3 id="today-weather-heading" className="text-foreground text-base font-bold md:text-lg">
+        오늘 날씨
+      </h3>
       <div className="mt-3 mb-5 flex items-center justify-between md:mt-9.5 md:mb-0 md:flex-col md:justify-center md:gap-3">
         <div className="flex items-center gap-2.5 lg:gap-3">
           <div className="relative h-19 w-19 md:h-15 md:w-15 lg:h-18 lg:w-18">
@@ -33,7 +35,7 @@ const TodayWeatherCard = ({ data }: TodayWeatherCardProps) => {
           </li>
         </ul>
       </div>
-    </div>
+    </section>
   );
 };
 

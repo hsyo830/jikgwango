@@ -2,8 +2,10 @@ import Image from "next/image";
 
 const TodayWeatherChecklist = () => {
   return (
-    <div>
-      <h3 className="text-foreground text-base font-bold md:text-lg">오늘 추천 준비물</h3>
+    <section aria-labelledby="today-checklist-heading">
+      <h3 id="today-checklist-heading" className="text-foreground text-base font-bold md:text-lg">
+        오늘 추천 준비물
+      </h3>
       <p className="text-muted text-base font-semibold">
         현재 날씨와 구장 환경을 고려한 추천이에요!
       </p>
@@ -47,7 +49,7 @@ const TodayWeatherChecklist = () => {
           오늘은 자외선이 강해요! 모자와 선크림으로 피부를 보호하세요.
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 
