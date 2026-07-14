@@ -19,21 +19,21 @@ const TodayWeatherChecklist = () => {
         </div>
         <div className="border-border bg-surface flex w-full flex-col items-center rounded-xl border p-3 md:gap-1 md:px-1 md:py-2 xl:min-w-23">
           <div className="relative h-19 w-19">
-            <Image src="/image/checklist/raincoat.png" alt="우비" fill sizes="76px" />
+            <Image src="/image/checklist/cap.png" alt="모자" fill sizes="76px" />
           </div>
-          <p className="text-sm font-medium">우비</p>
+          <p className="text-sm font-medium">모자</p>
         </div>
         <div className="border-border bg-surface flex w-full flex-col items-center rounded-xl border p-3 md:gap-1 md:px-1 md:py-2 xl:min-w-23">
           <div className="relative h-19 w-19">
-            <Image src="/image/checklist/raincoat.png" alt="우비" fill sizes="76px" />
+            <Image src="/image/checklist/uniform.png" alt="유니폼" fill sizes="76px" />
           </div>
-          <p className="text-sm font-medium">우비</p>
+          <p className="text-sm font-medium">유니폼</p>
         </div>
         <div className="border-border bg-surface flex w-full flex-col items-center rounded-xl border p-3 md:gap-1 md:px-1 md:py-2 xl:min-w-23">
           <div className="relative h-19 w-19">
-            <Image src="/image/checklist/raincoat.png" alt="우비" fill sizes="76px" />
+            <Image src="/image/checklist/water.png" alt="물" fill sizes="76px" />
           </div>
-          <p className="text-sm font-medium">우비</p>
+          <p className="text-sm font-medium">물</p>
         </div>
       </div>
       {/* --------------- */}
