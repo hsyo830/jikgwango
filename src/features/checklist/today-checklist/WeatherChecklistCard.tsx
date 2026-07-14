@@ -1,4 +1,4 @@
-import LoadingStadiumWeather from "@/src/components/common/loading/LoadingStadiumWeather";
+import LoadingWeatherChecklistCard from "@/src/components/common/loading/LoadingTodayWeatherCard";
 import NoResult from "@/src/components/common/NoResult";
 import { useStadiumWeather } from "@/src/hooks/queries/useStadiumWeatherQuery";
 import { getWeatherBaseDateTime } from "@/src/utils/weatherTime";
@@ -23,7 +23,7 @@ const WeatherChecklistCard = ({ stadiumId, nx, ny }: WeatherChecklistCardProps) 
     ny,
   });
 
-  if (isLoading) return <LoadingStadiumWeather />;
+  if (isLoading) return <LoadingWeatherChecklistCard />;
   if (isError || !data)
     return <NoResult message="날씨 정보와 준비물 정보를 불러오지 못했습니다." />;
 
