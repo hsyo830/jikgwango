@@ -16,6 +16,24 @@ export const KBO_TEAMS = {
     name: "롯데 자이언츠",
     logo: LotteLogo,
   },
+  LG: {
+    id: "lg-twins",
+    stadiumId: "jamsil-lg",
+    name: "LG 트윈스",
+    logo: LgLogo,
+  },
+  SS: {
+    id: "samsung-lions",
+    stadiumId: "daegu",
+    name: "삼성 라이온즈",
+    logo: SamsungLogo,
+  },
+  OB: {
+    id: "doosan-bears",
+    stadiumId: "jamsil-ds",
+    name: "두산 베어스",
+    logo: DoosanLogo,
+  },
   HH: {
     id: "hanwha-eagles",
     stadiumId: "daejeon",
@@ -28,6 +46,12 @@ export const KBO_TEAMS = {
     name: "KIA 타이거즈",
     logo: KiaLogo,
   },
+  NC: {
+    id: "nc-dinos",
+    stadiumId: "changwon",
+    name: "NC 다이노스",
+    logo: NcLogo,
+  },
   WO: {
     id: "kiwoom-heroes",
     stadiumId: "gocheok",
@@ -39,30 +63,6 @@ export const KBO_TEAMS = {
     stadiumId: "suwon",
     name: "KT 위즈",
     logo: KtLogo,
-  },
-  LG: {
-    id: "lg-twins",
-    stadiumId: "jamsil-lg",
-    name: "LG 트윈스",
-    logo: LgLogo,
-  },
-  NC: {
-    id: "nc-dinos",
-    stadiumId: "changwon",
-    name: "NC 다이노스",
-    logo: NcLogo,
-  },
-  OB: {
-    id: "doosan-bears",
-    stadiumId: "jamsil-ds",
-    name: "두산 베어스",
-    logo: DoosanLogo,
-  },
-  SS: {
-    id: "samsung-lions",
-    stadiumId: "daegu",
-    name: "삼성 라이온즈",
-    logo: SamsungLogo,
   },
   SK: {
     id: "ssg-landers",
