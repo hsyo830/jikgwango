@@ -33,7 +33,7 @@ const WeatherChecklistCard = ({ stadiumId, nx, ny }: WeatherChecklistCardProps) 
         <TodayWeatherCard data={data} />
       </div>
       <div className="md:pl-6">
-        <TodayWeatherChecklist />
+        <TodayWeatherChecklist data={data} />
       </div>
     </div>
   );

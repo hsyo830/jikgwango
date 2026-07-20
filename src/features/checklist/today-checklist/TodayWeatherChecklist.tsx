@@ -1,6 +1,14 @@
 import Image from "next/image";
 
-const TodayWeatherChecklist = () => {
+import { StadiumWeatherResponse } from "@/src/types/weather";
+
+import RecommendedChecklist from "../../main/checklist/components/RecommendedChecklist";
+
+type TodayWeatherChecklistProps = {
+  data: StadiumWeatherResponse;
+};
+
+const TodayWeatherChecklist = ({ data }: TodayWeatherChecklistProps) => {
   return (
     <section aria-labelledby="today-checklist-heading">
       <h3 id="today-checklist-heading" className="text-foreground text-base font-bold md:text-lg">
@@ -9,33 +17,7 @@ const TodayWeatherChecklist = () => {
       <p className="text-muted text-base font-semibold">
         현재 날씨와 구장 환경을 고려한 추천이에요!
       </p>
-      <div className="flex justify-between gap-1.5 py-5 md:gap-2">
-        {/* 준비물 뱃지 */}
-        <div className="border-border bg-surface flex w-full flex-col items-center rounded-xl border py-2.5 md:gap-1 md:px-1 md:py-2 xl:min-w-23">
-          <div className="relative h-15 w-15 md:h-19 md:w-19">
-            <Image src="/image/checklist/raincoat.png" alt="우비" fill sizes="76px" />
-          </div>
-          <p className="text-sm font-medium">우비</p>
-        </div>
-        <div className="border-border bg-surface flex w-full flex-col items-center rounded-xl border py-2.5 md:gap-1 md:px-1 md:py-2 xl:min-w-23">
-          <div className="relative h-15 w-15 md:h-19 md:w-19">
-            <Image src="/image/checklist/cap.png" alt="모자" fill sizes="76px" />
-          </div>
-          <p className="text-sm font-medium">모자</p>
-        </div>
-        <div className="border-border bg-surface flex w-full flex-col items-center rounded-xl border py-2.5 md:gap-1 md:px-1 md:py-2 xl:min-w-23">
-          <div className="relative h-15 w-15 md:h-19 md:w-19">
-            <Image src="/image/checklist/uniform.png" alt="유니폼" fill sizes="76px" />
-          </div>
-          <p className="text-sm font-medium">유니폼</p>
-        </div>
-        <div className="border-border bg-surface flex w-full flex-col items-center rounded-xl border py-2.5 md:gap-1 md:px-1 md:py-2 xl:min-w-23">
-          <div className="relative h-15 w-15 md:h-19 md:w-19">
-            <Image src="/image/checklist/water.png" alt="물" fill sizes="76px" />
-          </div>
-          <p className="text-sm font-medium">물</p>
-        </div>
-      </div>
+      <div className="flex justify-between gap-1.5 py-5 md:gap-2"></div>
       {/* --------------- */}
 
       <div className="bg-surface-2 divide-disabled flex items-center divide-x rounded-xl p-3">
