@@ -2,7 +2,7 @@ import Image from "next/image";
 
 import { StadiumWeatherResponse } from "@/src/types/weather";
 
-import RecommendedChecklist from "../../main/checklist/components/RecommendedChecklist";
+import { recommendItems } from "../recommendation/items";
 
 type TodayWeatherChecklistProps = {
   data: StadiumWeatherResponse;
@@ -17,8 +17,26 @@ const TodayWeatherChecklist = ({ data }: TodayWeatherChecklistProps) => {
       <p className="text-muted text-base font-semibold">
         현재 날씨와 구장 환경을 고려한 추천이에요!
       </p>
-      <div className="flex justify-between gap-1.5 py-5 md:gap-2"></div>
-      {/* --------------- */}
+
+      <div className="flex justify-between gap-1.5 py-5 md:gap-2">
+        {recommendItems
+          .map((item) => ({ ...item, calculatedScore: item.score(data) }))
+          .sort((a, b) => b.calculatedScore - a.calculatedScore)
+          .slice(0, 4)
+          .map((item) => (
+            <div
+              key={item.name}
+              className="border-border bg-surface flex w-full flex-col items-center rounded-xl border py-2.5 md:gap-1 md:px-1 md:py-2 xl:min-w-23"
+            >
+              <div className="relative h-15 w-15 md:h-19 md:w-19">
+                <Image src={item.itemImage} alt={item.name} fill sizes="76px" />
+              </div>
+              <p className="flex h-10 w-13 items-center justify-center text-center text-sm font-medium lg:w-full">
+                {item.name}
+              </p>
+            </div>
+          ))}
+      </div>
 
       <div className="bg-surface-2 divide-disabled flex items-center divide-x rounded-xl p-3">
         <div className="flex shrink-0 items-center gap-1 pr-3">
