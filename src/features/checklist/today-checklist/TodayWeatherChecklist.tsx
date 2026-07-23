@@ -48,7 +48,7 @@ const TodayWeatherChecklist = ({ data }: TodayWeatherChecklistProps) => {
         <div className="min-w-0 pl-3 text-sm font-medium">
           {data.current.pty === "0"
             ? "오늘은 자외선이 강해요! 모자와 선크림으로 피부를 보호하세요."
-            : "오늘은 비 소식이 있어요! 우산을 꼭 챙기세요."}
+            : "오늘은 우산을 꼭 챙기세요! 경기장 내에서는 우비 착용을 권장합니다."}
         </div>
       </div>
     </section>
